@@ -1,0 +1,35 @@
+At clock#           1 : rst = 1, AvgTxLen =   x, InstExed =   x, CurTxLen =   x, ATL_new =   x, IE_new =   x
+At clock#           2 : rst = 0, AvgTxLen =   4, InstExed =   1, CurTxLen =  10, ATL_new =   x, IE_new =   x
+At clock#           2 : rst = 0, AvgTxLen =   4, InstExed =   1, CurTxLen =  10, ATL_new =   0, IE_new =   0
+At clock#           3 : rst = 0, AvgTxLen =  40, InstExed =   4, CurTxLen =  30, ATL_new =   0, IE_new =   0
+At clock#           3 : rst = 0, AvgTxLen =  40, InstExed =   4, CurTxLen =  30, ATL_new = 255, IE_new =   0
+At clock#           4 : rst = 0, AvgTxLen = 100, InstExed =   2, CurTxLen =   6, ATL_new = 255, IE_new =   0
+At clock#           4 : rst = 0, AvgTxLen = 100, InstExed =   2, CurTxLen =   6, ATL_new =   3, IE_new =   0
+At clock#           4 : rst = 0, AvgTxLen = 100, InstExed =   2, CurTxLen =   6, ATL_new =   3, IE_new =   1
+At clock#           5 : rst = 0, AvgTxLen =  23, InstExed =   5, CurTxLen =  48, ATL_new =   3, IE_new =   1
+At clock#           5 : rst = 0, AvgTxLen =  23, InstExed =   5, CurTxLen =  48, ATL_new =   0, IE_new =   1
+At clock#           6 : rst = 0, AvgTxLen =   1, InstExed =  20, CurTxLen =  89, ATL_new =   0, IE_new =   1
+At clock#           6 : rst = 0, AvgTxLen =   1, InstExed =  20, CurTxLen =  89, ATL_new =   0, IE_new =   0
+At clock#           6 : rst = 0, AvgTxLen =   1, InstExed =  20, CurTxLen =  89, ATL_new =   7, IE_new =   2
+At clock#           7 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   7, IE_new =   2
+At clock#           7 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   6, IE_new =   0
+At clock#           7 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =  38, IE_new =   5
+At clock#           8 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =  38, IE_new =   5
+At clock#           8 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   4, IE_new =   1
+At clock#           8 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =  68, IE_new =   3
+At clock#           9 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =  68, IE_new =   3
+At clock#           9 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   0, IE_new =   2
+At clock#           9 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =  27, IE_new =   6
+At clock#          10 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =  27, IE_new =   6
+At clock#          10 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   1, IE_new =   4
+At clock#          10 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   5, IE_new =  21
+At clock#          11 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   5, IE_new =  21
+At clock#          11 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   0, IE_new =   1
+At clock#          11 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   2, IE_new =   3
+At clock#          12 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   2, IE_new =   3
+At clock#          13 : rst = 0, AvgTxLen =   2, InstExed =   2, CurTxLen =   2, ATL_new =   2, IE_new =   3
+Simulation complete via $finish(1) at time 260 NS + 0
+./tb/tb_tm_alu_syn.v:49 		$finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 166.6M data = 205.2M total (208.9M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.6% cpu)

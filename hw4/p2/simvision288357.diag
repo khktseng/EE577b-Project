@@ -1,0 +1,88 @@
+*** Message Type: info ***
+When: Sun Feb 27 11:09:04 PM PST 2022
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s079
+User: kyletsen
+Host: viterbi-scf2.usc.edu
+Platform: Linux/x86_64/3.10.0-1160.53.1.el7.x86_64
+Started: Sun Feb 27 11:09:04 PM PST 2022
+Command: /usr/local/cadence/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:viterbi-scf2.usc.edu:60735 -64BIT -nocopyright
+Work Directory: /home/viterbi/01/kyletsen/EE577b/hw4/p1
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:09:05 PM PST 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:09:06 PM PST 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:09:06 PM PST 2022
+Connect to Simulator
+      Design: work.tb_traffic_syn
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 27 11:09:04 PM PST 2022
+  Process ID: 287782
+   Directory: /home/viterbi/01/kyletsen/EE577b/hw4/p1
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_syn.tcl -GUI work.tb_traffic_syn
+
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:09:07 PM PST 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:12:19 PM PST 2022
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:13:29 PM PST 2022
+Exit NC-Sim: user
+      Design: work.tb_traffic_syn
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 27 11:09:04 PM PST 2022
+  Process ID: 287782
+   Directory: /home/viterbi/01/kyletsen/EE577b/hw4/p1
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_syn.tcl -GUI work.tb_traffic_syn
+
+ 
+*** Message Type: error ***
+When: Sun Feb 27 11:13:29 PM PST 2022
+NC-Sim Crashed:
+      Design: work.tb_traffic_syn
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 27 11:09:04 PM PST 2022
+  Process ID: 287782
+   Directory: /home/viterbi/01/kyletsen/EE577b/hw4/p1
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_syn.tcl -GUI work.tb_traffic_syn
+      Design: work.tb_traffic_syn
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Sun Feb 27 11:09:04 PM PST 2022
+  Process ID: 287782
+   Directory: /home/viterbi/01/kyletsen/EE577b/hw4/p1
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_syn.tcl -GUI work.tb_traffic_syn
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Sun Feb 27 11:13:32 PM PST 2022
+SimVision Exit.
+ 

@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Mon Feb 28 23:52:05 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'traffic_control', cell 'C309' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control', output port 'RA' is connected directly to output port 'RB'. (LINT-31)
+1

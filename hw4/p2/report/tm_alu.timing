@@ -1,0 +1,209 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tm_alu
+Version: K-2015.06-SP5-5
+Date   : Mon Feb 28 19:20:00 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: r2_ie_inc_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: r3_atln_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  r2_ie_inc_reg[1]/CLK (DFFPOSX1)                         0.00       0.00 r
+  r2_ie_inc_reg[1]/Q (DFFPOSX1)                           0.06       0.06 r
+  U101/Y (INVX2)                                          0.03       0.09 f
+  U102/Y (INVX8)                                          0.03       0.12 r
+  D0/b[1] (tm_alu_DW_div_7)                               0.00       0.12 r
+  D0/u_add_B3_0/B[2] (tm_alu_DW01_add_85)                 0.00       0.12 r
+  D0/u_add_B3_0/U76/Y (OR2X1)                             0.06       0.18 r
+  D0/u_add_B3_0/U109/Y (INVX1)                            0.02       0.20 f
+  D0/u_add_B3_0/U54/Y (OAI21X1)                           0.05       0.25 r
+  D0/u_add_B3_0/U39/Y (AOI21X1)                           0.02       0.27 f
+  D0/u_add_B3_0/U123/Y (BUFX2)                            0.05       0.32 f
+  D0/u_add_B3_0/U13/Y (OAI21X1)                           0.05       0.37 r
+  D0/u_add_B3_0/U3/Y (XNOR2X1)                            0.04       0.41 f
+  D0/u_add_B3_0/SUM[8] (tm_alu_DW01_add_85)               0.00       0.41 f
+  D0/U97/Y (OR2X2)                                        0.05       0.46 f
+  D0/U475/Y (INVX1)                                       0.01       0.46 r
+  D0/U31/Y (AND2X1)                                       0.06       0.52 r
+  D0/U686/Y (NAND3X1)                                     0.02       0.55 f
+  D0/U144/Y (BUFX2)                                       0.03       0.58 f
+  D0/U685/Y (AOI21X1)                                     0.03       0.61 r
+  D0/U138/Y (BUFX2)                                       0.03       0.64 r
+  D0/U22/Y (AND2X1)                                       0.04       0.68 r
+  D0/U143/Y (INVX1)                                       0.02       0.70 f
+  D0/U684/Y (AOI21X1)                                     0.02       0.72 r
+  D0/U117/Y (BUFX2)                                       0.04       0.76 r
+  D0/U317/Y (INVX1)                                       0.02       0.78 f
+  D0/U209/Y (OR2X1)                                       0.04       0.82 f
+  D0/U210/Y (INVX1)                                       0.00       0.82 r
+  D0/U681/Y (OR2X2)                                       0.07       0.89 r
+  D0/U441/Y (OR2X1)                                       0.04       0.93 r
+  D0/U442/Y (INVX1)                                       0.02       0.95 f
+  D0/u_add_PartRem_1_6_2/U11/Y (OAI21X1)                  0.06       1.01 r
+  D0/U106/Y (INVX2)                                       0.02       1.03 f
+  D0/U575/Y (OAI21X1)                                     0.05       1.07 r
+  D0/U520/Y (AND2X1)                                      0.04       1.11 r
+  D0/U85/Y (INVX1)                                        0.04       1.15 f
+  D0/U537/Y (INVX1)                                       0.08       1.23 r
+  D0/U701/Y (MUX2X1)                                      0.06       1.29 r
+  D0/U631/Y (XOR2X1)                                      0.04       1.33 f
+  D0/U700/Y (MUX2X1)                                      0.05       1.38 r
+  D0/U32/Y (OR2X1)                                        0.08       1.46 r
+  D0/U394/Y (OR2X1)                                       0.04       1.51 r
+  D0/U395/Y (INVX1)                                       0.03       1.53 f
+  D0/U29/Y (OR2X1)                                        0.04       1.57 f
+  D0/U145/Y (INVX1)                                       0.00       1.57 r
+  D0/u_add_PartRem_1_5_2/U9/Y (AOI21X1)                   0.02       1.59 f
+  D0/U115/Y (BUFX2)                                       0.04       1.63 f
+  D0/u_add_PartRem_1_5_2/U3/Y (OAI21X1)                   0.04       1.67 r
+  D0/U105/Y (AND2X2)                                      0.07       1.74 r
+  D0/U733/Y (MUX2X1)                                      0.06       1.80 f
+  D0/U98/Y (INVX2)                                        0.03       1.83 r
+  D0/U86/Y (AND2X1)                                       0.08       1.91 r
+  D0/U374/Y (INVX1)                                       0.04       1.94 f
+  D0/U334/Y (OR2X1)                                       0.05       1.99 f
+  D0/U335/Y (INVX1)                                       0.00       1.99 r
+  D0/U40/Y (OR2X1)                                        0.09       2.08 r
+  D0/u_add_PartRem_1_4_2/A[1] (tm_alu_DW01_add_87)        0.00       2.08 r
+  D0/u_add_PartRem_1_4_2/U77/Y (OR2X1)                    0.04       2.13 r
+  D0/u_add_PartRem_1_4_2/U78/Y (INVX1)                    0.03       2.15 f
+  D0/u_add_PartRem_1_4_2/U52/Y (OR2X1)                    0.04       2.19 f
+  D0/u_add_PartRem_1_4_2/U94/Y (INVX1)                    0.00       2.19 r
+  D0/u_add_PartRem_1_4_2/U29/Y (AOI21X1)                  0.02       2.21 f
+  D0/u_add_PartRem_1_4_2/U93/Y (BUFX2)                    0.05       2.26 f
+  D0/u_add_PartRem_1_4_2/U3/Y (OAI21X1)                   0.04       2.30 r
+  D0/u_add_PartRem_1_4_2/CO (tm_alu_DW01_add_87)          0.00       2.30 r
+  D0/U582/Y (INVX1)                                       0.02       2.32 f
+  D0/U55/Y (OR2X1)                                        0.07       2.39 f
+  D0/U94/Y (INVX8)                                        0.03       2.42 r
+  D0/U754/Y (MUX2X1)                                      0.05       2.47 f
+  D0/U16/Y (INVX1)                                        0.03       2.50 r
+  D0/U83/Y (AND2X1)                                       0.09       2.60 r
+  D0/U129/Y (INVX1)                                       0.04       2.64 f
+  D0/U220/Y (OR2X1)                                       0.05       2.69 f
+  D0/U221/Y (INVX1)                                       0.00       2.69 r
+  D0/U68/Y (OR2X1)                                        0.09       2.78 r
+  D0/u_add_PartRem_0_3_2/A[1] (tm_alu_DW01_add_90)        0.00       2.78 r
+  D0/u_add_PartRem_0_3_2/U107/Y (OR2X1)                   0.04       2.82 r
+  D0/u_add_PartRem_0_3_2/U108/Y (INVX1)                   0.03       2.85 f
+  D0/u_add_PartRem_0_3_2/U60/Y (OR2X1)                    0.04       2.89 f
+  D0/u_add_PartRem_0_3_2/U64/Y (INVX1)                    0.00       2.89 r
+  D0/u_add_PartRem_0_3_2/U33/Y (AOI21X1)                  0.02       2.91 f
+  D0/u_add_PartRem_0_3_2/U66/Y (BUFX2)                    0.04       2.95 f
+  D0/u_add_PartRem_0_3_2/U3/Y (OAI21X1)                   0.04       2.99 r
+  D0/u_add_PartRem_0_3_2/U63/Y (OR2X1)                    0.04       3.03 r
+  D0/u_add_PartRem_0_3_2/CO (tm_alu_DW01_add_90)          0.00       3.03 r
+  D0/U12/Y (INVX1)                                        0.02       3.05 f
+  D0/U13/Y (INVX1)                                        0.01       3.06 r
+  D0/U775/Y (MUX2X1)                                      0.09       3.15 r
+  D0/U324/Y (AND2X2)                                      0.06       3.20 r
+  D0/U361/Y (AND2X1)                                      0.04       3.24 r
+  D0/U362/Y (INVX1)                                       0.02       3.26 f
+  D0/U72/Y (AND2X1)                                       0.04       3.30 f
+  D0/U223/Y (INVX1)                                       0.00       3.31 r
+  D0/U71/Y (OR2X1)                                        0.08       3.39 r
+  D0/u_add_PartRem_0_2_2/A[2] (tm_alu_DW01_add_93)        0.00       3.39 r
+  D0/u_add_PartRem_0_2_2/U107/Y (OR2X1)                   0.04       3.43 r
+  D0/u_add_PartRem_0_2_2/U108/Y (INVX1)                   0.03       3.46 f
+  D0/u_add_PartRem_0_2_2/U58/Y (OR2X1)                    0.05       3.51 f
+  D0/u_add_PartRem_0_2_2/U66/Y (INVX1)                    0.00       3.51 r
+  D0/u_add_PartRem_0_2_2/U33/Y (AOI21X1)                  0.02       3.53 f
+  D0/u_add_PartRem_0_2_2/U62/Y (BUFX2)                    0.04       3.56 f
+  D0/u_add_PartRem_0_2_2/U3/Y (OAI21X1)                   0.04       3.60 r
+  D0/u_add_PartRem_0_2_2/U57/Y (OR2X2)                    0.07       3.68 r
+  D0/u_add_PartRem_0_2_2/CO (tm_alu_DW01_add_93)          0.00       3.68 r
+  D0/U793/Y (MUX2X1)                                      0.10       3.77 r
+  D0/U7/Y (AND2X2)                                        0.06       3.83 r
+  D0/U48/Y (AND2X1)                                       0.04       3.87 r
+  D0/U154/Y (INVX1)                                       0.02       3.89 f
+  D0/U47/Y (AND2X1)                                       0.04       3.93 f
+  D0/U222/Y (INVX1)                                       0.00       3.93 r
+  D0/U749/Y (OR2X2)                                       0.06       4.00 r
+  D0/u_add_PartRem_0_1_2/A[4] (tm_alu_DW01_add_96)        0.00       4.00 r
+  D0/u_add_PartRem_0_1_2/U105/Y (OR2X1)                   0.04       4.03 r
+  D0/u_add_PartRem_0_1_2/U106/Y (INVX1)                   0.03       4.06 f
+  D0/u_add_PartRem_0_1_2/U58/Y (OR2X1)                    0.05       4.11 f
+  D0/u_add_PartRem_0_1_2/U63/Y (INVX1)                    0.01       4.12 r
+  D0/u_add_PartRem_0_1_2/U61/Y (AND2X1)                   0.04       4.16 r
+  D0/u_add_PartRem_0_1_2/U67/Y (INVX1)                    0.02       4.18 f
+  D0/u_add_PartRem_0_1_2/U3/Y (OAI21X1)                   0.04       4.22 r
+  D0/u_add_PartRem_0_1_2/U64/Y (OR2X1)                    0.04       4.26 r
+  D0/u_add_PartRem_0_1_2/CO (tm_alu_DW01_add_96)          0.00       4.26 r
+  D0/U8/Y (INVX1)                                         0.02       4.28 f
+  D0/U9/Y (INVX1)                                         0.01       4.29 r
+  D0/U805/Y (MUX2X1)                                      0.04       4.33 f
+  D0/U65/Y (INVX1)                                        0.05       4.38 r
+  D0/U516/Y (AND2X1)                                      0.05       4.43 r
+  D0/U517/Y (INVX1)                                       0.04       4.47 f
+  D0/U66/Y (OR2X1)                                        0.05       4.52 f
+  D0/U747/Y (NAND3X1)                                     0.03       4.55 r
+  D0/U540/Y (BUFX2)                                       0.05       4.60 r
+  D0/u_add_PartRem_0_0_2/A[6] (tm_alu_DW01_add_99)        0.00       4.60 r
+  D0/u_add_PartRem_0_0_2/U110/Y (OR2X1)                   0.04       4.64 r
+  D0/u_add_PartRem_0_0_2/U111/Y (INVX1)                   0.02       4.66 f
+  D0/u_add_PartRem_0_0_2/U100/Y (OR2X2)                   0.05       4.71 f
+  D0/u_add_PartRem_0_0_2/U101/Y (INVX1)                   0.01       4.72 r
+  D0/u_add_PartRem_0_0_2/U80/Y (AND2X2)                   0.03       4.75 r
+  D0/u_add_PartRem_0_0_2/U81/Y (INVX1)                    0.02       4.76 f
+  D0/u_add_PartRem_0_0_2/U8/Y (OAI21X1)                   0.04       4.81 r
+  D0/u_add_PartRem_0_0_2/U74/Y (OR2X1)                    0.05       4.86 r
+  D0/u_add_PartRem_0_0_2/CO (tm_alu_DW01_add_99)          0.00       4.86 r
+  D0/U667/Y (MUX2X1)                                      0.04       4.90 f
+  D0/quotient[0] (tm_alu_DW_div_7)                        0.00       4.90 f
+  U162/Y (AND2X1)                                         0.03       4.93 f
+  r3_atln_reg[0]/D (DFFPOSX1)                             0.00       4.93 f
+  data arrival time                                                  4.93
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  r3_atln_reg[0]/CLK (DFFPOSX1)                           0.00       5.00 r
+  library setup time                                     -0.06       4.94
+  data required time                                                 4.94
+  --------------------------------------------------------------------------
+  data required time                                                 4.94
+  data arrival time                                                 -4.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: r3_atln_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: AvgTxLen_new[0]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  r3_atln_reg[0]/CLK (DFFPOSX1)            0.00       0.00 r
+  r3_atln_reg[0]/Q (DFFPOSX1)              0.10       0.10 f
+  AvgTxLen_new[0] (out)                    0.00       0.10 f
+  data arrival time                                   0.10
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+1

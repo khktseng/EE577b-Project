@@ -1,0 +1,33 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Mon Feb 28 19:19:14 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               19
+    Unloaded nets (LINT-2)                                         19
+--------------------------------------------------------------------------------
+
+Warning: In design 'tm_alu', net 'D0_div0' driven by pin 'D0/divide_by_0' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[0]' driven by pin 'D0/remainder_0' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[1]' driven by pin 'D0/remainder_1' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[2]' driven by pin 'D0/remainder_2' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[3]' driven by pin 'D0/remainder_3' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[4]' driven by pin 'D0/remainder_4' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[5]' driven by pin 'D0/remainder_5' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[6]' driven by pin 'D0/remainder_6' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_r[7]' driven by pin 'D0/remainder_7' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[8]' driven by pin 'D0/quotient_8' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[9]' driven by pin 'D0/quotient_9' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[10]' driven by pin 'D0/quotient_10' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[11]' driven by pin 'D0/quotient_11' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[12]' driven by pin 'D0/quotient_12' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[13]' driven by pin 'D0/quotient_13' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[14]' driven by pin 'D0/quotient_14' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'D0_out[15]' driven by pin 'D0/quotient_15' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'A1_co' driven by pin 'A1/CO' has no loads. (LINT-2)
+Warning: In design 'tm_alu', net 'A0_co' driven by pin 'A0/CO' has no loads. (LINT-2)
+1

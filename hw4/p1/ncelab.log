@@ -1,0 +1,209 @@
+ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncelab(64)	15.20-s079: Started on Feb 28, 2022 at 19:07:37 PST
+ncelab
+    -ACCESS +rwc
+    -NCFATAL INVSUP
+    -NCFATAL CUNOTB
+    -ERRORMAX 5
+    -UPDATE
+    -MESSAGES
+    -TIMESCALE 1ns/10ps
+    -LIBVERBOSE
+    work.tb_traffic_syn
+
+	Elaborating the design hierarchy:
+Resolving design unit 'traffic_control' at 'tb_traffic_syn.dut'.
+		Caching library 'work' ....... Done
+	library: 'work' views: 'module' -> found
+Resolved design unit 'traffic_control' at 'tb_traffic_syn.dut' to 'work.traffic_control:module'.
+Resolving design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_0_'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_0_' to 'work.DFFPOSX1:module'.
+Resolving design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_0_@DFFPOSX1<module>'.
+	library: 'work' views: 'module' 'udp' -> found
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_0_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_3_' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_3_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.ps_reg_0_' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.ps_reg_0_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_1_' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_1_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_2_' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.timer_reg_2_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.ps_reg_2_' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.ps_reg_2_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.ps_reg_1_' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.ps_reg_1_@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.walk_reg' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.walk_reg@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolved design unit 'DFFPOSX1' at 'tb_traffic_syn.dut@traffic_control<module>.ab_cycle_reg' to 'work.DFFPOSX1:module'.
+Resolved design unit 'udp_dff' at 'tb_traffic_syn.dut@traffic_control<module>.ab_cycle_reg@DFFPOSX1<module>' to 'work.udp_dff:udp'.
+Resolving design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U27'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U27' to 'work.OAI21X1:module'.
+Resolving design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U28'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U28' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U29' to 'work.NAND3X1:module'.
+Resolving design unit 'XOR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U32'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'XOR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U32' to 'work.XOR2X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U33' to 'work.OAI21X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U34' to 'work.NAND3X1:module'.
+Resolved design unit 'XOR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U36' to 'work.XOR2X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U37' to 'work.NAND3X1:module'.
+Resolving design unit 'AOI22X1' at 'tb_traffic_syn.dut@traffic_control<module>.U38'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'AOI22X1' at 'tb_traffic_syn.dut@traffic_control<module>.U38' to 'work.AOI22X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U40' to 'work.OAI21X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U41' to 'work.NAND3X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U42' to 'work.OAI21X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U43' to 'work.NAND3X1:module'.
+Resolved design unit 'AOI22X1' at 'tb_traffic_syn.dut@traffic_control<module>.U44' to 'work.AOI22X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U45' to 'work.OAI21X1:module'.
+Resolving design unit 'AOI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U46'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'AOI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U46' to 'work.AOI21X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U50' to 'work.OAI21X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U52' to 'work.OAI21X1:module'.
+Resolved design unit 'AOI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U53' to 'work.AOI21X1:module'.
+Resolving design unit 'NOR3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U55'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'NOR3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U55' to 'work.NOR3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U56' to 'work.NAND3X1:module'.
+Resolved design unit 'NOR3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U59' to 'work.NOR3X1:module'.
+Resolved design unit 'AOI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U60' to 'work.AOI21X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U62' to 'work.NAND3X1:module'.
+Resolved design unit 'OAI21X1' at 'tb_traffic_syn.dut@traffic_control<module>.U65' to 'work.OAI21X1:module'.
+Resolved design unit 'NOR3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U68' to 'work.NOR3X1:module'.
+Resolving design unit 'NAND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U69'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'NAND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U69' to 'work.NAND2X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U70' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U71' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U73' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U74' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U75' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U76' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U77' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U78' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U79' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U80' to 'work.NAND3X1:module'.
+Resolved design unit 'NAND3X1' at 'tb_traffic_syn.dut@traffic_control<module>.U81' to 'work.NAND3X1:module'.
+Resolving design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U82'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U82' to 'work.OR2X1:module'.
+Resolving design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U83'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U83' to 'work.AND2X1:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U84' to 'work.AND2X1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U85' to 'work.OR2X1:module'.
+Resolving design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U86'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U86' to 'work.BUFX2:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U87' to 'work.OR2X1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U88' to 'work.OR2X1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U89' to 'work.OR2X1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U90' to 'work.OR2X1:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U91' to 'work.AND2X1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U92' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U93' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U94' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U95' to 'work.BUFX2:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U96' to 'work.AND2X1:module'.
+Resolving design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U97'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U97' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U98' to 'work.BUFX2:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U99' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U100' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U101' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U102' to 'work.BUFX2:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U103' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U104' to 'work.INVX1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U105' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U106' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U107' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U108' to 'work.BUFX2:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U109' to 'work.AND2X1:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U110' to 'work.AND2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U111' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U112' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U113' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U114' to 'work.BUFX2:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U115' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U116' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U117' to 'work.BUFX2:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U118' to 'work.AND2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U119' to 'work.INVX1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U120' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U121' to 'work.INVX1:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U122' to 'work.AND2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U123' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U124' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U125' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U126' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U127' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U128' to 'work.BUFX2:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U129' to 'work.BUFX2:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U130' to 'work.AND2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U131' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U132' to 'work.INVX1:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U133' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U134' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U135' to 'work.BUFX2:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U136' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U137' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U138' to 'work.BUFX2:module'.
+Resolved design unit 'OR2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U139' to 'work.OR2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U140' to 'work.INVX1:module'.
+Resolved design unit 'BUFX2' at 'tb_traffic_syn.dut@traffic_control<module>.U141' to 'work.BUFX2:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U142' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U143' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U144' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U145' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U146' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U147' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U148' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U149' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U150' to 'work.INVX1:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U151' to 'work.AND2X1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U152' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U153' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U154' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U155' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U156' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U157' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U158' to 'work.INVX1:module'.
+Resolved design unit 'INVX1' at 'tb_traffic_syn.dut@traffic_control<module>.U159' to 'work.INVX1:module'.
+Resolved design unit 'AND2X1' at 'tb_traffic_syn.dut@traffic_control<module>.U160' to 'work.AND2X1:module'.
+ncelab: *W,CUSFNF: The SDF file "./netlist/traffic.sdf" not found..
+		$sdf_annotate("./netlist/traffic.sdf", dut,,"sdf.log","MAXIMUM","1.0:1.0:1.0", "FROM_MAXIMUM");
+		            |
+ncelab: *W,CUSSTI (./tb/tb_traffic_syn.v,34|14): This SDF System Task will be Ignored..
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.DFFPOSX1:module <0x53561612>
+			streams:   0, words:     0
+		work.tb_traffic_syn:module <0x5e141108>
+			streams:  10, words:  8481
+		work.traffic_control:module <0x127d7875>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                128      14
+		UDPs:                     9       1
+		Primitives:             186       5
+		Timing outputs:         126      10
+		Registers:               15       8
+		Scalar wires:           142       -
+		Always blocks:            2       2
+		Initial blocks:           2       2
+		Cont. assignments:        0       1
+		Pseudo assignments:       5       5
+		Timing checks:           54      10
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: work.tb_traffic_syn:module
+TOOL:	ncelab(64)	15.20-s079: Exiting on Feb 28, 2022 at 19:07:38 PST  (total: 00:00:01)
