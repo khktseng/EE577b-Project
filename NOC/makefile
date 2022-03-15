@@ -41,9 +41,9 @@
 
 
 # top level module
-TOP = tb_clock
-TOP_SYN = tb_clock_syn
-DESIGN_NAME = frequency_divider_by3
+TOP = tb_gold_ring
+TOP_SYN = tb_gold_ring_syn
+DESIGN_NAME = gold_ring
 
 # List of the design files
 DESIGN_FILES = ./design/*.v

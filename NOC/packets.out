@@ -1,0 +1,36 @@
+Phase 0 (Gather on n0)
+                  10ns: injecting packet 40010001beefbeef at n1
+                  15ns: injecting packet 80030002cafecafe at n2
+                  15ns: injecting packet 80010003feedfeed at n3
+                  25ns: Recieved packet 40000001beefbeef on node 0
+                  30ns: Recieved packet 80000003feedfeed on node 0
+                  40ns: Recieved packet 80000002cafecafe on node 0
+
+
+Phase 1 (Gather on n1)
+                  50ns: injecting packet 00010000deaddead at n0
+                  55ns: injecting packet c001cafecafecafe at n2
+                  55ns: injecting packet c0030003feedfeed at n3
+                  65ns: Recieved packet 00000000deaddead on node 1
+                  70ns: Recieved packet c000cafecafecafe on node 1
+                  80ns: Recieved packet c0000003feedfeed on node 1
+
+
+Phase 2 (Gather on n2)
+                  90ns: injecting packet 00030000deaddead at n0
+                  90ns: injecting packet 00010001beefbeef at n1
+                  95ns: injecting packet c0010003feedfeed at n3
+                 105ns: Recieved packet 00000001beefbeef on node 2
+                 110ns: Recieved packet c0000003feedfeed on node 2
+                 115ns: Recieved packet 00000000deaddead on node 2
+
+
+Phase 3 (Gather on n3)
+                 130ns: injecting packet 40010000deaddead at n0
+                 130ns: injecting packet 40030001beefbeef at n1
+                 135ns: injecting packet 80010002cafecafe at n2
+                 145ns: Recieved packet 40000000deaddead on node 3
+                 150ns: Recieved packet 80000002cafecafe on node 3
+                 155ns: Recieved packet 40000001beefbeef on node 3
+
+

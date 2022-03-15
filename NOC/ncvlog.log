@@ -1,16 +1,16 @@
 ncvlog(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	ncvlog(64)	15.20-s079: Started on Feb 27, 2022 at 23:20:25 PST
+TOOL:	ncvlog(64)	15.20-s079: Started on Mar 15, 2022 at 01:29:57 PDT
 ncvlog
     -STATUS
     -MESSAGES
     -UPDATE
     -INCDIR ./include
     -work work
-    ./tb/tb_clock.v
+    ./tb/tb_gold_router.v
 
-file: ./tb/tb_clock.v
-	module work.tb_clock
+file: ./tb/tb_gold_router.v
+	module work.tb_gold_router
 		errors: 0, warnings: 0
 ncvlog: Memory Usage - 21.4M program + 28.1M data = 49.5M total
 ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)
-TOOL:	ncvlog(64)	15.20-s079: Exiting on Feb 27, 2022 at 23:20:25 PST  (total: 00:00:00)
+TOOL:	ncvlog(64)	15.20-s079: Exiting on Mar 15, 2022 at 01:29:57 PDT  (total: 00:00:00)

@@ -1,0 +1,124 @@
+*** Message Type: info ***
+When: Mon Mar 14 11:59:58 PM PDT 2022
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s079
+User: kyletsen
+Host: viterbi-scf2.usc.edu
+Platform: Linux/x86_64/3.10.0-1160.53.1.el7.x86_64
+Started: Mon Mar 14 11:59:58 PM PDT 2022
+Command: /usr/local/cadence/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:viterbi-scf2.usc.edu:37003 -64BIT -nocopyright
+Work Directory: /home/viterbi/01/kyletsen/EE577b/Project/NOC
+ 
+*** Message Type: info ***
+When: Mon Mar 14 11:59:59 PM PDT 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Mon Mar 14 11:59:59 PM PDT 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:00:00 AM PDT 2022
+Connect to Simulator
+      Design: work.tb_gold_ring
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Mon Mar 14 11:59:58 PM PDT 2022
+  Process ID: 63322
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/NOC
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_gold_ring
+
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:00:01 AM PDT 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:01:02 AM PDT 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:03:43 AM PDT 2022
+Create waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:03:49 AM PDT 2022
+Delete waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:03:54 AM PDT 2022
+Create waveform window: "Waveform 3"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:04:07 AM PDT 2022
+Delete waveform window: "Waveform 3"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:04:20 AM PDT 2022
+Create waveform window: "Waveform 4"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:05:41 AM PDT 2022
+Create waveform window: "Waveform 5"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:05:54 AM PDT 2022
+Delete waveform window: "Waveform 5"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:06:35 AM PDT 2022
+Delete waveform window: "Waveform 4"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:06:36 AM PDT 2022
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:06:53 AM PDT 2022
+Exit NC-Sim: user
+      Design: work.tb_gold_ring
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Mon Mar 14 11:59:58 PM PDT 2022
+  Process ID: 63322
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/NOC
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_gold_ring
+
+ 
+*** Message Type: error ***
+When: Tue Mar 15 12:06:53 AM PDT 2022
+NC-Sim Crashed:
+      Design: work.tb_gold_ring
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Mon Mar 14 11:59:58 PM PDT 2022
+  Process ID: 63322
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/NOC
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_gold_ring
+      Design: work.tb_gold_ring
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:     ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Mon Mar 14 11:59:58 PM PDT 2022
+  Process ID: 63322
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/NOC
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_gold_ring
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Tue Mar 15 12:06:56 AM PDT 2022
+SimVision Exit.
+ 
