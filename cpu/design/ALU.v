@@ -6,9 +6,9 @@
 //		USC ID: 1793733065
 //		Cardinal Processor ALU (ALU.v)
 
-`include "./include/sim_ver/DW_div.v"
-`include "./include/sim_ver/DW02_mult.v"
-`include "./include/sim_ver/DW_sqrt.v"
+//`include "./include/sim_ver/DW_div.v"
+//`include "./include/sim_ver/DW02_mult.v"
+//`include "./include/sim_ver/DW_sqrt.v"
 
 module ALU(rA, rB, rD, control, WW);
 input [0:63] rA, rB; //Source Operands
@@ -25,25 +25,21 @@ always@(*)
 begin
 	case(WW)
 		2'b00: 	begin
-					size = 5'd8;
-					bits = 3'd3;
-				end
+			size = 5'd8;
+			bits = 3'd3;
+		end
 		2'b01: 	begin
-					size = 5'd16;
-					bits = 3'd4;
-				end
+			size = 5'd16;
+			bits = 3'd4;
+		end
 		2'b10: 	begin
-					size = 5'd32;
-					bits = 3'd5;
-				end
+			size = 5'd32;
+			bits = 3'd5;
+		end
 		2'b11: 	begin
-					size = 5'd64;
-					bits = 3'd6;
-				end
-		default: begin
-					size = 5'd8;
-					bits = 3'd3;
-				end
+			size = 5'd64;
+			bits = 3'd6;
+		end
 	endcase
 end
 
@@ -211,43 +207,7 @@ begin
 
 					end	
 	default:
+		rD = 'b0;
 	endcase
-
-
-/*	if(format == 6'b101010) //R-type instruction not including branches
-	begin
-		case(control)
-			=
-		endcase
 	end
-	
-	else if (format == 6'b100000) // Memory type: Load Instruction
-	begin
-	
-	end
-	
-	else if (format == 6'b100001) // Memory type: Store Instruction
-	begin
-	
-	end
-	
-	else if (format == 6'b100010) //R-type: BEZ Instruction
-	begin
-	
-	end
-	
-	else if (format == 6'b100011) //R-type: BNEZ Instruction
-	begin
-	
-	end
-	
-	else if (format == 6'b111100) //R-type: NOP Instruction
-	begin
-	
-	end
-	
-	else
-		$display("Instruction type not supported.";)*/
-	
-end
 endmodule

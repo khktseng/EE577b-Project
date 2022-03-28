@@ -41,9 +41,9 @@
 
 
 # top level module
-TOP = tb_ALU
-TOP_SYN = tb_ALU_syn
-DESIGN_NAME = ALU
+TOP = tb_gold_cpu
+TOP_SYN = tb_gold_cpu_syn
+DESIGN_NAME = gold_cpu
 
 # List of the design files
 DESIGN_FILES = ./design/*.v
