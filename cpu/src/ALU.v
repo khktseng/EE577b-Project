@@ -17,13 +17,14 @@ input [0:1] WW; // Word Width Field
 output reg [0:63] rD;
 
 reg [0:4] size; 
-reg [0:2] bits;
+reg [0:2] bits
 reg [0:63] s;
-genvar i;
+int i;
 
 always@(*)
 begin
 	case(WW)
+	begin
 		2'b00: 	begin
 					size = 5'd8;
 					bits = 3'd3;
