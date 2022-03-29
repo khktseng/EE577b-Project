@@ -22,10 +22,10 @@ module alu(
 	wire [0:63] adder_out, mult_out, shift_out, rotate_out, div_out, mod_out, sqrt_out;
 
 	adder add(op1, op2, ww, adder_out, opcode[0]);
-	multiplier mult(op1, mop2, ww, mult_out, opcode[0]);
+	multiplier mult(op1, mop2, ww, opcode[0], mult_out);
 	shifter shift(op1, op2, ww, la_lr, shift_out);
 	rotator rotate(op1, ww, rotate_out);
-	dividier div(op1, op2, ww, div_out);
+	divider div(op1, op2, ww, div_out);
 	modulo mod(op1, op2, ww, mod_out);
 	rooter sqrt(op1, ww, sqrt_out);
 

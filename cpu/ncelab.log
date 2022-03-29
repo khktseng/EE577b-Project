@@ -1,5 +1,5 @@
 ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	ncelab(64)	15.20-s079: Started on Mar 29, 2022 at 13:59:48 PDT
+TOOL:	ncelab(64)	15.20-s079: Started on Mar 29, 2022 at 15:06:22 PDT
 ncelab
     -ACCESS +rwc
     -NCFATAL INVSUP
@@ -9,30 +9,99 @@ ncelab
     -MESSAGES
     -TIMESCALE 1ns/10ps
     -LIBVERBOSE
-    work.tb_multiplier
+    work.tb_gold_cpu
 
 	Elaborating the design hierarchy:
-Resolving design unit 'multiplier' at 'tb_multiplier.dut'.
+Resolving design unit 'gold_cpu' at 'tb_gold_cpu.dut'.
 		Caching library 'work' ....... Done
 	library: 'work' views: 'module' -> found
-Resolved design unit 'multiplier' at 'tb_multiplier.dut' to 'work.multiplier:module'.
+Resolved design unit 'gold_cpu' at 'tb_gold_cpu.dut' to 'work.gold_cpu:module'.
+Resolving design unit 'reg_file' at 'tb_gold_cpu.dut@gold_cpu<module>.rf'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'reg_file' at 'tb_gold_cpu.dut@gold_cpu<module>.rf' to 'work.reg_file:module'.
+Resolving design unit 'alu' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'alu' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu' to 'work.alu:module'.
+Resolving design unit 'adder' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'adder' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add' to 'work.adder:module'.
+Resolving design unit 'multiplier' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.mult'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'multiplier' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.mult' to 'work.multiplier:module'.
+Resolving design unit 'shifter' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.shift'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'shifter' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.shift' to 'work.shifter:module'.
+Resolving design unit 'rotator' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.rotate'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'rotator' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.rotate' to 'work.rotator:module'.
+Resolving design unit 'divider' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.div'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'divider' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.div' to 'work.divider:module'.
+Resolving design unit 'modulo' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.mod'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'modulo' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.mod' to 'work.modulo:module'.
+Resolving design unit 'rooter' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.sqrt'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'rooter' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.sqrt' to 'work.rooter:module'.
+Resolving design unit 'imem' at 'tb_gold_cpu.IM'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'imem' at 'tb_gold_cpu.IM' to 'work.imem:module'.
+Resolving design unit 'dmem' at 'tb_gold_cpu.DM'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'dmem' at 'tb_gold_cpu.DM' to 'work.dmem:module'.
+Resolving design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[1].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[2].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[3].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[4].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[5].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[6].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@alu<module>.add@adder<module>.genblk3[7].a_i' to 'work.adder_byte:module'.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
+		work.adder:module <0x7f8df4b3>
+			streams:  20, words:  3416
+		work.adder_byte:module <0x02772097>
+			streams:   2, words:   537
+		work.alu:module <0x2be9ccac>
+			streams:   4, words:  2747
+		work.divider:module <0x4928e851>
+			streams:   1, words:  7293
+		work.dmem:module <0x65dad686>
+			streams:   5, words:  2190
+		work.gold_cpu:module <0x6b7917cd>
+			streams:  21, words: 10102
+		work.imem:module <0x43b3f676>
+			streams:   1, words:   191
+		work.modulo:module <0x0d60c8a1>
+			streams:   1, words:  7334
 		work.multiplier:module <0x2cce4e4a>
 			streams:   1, words:  5578
-		work.tb_multiplier:module <0x62887f4d>
-			streams:   5, words:  7098
+		work.reg_file:module <0x3e209c6d>
+			streams:   4, words:  1598
+		work.rooter:module <0x00c61e5c>
+			streams:   1, words: 11675
+		work.rotator:module <0x6e0c4b30>
+			streams:   1, words:  5050
+		work.shifter:module <0x3c7e628c>
+			streams:   1, words: 18821
+		work.tb_gold_cpu:module <0x52c8c94d>
+			streams:  10, words:  6191
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
-		Modules:                  2       2
-		Registers:                6       6
-		Scalar wires:             1       -
-		Vectored wires:           4       -
-		Always blocks:            1       1
+		Modules:                 21      14
+		Registers:               45      45
+		Scalar wires:            24       -
+		Expanded wires:          70       9
+		Vectored wires:          59       -
+		Always blocks:           15      15
 		Initial blocks:           1       1
-		Pseudo assignments:       4       4
+		Cont. assignments:       34      26
+		Pseudo assignments:      30      30
 		Simulation timescale:  10ps
-	Writing initial simulation snapshot: work.tb_multiplier:module
-TOOL:	ncelab(64)	15.20-s079: Exiting on Mar 29, 2022 at 13:59:48 PDT  (total: 00:00:00)
+	Writing initial simulation snapshot: work.tb_gold_cpu:module
+TOOL:	ncelab(64)	15.20-s079: Exiting on Mar 29, 2022 at 15:06:22 PDT  (total: 00:00:00)

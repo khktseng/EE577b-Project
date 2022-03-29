@@ -6,7 +6,8 @@ module gold_cpu(
 	input clk, reset,
 	output [0:31] ins_addr,
 	input [0:31] inst,
-	output reg [0:31] mem_ins,
+	output [0:15] mem_addr,
+	output reg mem_en, mem_sl,
 	output reg [0:63] st_data,
 	input [0:63] ld_data
 	);
@@ -51,6 +52,8 @@ module gold_cpu(
 	assign im = inst_D[16:31];
 	assign ww_D = inst_D[24:25];
 
+	assign mem_addr = im;
+
 	reg_file rf(clk, r0, r1, rw, r0_D, r1_D, wd, we);
 
 	// execute
@@ -71,7 +74,8 @@ module gold_cpu(
 		br_taken = 'b0;
 		we_D = 'b0;
 		sel_mem_D = 'b0;
-		mem_ins = 'b0;
+		mem_en = 'b0;
+		
 		
 	// Instruction decode
 		// if arithmetic op set we
@@ -84,7 +88,8 @@ module gold_cpu(
 			sel_mem_D = 'b1;
 			// mem ins format:
 			// v, s/l, ..., imm
-			mem_ins = {1'b1, ot[0], 14'b0, im};
+			mem_en = 1'b1;
+			mem_sl = ot[0];
 		end
 
 		// if branch, check rD value
@@ -95,6 +100,9 @@ module gold_cpu(
 				next_PC = im;
 			end
 		end
+
+		if(rD == 'b0)
+			we_D = 'b0;
 
 	// Execute
 		// select between mem data or alu output
