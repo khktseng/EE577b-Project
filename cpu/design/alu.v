@@ -17,58 +17,30 @@ module alu(
 	output reg [0:63] alu_out
 	);
 
-	reg[0:63] vadd, vsub, vmulu, vshift;
+	reg [0:63] mop2;
+	reg [1:0] la_lr;
+	wire [0:63] adder_out, mult_out, shift_out, rotate_out;
 
-	reg [8:0] vaddsub_b[0:7];
-	reg [14:0] vshift_b[0:7];
-	reg [15:0] vmulu_b[0:3];
+	adder add(op1, op2, ww, adder_out, opcode[0]);
+	multiplier mult(op1, mop2, ww, mult_out, opcode[0]);
+	shifter shift(op1, op2, ww, la_lr, shift_out);
+	rotator rotate(op1, ww, rotate_out);
 
-	//perform per byte operations
-	generate
-		genvar i;
-		for (i = 0; i < 8; i = i+1) begin
-			always @(*) begin //add, sub
-				if(opcode[0])	//sub
-					vaddsub_b[i] = op1[i*8:i+7] + ~op2[i*8:i+7] + 'b1;
-				else //add
-					vaddsub_b[i] = op1[i*8:i+7] + op2[i*8:i+7];
-			end
+	always @(opcode) begin
+		if (opcode[5:1] == 5'b01000)
+			mop2 = op1;
+		else
+			mop2 = op2;
 
-			always @(*) begin //sll, srl, sra
-				case(opcode[1:0])
-					2'b10: vshift_b[i] = op1[i*8:i+7] << op2[i*8+5:i*8+7]; //sll
-					2'b11: vshitft_b[i] = op1[i*8:i+7] >> op2[i*8+5:i*8+7]; //srl
-					default: vshift_b[i] = op1[i*8]:i+7] >>> op2[i*8+5:i*8+7]; //sra
-				endcase
-			end
-
-		end
-
-		// mul / square
-		for (i = 0; i < 4; i = i + 1) begin
-			always @(*) begin
-				case(opcode):
-					6'b001000: vmulu_b[i] = op1[i*16:i+7] * op2 [i*16:i+7];
-					6'b001001: vmulu_b[i] = op1[i*16+8:i+7] * op2[i*16:i+7];	
-					6'b010000: vmulu_b[i] = op1[i*16:i+7]**2;
-					6'b010001: vmulu_b[i] = op1[i*16+8:i+7]**2
-					default: vmulu_b[i] = 16'bX;
-				endcase
-			end
-		end
-	endgenerate
+		if (opcode[1:0] == 2'b10)
+			la_lr = 2'b11;
+		else if(opcode[1:0] == 2'b11)
+			la_lr = 2'b10;
+		else
+			la_lr = 2'b00;
+	end
 
 	always @(*) begin
-		// Perform transformation and assignment based on ww
-		case(ww)
-			2'b00: begin
-				
-			end
-			2'b01:
-			2'b10:
-			2'b11:
-		endcase
-
 		// Assign alu output based on opcode
 		case(opcode)
 			6'd1: alu_out = op1 & op2; //vand
@@ -76,17 +48,14 @@ module alu(
 			6'd3: alu_out = op1 ^ op2; //vxor
 			6'd4: alu_out = ~op1; 	   //vnot
 			6'd5: alu_out = op1; 	   //vmov
-			6'd6: alu_out = vadd;
-			6'd7: alu_out = vsub;
-			6'd8: alu_out = vmulu;	//mulu even
-			6'd9: alu_out = vmulu;	//mulu odd
-			6'd10: alu_out = vshift; //vsll
-			6'd11: alu_out = vshift; //vsrl
-			6'd12: alu_out = vshift; //vsra
-			6'd13: begin //vrtth
-				//for (i = 0; i <= 64 - size; i = i + size)
-				//	alu_out[i:i+size-1] = {op1[i+size>>1:i+size-1], op1[i:i+size>>1-1]};
-			end
+			6'd6: alu_out = adder_out;
+			6'd7: alu_out = adder_out;
+			6'd8: alu_out = mult_out;	//mulu even
+			6'd9: alu_out = mult_out;	//mulu odd
+			6'd10: alu_out = shift_out; //vsll
+			6'd11: alu_out = shift_out; //vsrl
+			6'd12: alu_out = shift_out; //vsra
+			6'd13: alu_out = rotate_out; //vrtth
 			6'd14: begin //vdivu
 				//for (i = 0; i <= 64 - size; i = i + size)
 				//	alu_out[i:i+size-1] = op1[i:i+size-1] / op2[i:i+size-1];
@@ -95,16 +64,11 @@ module alu(
 				//for (i = 0; i <= 64 - size; i = i + size)
 				//	alu_out[i:i+size-1] = op1[i:i+size-1] % op2[i:i+size-1];
 			end
-			6'd16: begin//vsqeu
-				alu_out = 'b0;
-			end
-			6'd17: begin //vsqou
-				alu_out = 'b0;
-			end
+			6'd16: alu_out = mult_out; //vsqeu
+			6'd17: alu_out = mult_out; //vsqou
 			6'd18: begin //vsqrtu
 				alu_out = 'b0;
 			end
-
 			default: alu_out = 'b0;
 		endcase
 	end
