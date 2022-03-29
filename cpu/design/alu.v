@@ -1,0 +1,111 @@
+//		EE577B Project Phase 2
+//		2022
+//		Vaishali Raja
+//		USC ID: 1149624094
+//		Kyle Tseng
+//		USC ID: 1793733065
+//		Cardinal Processor ALU (ALU.v)
+
+//`include "./include/sim_ver/DW_div.v"
+//`include "./include/sim_ver/DW02_mult.v"
+//`include "./include/sim_ver/DW_sqrt.v"
+
+module alu(
+	input [0:63] op1, op2,
+	input [5:0] opcode,
+	input [1:0] ww,
+	output reg [0:63] alu_out
+	);
+
+	reg[0:63] vadd, vsub, vmulu, vshift;
+
+	reg [8:0] vaddsub_b[0:7];
+	reg [14:0] vshift_b[0:7];
+	reg [15:0] vmulu_b[0:3];
+
+	//perform per byte operations
+	generate
+		genvar i;
+		for (i = 0; i < 8; i = i+1) begin
+			always @(*) begin //add, sub
+				if(opcode[0])	//sub
+					vaddsub_b[i] = op1[i*8:i+7] + ~op2[i*8:i+7] + 'b1;
+				else //add
+					vaddsub_b[i] = op1[i*8:i+7] + op2[i*8:i+7];
+			end
+
+			always @(*) begin //sll, srl, sra
+				case(opcode[1:0])
+					2'b10: vshift_b[i] = op1[i*8:i+7] << op2[i*8+5:i*8+7]; //sll
+					2'b11: vshitft_b[i] = op1[i*8:i+7] >> op2[i*8+5:i*8+7]; //srl
+					default: vshift_b[i] = op1[i*8]:i+7] >>> op2[i*8+5:i*8+7]; //sra
+				endcase
+			end
+
+		end
+
+		// mul / square
+		for (i = 0; i < 4; i = i + 1) begin
+			always @(*) begin
+				case(opcode):
+					6'b001000: vmulu_b[i] = op1[i*16:i+7] * op2 [i*16:i+7];
+					6'b001001: vmulu_b[i] = op1[i*16+8:i+7] * op2[i*16:i+7];	
+					6'b010000: vmulu_b[i] = op1[i*16:i+7]**2;
+					6'b010001: vmulu_b[i] = op1[i*16+8:i+7]**2
+					default: vmulu_b[i] = 16'bX;
+				endcase
+			end
+		end
+	endgenerate
+
+	always @(*) begin
+		// Perform transformation and assignment based on ww
+		case(ww)
+			2'b00: begin
+				
+			end
+			2'b01:
+			2'b10:
+			2'b11:
+		endcase
+
+		// Assign alu output based on opcode
+		case(opcode)
+			6'd1: alu_out = op1 & op2; //vand
+			6'd2: alu_out = op1 | op2; //vor
+			6'd3: alu_out = op1 ^ op2; //vxor
+			6'd4: alu_out = ~op1; 	   //vnot
+			6'd5: alu_out = op1; 	   //vmov
+			6'd6: alu_out = vadd;
+			6'd7: alu_out = vsub;
+			6'd8: alu_out = vmulu;	//mulu even
+			6'd9: alu_out = vmulu;	//mulu odd
+			6'd10: alu_out = vshift; //vsll
+			6'd11: alu_out = vshift; //vsrl
+			6'd12: alu_out = vshift; //vsra
+			6'd13: begin //vrtth
+				//for (i = 0; i <= 64 - size; i = i + size)
+				//	alu_out[i:i+size-1] = {op1[i+size>>1:i+size-1], op1[i:i+size>>1-1]};
+			end
+			6'd14: begin //vdivu
+				//for (i = 0; i <= 64 - size; i = i + size)
+				//	alu_out[i:i+size-1] = op1[i:i+size-1] / op2[i:i+size-1];
+			end
+			6'd15: begin //vmodu
+				//for (i = 0; i <= 64 - size; i = i + size)
+				//	alu_out[i:i+size-1] = op1[i:i+size-1] % op2[i:i+size-1];
+			end
+			6'd16: begin//vsqeu
+				alu_out = 'b0;
+			end
+			6'd17: begin //vsqou
+				alu_out = 'b0;
+			end
+			6'd18: begin //vsqrtu
+				alu_out = 'b0;
+			end
+
+			default: alu_out = 'b0;
+		endcase
+	end
+endmodule

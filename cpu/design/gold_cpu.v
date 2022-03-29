@@ -23,8 +23,9 @@ module gold_cpu(
 	reg [4:0] r0, r1, rw;
 	wire [63:0] r1_D, r0_D;
 	reg [63:0] wd;
+	reg [4:0] rD_E;
 
-	wire [4:0] rD, rD_E, rA, rB;
+	wire [4:0] rD, rA, rB;
 	wire [5:0] ot, op;
 	wire [15:0] im;
 	wire [1:0] ww_D;
@@ -40,7 +41,7 @@ module gold_cpu(
 	assign ww_D = inst_D[24:25];
 	assign we = we_E;
 
-	ALU alu(rA_E, rB_E, alu_out, alu_op, ww_E);
+	alu the_alu(rA_E, rB_E, alu_op, ww_E, alu_out);
 	reg_file rf(clk, r0, r1, rw, r0_D, r1_D, wd, we);
 
 	always @(*) begin
@@ -52,7 +53,7 @@ module gold_cpu(
 		next_PC = PC + 'd4;
 		br_taken = 'b0;
 		we_D = 'b0;
-		sel_mem = 'b0;
+		sel_mem_D = 'b0;
 		
 	// Instruction decode
 		// if arithmetic op set we
@@ -63,6 +64,7 @@ module gold_cpu(
 		if(ot == 6'b100000) begin
 			we_D = 'b1;
 			sel_mem_D = 'b1;
+		end
 
 		// if branch, check rD value
 		if(ot == 6'b100010 || ot == 6'b100011) begin
@@ -88,7 +90,7 @@ module gold_cpu(
 		if(br_taken)
 			inst_D <= inst;
 		else
-			inst_D <= NOP;
+			inst_D <= `NOP;
 
 		rD_E <= rD;
 		rA_E <= rA_D;
