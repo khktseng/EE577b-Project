@@ -24,6 +24,7 @@ int i;
 always@(*)
 begin
 	case(WW)
+	begin
 		2'b00: 	begin
 					size = 5'd8;
 					bits = 3'd3;

@@ -28,14 +28,14 @@ Loading db file '/usr/local/synopsys/Design_Compiler/default/libraries/syn/stand
 Loading db file '/usr/local/synopsys/Design_Compiler/default/libraries/syn/gtech.db'
   Loading link library 'gscl45nm'
   Loading link library 'gtech'
-Loading verilog file '/home/viterbi/01/kyletsen/EE577b/hw4/p1/src/traffic_control_1hot.v'
+Loading verilog file '/home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/src/traffic_control_1hot.v'
 Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
-Compiling source file /home/viterbi/01/kyletsen/EE577b/hw4/p1/src/traffic_control_1hot.v
+Compiling source file /home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/src/traffic_control_1hot.v
 
 Statistics for case statements in always block at line 19 in file
-        '/home/viterbi/01/kyletsen/EE577b/hw4/p1/src/traffic_control_1hot.v'
+        '/home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/src/traffic_control_1hot.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
@@ -44,7 +44,7 @@ Statistics for case statements in always block at line 19 in file
 
 Inferred memory devices in process
         in routine traffic_control_1hot line 109 in file
-                '/home/viterbi/01/kyletsen/EE577b/hw4/p1/src/traffic_control_1hot.v'.
+                '/home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/src/traffic_control_1hot.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
@@ -54,7 +54,7 @@ Inferred memory devices in process
 |      timer_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Current design is now '/home/viterbi/01/kyletsen/EE577b/hw4/p1/src/traffic_control_1hot.db:traffic_control_1hot'
+Current design is now '/home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/src/traffic_control_1hot.db:traffic_control_1hot'
 Loaded 1 design.
 Current design is 'traffic_control_1hot'.
 traffic_control_1hot
@@ -74,7 +74,7 @@ link ;
   Linking design 'traffic_control_1hot'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  traffic_control_1hot        /home/viterbi/01/kyletsen/EE577b/hw4/p1/src/traffic_control_1hot.db
+  traffic_control_1hot        /home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/src/traffic_control_1hot.db
   gscl45nm (library)          /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db
   dw_foundation.sldb (library) /usr/local/synopsys/Design_Compiler/default/libraries/syn/dw_foundation.sldb
 
@@ -125,26 +125,26 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:01     365.6      0.00       0.0       0.2                          
-    0:00:01     365.6      0.00       0.0       0.2                          
-    0:00:01     365.6      0.00       0.0       0.2                          
-    0:00:01     365.6      0.00       0.0       0.2                          
-    0:00:01     365.6      0.00       0.0       0.2                          
-    0:00:01     348.7      0.00       0.0       0.2                          
-    0:00:01     348.7      0.00       0.0       0.2                          
-    0:00:01     348.7      0.00       0.0       0.2                          
-    0:00:01     348.7      0.00       0.0       0.2                          
-    0:00:01     348.7      0.00       0.0       0.2                          
-    0:00:01     353.9      0.00       0.0       0.2                          
-    0:00:01     365.6      0.00       0.0       0.1                          
-    0:00:01     377.8      0.00       0.0       0.1                          
-    0:00:01     393.7      0.00       0.0       0.1                          
-    0:00:01     406.9      0.00       0.0       0.1                          
-    0:00:01     413.5      0.00       0.0       0.1                          
-    0:00:01     425.2      0.00       0.0       0.0                          
-    0:00:01     427.1      0.00       0.0       0.0                          
-    0:00:01     427.1      0.00       0.0       0.0                          
-    0:00:01     427.1      0.00       0.0       0.0                          
+    0:00:00     365.6      0.00       0.0       0.2                          
+    0:00:00     365.6      0.00       0.0       0.2                          
+    0:00:00     365.6      0.00       0.0       0.2                          
+    0:00:00     365.6      0.00       0.0       0.2                          
+    0:00:00     365.6      0.00       0.0       0.2                          
+    0:00:00     348.7      0.00       0.0       0.2                          
+    0:00:00     348.7      0.00       0.0       0.2                          
+    0:00:00     348.7      0.00       0.0       0.2                          
+    0:00:00     348.7      0.00       0.0       0.2                          
+    0:00:00     348.7      0.00       0.0       0.2                          
+    0:00:00     353.9      0.00       0.0       0.2                          
+    0:00:00     365.6      0.00       0.0       0.1                          
+    0:00:00     377.8      0.00       0.0       0.1                          
+    0:00:00     393.7      0.00       0.0       0.1                          
+    0:00:00     406.9      0.00       0.0       0.1                          
+    0:00:00     413.5      0.00       0.0       0.1                          
+    0:00:00     425.2      0.00       0.0       0.0                          
+    0:00:00     427.1      0.00       0.0       0.0                          
+    0:00:00     427.1      0.00       0.0       0.0                          
+    0:00:00     427.1      0.00       0.0       0.0                          
 
 
 
@@ -155,9 +155,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:01     427.1      0.00       0.0       0.0                          
-    0:00:01     427.1      0.00       0.0       0.0                          
-    0:00:01     424.7      0.00       0.0       0.0                          
+    0:00:00     427.1      0.00       0.0       0.0                          
+    0:00:00     427.1      0.00       0.0       0.0                          
+    0:00:00     424.7      0.00       0.0       0.0                          
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -167,7 +167,7 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:01     424.7      0.00       0.0       0.0                          
+    0:00:00     424.7      0.00       0.0       0.0                          
     0:00:01     483.4      0.00       0.0       0.0                          
 
 
@@ -221,14 +221,14 @@ change_names -rules verilog -hierarchy ;
 Warning: In the design traffic_control_1hot, net 'RA' is connecting multiple ports. (UCN-1)
 1
 write -format verilog -hierarchy -out netlist/${design_name}_syn.v ;
-Writing verilog file '/home/viterbi/01/kyletsen/EE577b/hw4/p1/netlist/traffic_control_1hot_syn.v'.
+Writing verilog file '/home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/netlist/traffic_control_1hot_syn.v'.
 Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
 1
 # Writing Standard Delay Format (SDF) back-annotation file.
 # This delay information can be used for post-synthesis simulation.
 write_sdf netlist/${design_name}_syn.sdf;
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
-Information: Writing timing information to file '/home/viterbi/01/kyletsen/EE577b/hw4/p1/netlist/traffic_control_1hot_syn.sdf'. (WT-3)
+Information: Writing timing information to file '/home/viterbi/01/kyletsen/EE577b/Project/hw4/p1/netlist/traffic_control_1hot_syn.sdf'. (WT-3)
 1
 write_sdc netlist/${design_name}_syn.sdc
 1

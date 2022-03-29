@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "traffic_control_1hot")
-(DATE "Mon Feb 28 23:54:15 2022")
+(DATE "Sun Mar 27 20:50:12 2022")
 (VENDOR "gscl45nm")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "K-2015.06-SP5-5")
