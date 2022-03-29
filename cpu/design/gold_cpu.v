@@ -6,31 +6,42 @@ module gold_cpu(
 	input clk, reset,
 	output [0:31] ins_addr,
 	input [0:31] inst,
-	output [0:31] mem_ins,
-	output [0:63] st_data,
+	output reg [0:31] mem_ins,
+	output reg [0:63] st_data,
 	input [0:63] ld_data
 	);
 
 	reg [0:31] PC, next_PC;
-	reg [31:0] inst_D;
+	reg [0:31] inst_D;
 	reg we_D, we_E;
-	reg [63:0] rA_D, rA_E, rB_E, rB_D, wb;
+	reg [0:63] opA_D, opA_E, opB_E, opB_D, wb;
 	reg sel_mem_D, sel_mem_E;
 	reg [5:0] alu_op;
 	reg [1:0] ww_E;
 	reg br_taken;
 
 	reg [4:0] r0, r1, rw;
-	wire [63:0] r1_D, r0_D;
-	reg [63:0] wd;
+	wire [0:63] r1_D, r0_D;
+	reg [0:63] wd;
 	reg [4:0] rD_E;
+
+	// forwarding from wb to ex
+	wire fwdA_D, fwdB_D;
+	reg fwdA_E, fwdB_E;
 
 	wire [4:0] rD, rA, rB;
 	wire [5:0] ot, op;
 	wire [15:0] im;
 	wire [1:0] ww_D;
-	wire [63:0] alu_out;
+	wire [0:63] alu_out;
 	wire we;
+
+	// Fetch
+	assign ins_addr = PC;
+
+	// Decode
+	assign fwdA_D = (rD_E == rA && we_E); // fwd a if ra = ex's rd and ex's rd is valid
+	assign fwdB_D = (rD_E == rB && we_E); // fwd b if rb is ex's rd and ex's rd is valid
 
 	assign rD = inst_D[6:10];
 	assign rA = inst_D[11:15];
@@ -39,21 +50,28 @@ module gold_cpu(
 	assign op = inst_D[26:31];
 	assign im = inst_D[16:31];
 	assign ww_D = inst_D[24:25];
+
+	reg_file rf(clk, r0, r1, rw, r0_D, r1_D, wd, we);
+
+	// execute
+	wire [0:63] alu_opA, alu_opB;
+	assign alu_opA = fwdA_E ? wb : opA_E;
+	assign alu_opB = fwdB_E ? wb : opB_E;
 	assign we = we_E;
 
-	alu the_alu(rA_E, rB_E, alu_op, ww_E, alu_out);
-	reg_file rf(clk, r0, r1, rw, r0_D, r1_D, wd, we);
+	alu the_alu(opA_E, opB_E, alu_op, ww_E, alu_out);
 
 	always @(*) begin
 		// Default values 
 		r0 = rA;
 		r1 = rB;
-		rA_D = r0_D;
-		rB_D = r1_D;
+		opA_D = r0_D;
+		opB_D = r1_D;
 		next_PC = PC + 'd4;
 		br_taken = 'b0;
 		we_D = 'b0;
 		sel_mem_D = 'b0;
+		mem_ins = 'b0;
 		
 	// Instruction decode
 		// if arithmetic op set we
@@ -61,15 +79,18 @@ module gold_cpu(
 			we_D = 'b1;
 
 		// if load op set we and set sel_mem
-		if(ot == 6'b100000) begin
-			we_D = 'b1;
+		if(ot[5:0] == 6'b10000) begin
+			we_D = ~ot[0];
 			sel_mem_D = 'b1;
+			// mem ins format:
+			// v, s/l, ..., imm
+			mem_ins = {1'b1, ot[0], 14'b0, im};
 		end
 
 		// if branch, check rD value
-		if(ot == 6'b100010 || ot == 6'b100011) begin
+		if(ot[5:1] == 5'b10001) begin
 			r0 = rD;
-			if(r0_D == 'b0 && ~ot[0]) begin
+			if(r0_D == 'b0 && ~ot[0] || r0_D != 'b0 && ot[0]) begin
 				br_taken = 1'b1;
 				next_PC = im;
 			end
@@ -93,11 +114,13 @@ module gold_cpu(
 			inst_D <= `NOP;
 
 		rD_E <= rD;
-		rA_E <= rA_D;
-		rB_E <= rB_D;
+		opA_E <= opA_D;
+		opB_E <= opB_D;
 		we_E <= we_D;
 		ww_E <= ww_D;
 		sel_mem_E <= sel_mem_D;
+		fwdA_E <= fwdA_D;
+		fwdB_E <= fwdB_D;
 		
 		//if WE at execute, save value for forwarding to EX
 		if(we_E)
@@ -106,11 +129,13 @@ module gold_cpu(
 		if (reset) begin
 			PC <= 'b0;
 			rD_E <= 'b0;
-			rA_E <= 'b0;
-			rB_E <= 'b0;
+			opA_E <= 'b0;
+			opB_E <= 'b0;
 			we_E <= 'b0;
 			ww_E <= 'b0;
 			sel_mem_E <= 'b0;
+			fwdA_E <= 'b0;
+			fwdB_E <= 'b0;
 		end
 	end
 endmodule

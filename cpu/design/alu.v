@@ -19,12 +19,15 @@ module alu(
 
 	reg [0:63] mop2;
 	reg [1:0] la_lr;
-	wire [0:63] adder_out, mult_out, shift_out, rotate_out;
+	wire [0:63] adder_out, mult_out, shift_out, rotate_out, div_out, mod_out, sqrt_out;
 
 	adder add(op1, op2, ww, adder_out, opcode[0]);
 	multiplier mult(op1, mop2, ww, mult_out, opcode[0]);
 	shifter shift(op1, op2, ww, la_lr, shift_out);
 	rotator rotate(op1, ww, rotate_out);
+	dividier div(op1, op2, ww, div_out);
+	modulo mod(op1, op2, ww, mod_out);
+	rooter sqrt(op1, ww, sqrt_out);
 
 	always @(opcode) begin
 		if (opcode[5:1] == 5'b01000)
@@ -56,19 +59,11 @@ module alu(
 			6'd11: alu_out = shift_out; //vsrl
 			6'd12: alu_out = shift_out; //vsra
 			6'd13: alu_out = rotate_out; //vrtth
-			6'd14: begin //vdivu
-				//for (i = 0; i <= 64 - size; i = i + size)
-				//	alu_out[i:i+size-1] = op1[i:i+size-1] / op2[i:i+size-1];
-			end
-			6'd15: begin //vmodu
-				//for (i = 0; i <= 64 - size; i = i + size)
-				//	alu_out[i:i+size-1] = op1[i:i+size-1] % op2[i:i+size-1];
-			end
+			6'd14: alu_out = div_out; //vdivu
+			6'd15: alu_out = mod_out; //vmodu
 			6'd16: alu_out = mult_out; //vsqeu
 			6'd17: alu_out = mult_out; //vsqou
-			6'd18: begin //vsqrtu
-				alu_out = 'b0;
-			end
+			6'd18: alu_out = sqrt_out; //vsqrtu
 			default: alu_out = 'b0;
 		endcase
 	end

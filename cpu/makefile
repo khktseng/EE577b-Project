@@ -41,9 +41,9 @@
 
 
 # top level module
-TOP = tb_adder
+TOP = tb_multiplier
 TOP_SYN = tb_gold_cpu_syn
-DESIGN_NAME = adder
+DESIGN_NAME = multiplier
 
 # List of the design files
 DESIGN_FILES = ./design/*.v
