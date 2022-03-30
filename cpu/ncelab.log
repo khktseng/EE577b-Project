@@ -1,5 +1,5 @@
 ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	ncelab(64)	15.20-s079: Started on Mar 29, 2022 at 15:06:22 PDT
+TOOL:	ncelab(64)	15.20-s079: Started on Mar 29, 2022 at 17:12:46 PDT
 ncelab
     -ACCESS +rwc
     -NCFATAL INVSUP
@@ -71,16 +71,16 @@ Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@a
 			streams:   1, words:  7293
 		work.dmem:module <0x65dad686>
 			streams:   5, words:  2190
-		work.gold_cpu:module <0x6b7917cd>
-			streams:  21, words: 10102
+		work.gold_cpu:module <0x7c9416a7>
+			streams:  21, words: 11120
 		work.imem:module <0x43b3f676>
 			streams:   1, words:   191
 		work.modulo:module <0x0d60c8a1>
 			streams:   1, words:  7334
 		work.multiplier:module <0x2cce4e4a>
 			streams:   1, words:  5578
-		work.reg_file:module <0x3e209c6d>
-			streams:   4, words:  1598
+		work.reg_file:module <0x5b5dbbc7>
+			streams:   5, words:  2156
 		work.rooter:module <0x00c61e5c>
 			streams:   1, words: 11675
 		work.rotator:module <0x6e0c4b30>
@@ -94,7 +94,7 @@ Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@a
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                 21      14
-		Registers:               45      45
+		Registers:               44      44
 		Scalar wires:            24       -
 		Expanded wires:          70       9
 		Vectored wires:          59       -
@@ -104,4 +104,4 @@ Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@a
 		Pseudo assignments:      30      30
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: work.tb_gold_cpu:module
-TOOL:	ncelab(64)	15.20-s079: Exiting on Mar 29, 2022 at 15:06:22 PDT  (total: 00:00:00)
+TOOL:	ncelab(64)	15.20-s079: Exiting on Mar 29, 2022 at 17:12:46 PDT  (total: 00:00:00)

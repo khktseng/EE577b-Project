@@ -21,7 +21,7 @@ module gold_cpu(
 	reg [1:0] ww_E;
 	reg br_taken;
 
-	reg [4:0] r0, r1, rw;
+	reg [4:0] r0, r1;
 	wire [0:63] r1_D, r0_D;
 	reg [0:63] wd;
 	reg [4:0] rD_E;
@@ -54,7 +54,7 @@ module gold_cpu(
 
 	assign mem_addr = im;
 
-	reg_file rf(clk, r0, r1, rw, r0_D, r1_D, wd, we);
+	reg_file rf(clk, reset, r0, r1, rD_E, r0_D, r1_D, wd, we);
 
 	// execute
 	wire [0:63] alu_opA, alu_opB;
@@ -75,6 +75,7 @@ module gold_cpu(
 		we_D = 'b0;
 		sel_mem_D = 'b0;
 		mem_en = 'b0;
+		st_data = r0_D;
 		
 		
 	// Instruction decode
@@ -83,13 +84,14 @@ module gold_cpu(
 			we_D = 'b1;
 
 		// if load op set we and set sel_mem
-		if(ot[5:0] == 6'b10000) begin
+		if(ot[5:1] == 5'b10000) begin
 			we_D = ~ot[0];
 			sel_mem_D = 'b1;
 			// mem ins format:
 			// v, s/l, ..., imm
 			mem_en = 1'b1;
 			mem_sl = ot[0];
+			r0 = rD;
 		end
 
 		// if branch, check rD value
@@ -117,9 +119,9 @@ module gold_cpu(
 
 		// if branch is taken in ID, insert NOP into next slot
 		if(br_taken)
-			inst_D <= inst;
-		else
 			inst_D <= `NOP;
+		else
+			inst_D <= inst;
 
 		rD_E <= rD;
 		opA_E <= opA_D;
@@ -129,6 +131,7 @@ module gold_cpu(
 		sel_mem_E <= sel_mem_D;
 		fwdA_E <= fwdA_D;
 		fwdB_E <= fwdB_D;
+		alu_op <= op;
 		
 		//if WE at execute, save value for forwarding to EX
 		if(we_E)
@@ -144,6 +147,7 @@ module gold_cpu(
 			sel_mem_E <= 'b0;
 			fwdA_E <= 'b0;
 			fwdB_E <= 'b0;
+			alu_op <= 'b0;
 		end
 	end
 endmodule

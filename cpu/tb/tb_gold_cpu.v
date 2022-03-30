@@ -34,13 +34,13 @@ module tb_gold_cpu;
 	end
 
 	initial begin
-		$readmemh("./memory_fill/imem_0.fill", IM.MEM);
+		$readmemh("./memory_fill/inst_rand.fill", IM.MEM);
 		$readmemh("./memory_fill/dmem.fill", DM.MEM);
 
 		clk <= 0;
 		reset <= 1'b1;
 		repeat(5) @(negedge clk);
-		reset <= 0;
+		reset <= 1'b0;
 
 		wait(inst == 32'h00000000);
 		$display("The program completed in %d cycles", cycle_num);
