@@ -34,7 +34,7 @@ module tb_gold_cpu;
 	end
 
 	initial begin
-		$readmemh("./memory_fill/inst_rand.fill", IM.MEM);
+		$readmemh("./memory_fill/inst_arith.fill", IM.MEM);
 		$readmemh("./memory_fill/dmem.fill", DM.MEM);
 
 		clk <= 0;

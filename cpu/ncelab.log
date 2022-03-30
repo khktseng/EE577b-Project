@@ -1,5 +1,5 @@
 ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	ncelab(64)	15.20-s079: Started on Mar 29, 2022 at 17:12:46 PDT
+TOOL:	ncelab(64)	15.20-s079: Started on Mar 29, 2022 at 18:02:31 PDT
 ncelab
     -ACCESS +rwc
     -NCFATAL INVSUP
@@ -71,8 +71,8 @@ Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@a
 			streams:   1, words:  7293
 		work.dmem:module <0x65dad686>
 			streams:   5, words:  2190
-		work.gold_cpu:module <0x7c9416a7>
-			streams:  21, words: 11120
+		work.gold_cpu:module <0x37185d60>
+			streams:  20, words: 10407
 		work.imem:module <0x43b3f676>
 			streams:   1, words:   191
 		work.modulo:module <0x0d60c8a1>
@@ -94,14 +94,14 @@ Resolved design unit 'adder_byte' at 'tb_gold_cpu.dut@gold_cpu<module>.the_alu@a
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                 21      14
-		Registers:               44      44
-		Scalar wires:            24       -
+		Registers:               42      42
+		Scalar wires:            25       -
 		Expanded wires:          70       9
-		Vectored wires:          59       -
+		Vectored wires:          57       -
 		Always blocks:           15      15
 		Initial blocks:           1       1
-		Cont. assignments:       34      26
-		Pseudo assignments:      30      30
+		Cont. assignments:       37      29
+		Pseudo assignments:      26      26
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: work.tb_gold_cpu:module
-TOOL:	ncelab(64)	15.20-s079: Exiting on Mar 29, 2022 at 17:12:46 PDT  (total: 00:00:00)
+TOOL:	ncelab(64)	15.20-s079: Exiting on Mar 29, 2022 at 18:02:31 PDT  (total: 00:00:00)

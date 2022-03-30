@@ -21,10 +21,11 @@ module gold_cpu(
 	reg [1:0] ww_E;
 	reg br_taken;
 
-	reg [4:0] r0, r1;
-	wire [0:63] r1_D, r0_D;
+	wire [4:0] r0;
+	wire [0:63] r1_D, r0_D, br_D;
 	reg [0:63] wd;
 	reg [4:0] rD_E;
+	wire is_imm_op;
 
 	// forwarding from wb to ex
 	wire fwdA_D, fwdB_D;
@@ -54,7 +55,11 @@ module gold_cpu(
 
 	assign mem_addr = im;
 
-	reg_file rf(clk, reset, r0, r1, rD_E, r0_D, r1_D, wd, we);
+	assign is_imm_op = (ot[5:2] == 4'b1000);
+	assign r0 = is_imm_op ? rD : rA;
+	assign br_D = (rD_E == rD) ? alu_out : r0_D;
+
+	reg_file rf(clk, reset, r0, rB, rD_E, r0_D, r1_D, wd, we);
 
 	// execute
 	wire [0:63] alu_opA, alu_opB;
@@ -62,12 +67,12 @@ module gold_cpu(
 	assign alu_opB = fwdB_E ? wb : opB_E;
 	assign we = we_E;
 
-	alu the_alu(opA_E, opB_E, alu_op, ww_E, alu_out);
+	alu the_alu(alu_opA, alu_opB, alu_op, ww_E, alu_out);
+
+
 
 	always @(*) begin
 		// Default values 
-		r0 = rA;
-		r1 = rB;
 		opA_D = r0_D;
 		opB_D = r1_D;
 		next_PC = PC + 'd4;
@@ -84,20 +89,18 @@ module gold_cpu(
 			we_D = 'b1;
 
 		// if load op set we and set sel_mem
-		if(ot[5:1] == 5'b10000) begin
+		if(is_imm_op && ~ot[1]) begin
 			we_D = ~ot[0];
 			sel_mem_D = 'b1;
 			// mem ins format:
 			// v, s/l, ..., imm
 			mem_en = 1'b1;
 			mem_sl = ot[0];
-			r0 = rD;
 		end
 
 		// if branch, check rD value
-		if(ot[5:1] == 5'b10001) begin
-			r0 = rD;
-			if(r0_D == 'b0 && ~ot[0] || r0_D != 'b0 && ot[0]) begin
+		if(is_imm_op && ot[1]) begin
+			if(br_D == 'b0 && ~ot[0] || br_D != 'b0 && ot[0]) begin
 				br_taken = 1'b1;
 				next_PC = im;
 			end
