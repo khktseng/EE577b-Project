@@ -1,0 +1,96 @@
+*** Message Type: info ***
+When: Wed Apr 06 10:36:14 PM PDT 2022
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s079
+User: kyletsen
+Host: viterbi-scf2.usc.edu
+Platform: Linux/x86_64/3.10.0-1160.59.1.el7.x86_64
+Started: Wed Apr 06 10:36:14 PM PDT 2022
+Command: /usr/local/cadence/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:viterbi-scf2.usc.edu:42667 -64BIT -nocopyright
+Work Directory: /home/viterbi/01/kyletsen/EE577b/Project/tms
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:36:14 PM PDT 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:36:15 PM PDT 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:36:15 PM PDT 2022
+Connect to Simulator
+      Design: work.tb_mult_byte
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Wed Apr 06 10:36:13 PM PDT 2022
+  Process ID: 326540
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/tms
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_mult_byte
+
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:36:16 PM PDT 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:36:31 PM PDT 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:44:16 PM PDT 2022
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:44:17 PM PDT 2022
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:44:19 PM PDT 2022
+Exit NC-Sim: user
+      Design: work.tb_mult_byte
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Wed Apr 06 10:36:13 PM PDT 2022
+  Process ID: 326540
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/tms
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_mult_byte
+
+ 
+*** Message Type: error ***
+When: Wed Apr 06 10:44:19 PM PDT 2022
+NC-Sim Crashed:
+      Design: work.tb_mult_byte
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Wed Apr 06 10:36:13 PM PDT 2022
+  Process ID: 326540
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/tms
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_mult_byte
+      Design: work.tb_mult_byte
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:    ncsim(64)       15.20-s079
+        User: kyletsen
+        Host: viterbi-scf2.usc.edu
+Time Started: Wed Apr 06 10:36:13 PM PDT 2022
+  Process ID: 326540
+   Directory: /home/viterbi/01/kyletsen/EE577b/Project/tms
+     Command: ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript.tcl -GUI work.tb_mult_byte
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Wed Apr 06 10:44:22 PM PDT 2022
+SimVision Exit.
+ 

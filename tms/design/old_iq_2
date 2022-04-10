@@ -1,0 +1,51 @@
+// verilog for issue queue
+
+module iqueue(clk, reset, cdb, optype, opcode, pA_i, pB_i, pD_i, ai_r, bi_r, pA_o, pB_o, pD_o);
+	parameter EU_TYPE = 6'b101010;
+	parameter PRF_SIZE = 128;
+	localparam PRF_ADDR = $clog2(PRF_SIZE);
+
+	input clk, reset;
+	input [0:5] optype, opcode;
+	input [PRF_ADDR-1:0] cdb;
+
+	reg [PRF_ADDR-1:0] pA [0:3];
+	reg [PRF_ADDR-1:0] pB [0:3];
+	reg [PRF_ADDR-1:0] pD [0:3];
+	reg [1:0] age [0:3];
+	reg [1:0] ab_ready [0:3];
+	reg [3:0] next_issue;
+
+	wire [3:0] inst_ready;
+
+	// fifo for free IQ entries
+	fifo #(FIFO_SIZE=4, INIT=1) free_entries(
+		.clk(clk),
+		.reset(reset),
+		.in
+		.front
+		.add
+		.remove
+		.full
+		.empty
+		);
+
+	integer i;
+	always @(*) begin
+		// Find the oldest entry
+		if (
+
+	end
+	
+
+	always @(posedge clk) begin
+		// Increment age of each iq entry by one clk
+		for (i = 0; i < IQ_SIZE; i = i + 1)
+			age[i] <= age[i] + 1;
+		
+		if (reset) begin
+			
+		end
+	end
+endmodule
+	

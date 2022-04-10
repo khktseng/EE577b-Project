@@ -1,0 +1,244 @@
+ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncelab(64)	15.20-s079: Started on Apr 09, 2022 at 20:13:35 PDT
+ncelab
+    -ACCESS +rwc
+    -NCFATAL INVSUP
+    -NCFATAL CUNOTB
+    -ERRORMAX 5
+    -UPDATE
+    -MESSAGES
+    -TIMESCALE 1ns/10ps
+    -LIBVERBOSE
+    work.tb_cmp
+
+	Elaborating the design hierarchy:
+Resolving design unit 'imem' at 'tb_cmp.IM_node0'.
+		Caching library 'work' ....... Done
+	library: 'work' views: 'module' -> found
+Resolved design unit 'imem' at 'tb_cmp.IM_node0' to 'work.imem:module'.
+Resolved design unit 'imem' at 'tb_cmp.IM_node1' to 'work.imem:module'.
+Resolved design unit 'imem' at 'tb_cmp.IM_node2' to 'work.imem:module'.
+Resolved design unit 'imem' at 'tb_cmp.IM_node3' to 'work.imem:module'.
+Resolving design unit 'dmem' at 'tb_cmp.DM_node0'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'dmem' at 'tb_cmp.DM_node0' to 'work.dmem:module'.
+Resolved design unit 'dmem' at 'tb_cmp.DM_node1' to 'work.dmem:module'.
+Resolved design unit 'dmem' at 'tb_cmp.DM_node2' to 'work.dmem:module'.
+Resolved design unit 'dmem' at 'tb_cmp.DM_node3' to 'work.dmem:module'.
+Resolving design unit 'cardinal_cmp' at 'tb_cmp.CMP'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'cardinal_cmp' at 'tb_cmp.CMP' to 'work.cardinal_cmp:module'.
+Resolving design unit 'cardinal_ring' at 'tb_cmp.CMP@cardinal_cmp<module>.ring'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'cardinal_ring' at 'tb_cmp.CMP@cardinal_cmp<module>.ring' to 'work.cardinal_ring:module'.
+Resolving design unit 'gold_router' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'gold_router' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0' to 'work.gold_router:module'.
+Resolving design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.cwi'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.cwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.ccwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.pei' to 'work.input_handler:module'.
+Resolving design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.cwo'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.cwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.ccwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.peo' to 'work.output_handler:module'.
+Resolving design unit 'rte_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.router'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'rte_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n0@gold_router<module>.router' to 'work.rte_handler:module'.
+Resolved design unit 'gold_router' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1' to 'work.gold_router:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.cwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.ccwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.pei' to 'work.input_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.cwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.ccwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.peo' to 'work.output_handler:module'.
+Resolved design unit 'rte_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n1@gold_router<module>.router' to 'work.rte_handler:module'.
+Resolved design unit 'gold_router' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2' to 'work.gold_router:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.cwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.ccwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.pei' to 'work.input_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.cwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.ccwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.peo' to 'work.output_handler:module'.
+Resolved design unit 'rte_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n2@gold_router<module>.router' to 'work.rte_handler:module'.
+Resolved design unit 'gold_router' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3' to 'work.gold_router:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.cwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.ccwi' to 'work.input_handler:module'.
+Resolved design unit 'input_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.pei' to 'work.input_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.cwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.ccwo' to 'work.output_handler:module'.
+Resolved design unit 'output_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.peo' to 'work.output_handler:module'.
+Resolved design unit 'rte_handler' at 'tb_cmp.CMP@cardinal_cmp<module>.ring@cardinal_ring<module>.n3@gold_router<module>.router' to 'work.rte_handler:module'.
+Resolving design unit 'cardinal_nic' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].nic'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'cardinal_nic' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].nic' to 'work.cardinal_nic:module'.
+Resolving design unit 'cardinal_processor' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'cardinal_processor' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu' to 'work.cardinal_processor:module'.
+Resolving design unit 'reg_file' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.rf'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'reg_file' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.rf' to 'work.reg_file:module'.
+Resolving design unit 'alu' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'alu' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu' to 'work.alu:module'.
+Resolving design unit 'adder' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'adder' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add' to 'work.adder:module'.
+Resolving design unit 'multiplier' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.mult'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'multiplier' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.mult' to 'work.multiplier:module'.
+Resolving design unit 'shifter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.shift'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'shifter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.shift' to 'work.shifter:module'.
+Resolving design unit 'rotator' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.rotate'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'rotator' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.rotate' to 'work.rotator:module'.
+Resolving design unit 'divider' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.div'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'divider' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.div' to 'work.divider:module'.
+Resolving design unit 'modulo' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.mod'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'modulo' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.mod' to 'work.modulo:module'.
+Resolving design unit 'rooter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.sqrt'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'rooter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.sqrt' to 'work.rooter:module'.
+Resolved design unit 'cardinal_nic' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].nic' to 'work.cardinal_nic:module'.
+Resolved design unit 'cardinal_processor' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu' to 'work.cardinal_processor:module'.
+Resolved design unit 'reg_file' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.rf' to 'work.reg_file:module'.
+Resolved design unit 'alu' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu' to 'work.alu:module'.
+Resolved design unit 'adder' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add' to 'work.adder:module'.
+Resolved design unit 'multiplier' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.mult' to 'work.multiplier:module'.
+Resolved design unit 'shifter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.shift' to 'work.shifter:module'.
+Resolved design unit 'rotator' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.rotate' to 'work.rotator:module'.
+Resolved design unit 'divider' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.div' to 'work.divider:module'.
+Resolved design unit 'modulo' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.mod' to 'work.modulo:module'.
+Resolved design unit 'rooter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.sqrt' to 'work.rooter:module'.
+Resolved design unit 'cardinal_nic' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].nic' to 'work.cardinal_nic:module'.
+Resolved design unit 'cardinal_processor' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu' to 'work.cardinal_processor:module'.
+Resolved design unit 'reg_file' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.rf' to 'work.reg_file:module'.
+Resolved design unit 'alu' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu' to 'work.alu:module'.
+Resolved design unit 'adder' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add' to 'work.adder:module'.
+Resolved design unit 'multiplier' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.mult' to 'work.multiplier:module'.
+Resolved design unit 'shifter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.shift' to 'work.shifter:module'.
+Resolved design unit 'rotator' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.rotate' to 'work.rotator:module'.
+Resolved design unit 'divider' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.div' to 'work.divider:module'.
+Resolved design unit 'modulo' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.mod' to 'work.modulo:module'.
+Resolved design unit 'rooter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.sqrt' to 'work.rooter:module'.
+Resolved design unit 'cardinal_nic' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].nic' to 'work.cardinal_nic:module'.
+Resolved design unit 'cardinal_processor' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu' to 'work.cardinal_processor:module'.
+Resolved design unit 'reg_file' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.rf' to 'work.reg_file:module'.
+Resolved design unit 'alu' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu' to 'work.alu:module'.
+Resolved design unit 'adder' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add' to 'work.adder:module'.
+Resolved design unit 'multiplier' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.mult' to 'work.multiplier:module'.
+Resolved design unit 'shifter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.shift' to 'work.shifter:module'.
+Resolved design unit 'rotator' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.rotate' to 'work.rotator:module'.
+Resolved design unit 'divider' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.div' to 'work.divider:module'.
+Resolved design unit 'modulo' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.mod' to 'work.modulo:module'.
+Resolved design unit 'rooter' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.sqrt' to 'work.rooter:module'.
+Resolving design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[1].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[2].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[3].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[4].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[5].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[6].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[0].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[7].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[1].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[2].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[3].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[4].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[5].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[6].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[1].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[7].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[1].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[2].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[3].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[4].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[5].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[6].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[2].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[7].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[0].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[1].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[2].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[3].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[4].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[5].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[6].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_cmp.CMP@cardinal_cmp<module>.genblk1[3].cpu@cardinal_processor<module>.the_alu@alu<module>.add@adder<module>.genblk3[7].a_i' to 'work.adder_byte:module'.
+	.node0_mem_addr	(node0_addr_out	),
+	               	              |
+ncelab: *W,CUVMPW (./tb/tb_cmp.v,152|31): port sizes differ in port connection (32/16).
+	.node1_mem_addr (node1_addr_out ),
+	                              |
+ncelab: *W,CUVMPW (./tb/tb_cmp.v,158|31): port sizes differ in port connection (32/16).
+	.node2_mem_addr (node2_addr_out ),
+	                              |
+ncelab: *W,CUVMPW (./tb/tb_cmp.v,164|31): port sizes differ in port connection (32/16).
+	.node3_mem_addr (node3_addr_out ),
+	                              |
+ncelab: *W,CUVMPW (./tb/tb_cmp.v,170|31): port sizes differ in port connection (32/16).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.adder:module <0x3ba4e421>
+			streams:  20, words:  3558
+		work.adder_byte:module <0x02772097>
+			streams:   2, words:   537
+		work.alu:module <0x1cb84261>
+			streams:   4, words:  2747
+		work.cardinal_cmp:module <0x47cf6d3b>
+			streams:  20, words:  2489
+		work.cardinal_nic:module <0x657e3c09>
+			streams:   5, words:  6915
+		work.cardinal_processor:module <0x3a72cb6e>
+			streams:  20, words: 10407
+		work.divider:module <0x1f331723>
+			streams:   1, words:  7293
+		work.dmem:module <0x74cc4350>
+			streams:   5, words:  2364
+		work.gold_router:module <0x20ae54d6>
+			streams:   3, words:  1103
+		work.imem:module <0x0d44267c>
+			streams:   1, words:   191
+		work.input_handler:module <0x16512389>
+			streams:   9, words:  4146
+		work.modulo:module <0x5b7b37d3>
+			streams:   1, words:  7334
+		work.multiplier:module <0x1095a268>
+			streams:   1, words:  5578
+		work.output_handler:module <0x78bca9dc>
+			streams:  14, words:  7235
+		work.reg_file:module <0x2d3788cf>
+			streams:   5, words:  2156
+		work.rooter:module <0x7435e357>
+			streams:   1, words: 11675
+		work.rotator:module <0x1affb63b>
+			streams:   1, words:  5050
+		work.rte_handler:module <0x4af86188>
+			streams:   0, words:     0
+		work.shifter:module <0x0ff3e3e7>
+			streams:   1, words: 18821
+		work.tb_cmp:module <0x1eea720c>
+			streams:  13, words: 13041
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                119      21
+		Resolved nets:           14       2
+		Registers:              280      66
+		Scalar wires:           374       -
+		Expanded wires:        1048      48
+		Vectored wires:         300       -
+		Always blocks:           94      21
+		Initial blocks:           2       2
+		Cont. assignments:      264      66
+		Pseudo assignments:      98      29
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: work.tb_cmp:module
+TOOL:	ncelab(64)	15.20-s079: Exiting on Apr 09, 2022 at 20:13:35 PDT  (total: 00:00:00)

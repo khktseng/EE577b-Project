@@ -1,0 +1,52 @@
+ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncelab(64)	15.20-s079: Started on Apr 07, 2022 at 20:47:59 PDT
+ncelab
+    -ACCESS +rwc
+    -NCFATAL INVSUP
+    -NCFATAL CUNOTB
+    -ERRORMAX 5
+    -UPDATE
+    -MESSAGES
+    -TIMESCALE 1ns/10ps
+    -LIBVERBOSE
+    work.tb_adder
+
+	Elaborating the design hierarchy:
+Resolving design unit 'adder' at 'tb_adder.dut'.
+		Caching library 'work' ....... Done
+	library: 'work' views: 'module' -> found
+Resolved design unit 'adder' at 'tb_adder.dut' to 'work.adder:module'.
+Resolving design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[0].a_i'.
+	library: 'work' views: 'module' -> found
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[0].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[1].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[2].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[3].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[4].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[5].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[6].a_i' to 'work.adder_byte:module'.
+Resolved design unit 'adder_byte' at 'tb_adder.dut@adder<module>.genblk3[7].a_i' to 'work.adder_byte:module'.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.adder:module <0x220c5a57>
+			streams:  31, words:  7306
+		work.adder_byte:module <0x02772097>
+			streams:   2, words:   537
+		work.tb_adder:module <0x69d64d0d>
+			streams:  14, words: 12904
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 10       3
+		Registers:               10      10
+		Scalar wires:            22       -
+		Expanded wires:          64       8
+		Vectored wires:          29       -
+		Always blocks:            4       4
+		Initial blocks:           2       2
+		Cont. assignments:       26      10
+		Pseudo assignments:      23      23
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: work.tb_adder:module
+TOOL:	ncelab(64)	15.20-s079: Exiting on Apr 07, 2022 at 20:47:59 PDT  (total: 00:00:00)
