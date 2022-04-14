@@ -174,6 +174,9 @@ sim_syn : clean elab_syn~
 simg_syn : clean elab_syn~
 	ncsim $(NCSIM_SWITCHES_GUI_SYN) work.$(TOP_SYN)
 
+run : 
+	ncsim $(NCSIM_SWITCHES_NO_GUI) work.$(TOP)
+
 syn:
 	dc_shell -f scripts/syn.tcl -output_log_file dc.log
 

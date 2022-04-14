@@ -1,0 +1,501 @@
+
+Running Test # 0 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.1s total (12.5s, 1.2% cpu)
+
+Running Test # 1 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.1s total (12.5s, 0.9% cpu)
+
+Running Test # 2 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.1s total (12.5s, 1.2% cpu)
+
+Running Test # 3 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 4 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 5 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 6 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 7 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.6s, 1.3% cpu)
+
+Running Test # 8 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 9 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 10 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 11 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 12 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 13 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 14 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 15 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 16 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 17 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.2% cpu)
+
+Running Test # 18 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.6s, 1.4% cpu)
+
+Running Test # 19 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 20 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 21 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 22 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 23 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 24 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.6s, 1.4% cpu)
+
+Running Test # 25 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 26 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 27 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 28 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.2% cpu)
+
+Running Test # 29 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.4% cpu)
+
+Running Test # 30 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+Loading snapshot work.tb_cmp:module .................... Done
+ncsim> set tb $env(TOP);
+tb_cmp
+ncsim> probe -create -shm $tb -all -depth all
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> # simvision -input ./scripts/ddr2sdram.sv
+ncsim> run
+Simulation complete via $finish(1) at time 50 US + 0
+./tb/tb_cmp.v:179     $finish;
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 156.6M data = 195.3M total (199.1M Peak)
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.2s total (12.5s, 1.3% cpu)
+
+Running Test # 31 
+ncsim -STATUS -NOCOPYRIGHT -MESSAGES -NCFATAL INVSUP -NOWARN DLBRLK -TCL -NOLOG -NOKEY -INPUT ./scripts/runscript_nogui.tcl work.tb_cmp
+ncsim: Memory Usage - 38.6M program + 28.6M data = 67.2M total (67.3M Peak)
+ncsim: CPU Usage - 0.0s system + 0.0s user = 0.0s total (2.3s, 1.7% cpu)
