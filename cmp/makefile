@@ -41,9 +41,9 @@
 
 
 # top level module
-TOP = tb_cmp
-TOP_SYN = tb_clock_syn
-DESIGN_NAME = cardinal_cmp
+TOP = tb_nic
+TOP_SYN = tb_nic_syn
+DESIGN_NAME = cardinal_nic
 
 # List of the design files
 DESIGN_FILES = ./design/*.v

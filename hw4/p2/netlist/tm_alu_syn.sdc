@@ -1,12 +1,12 @@
 ###################################################################
 
-# Created by write_sdc on Mon Feb 28 19:20:00 2022
+# Created by write_sdc on Sun Apr 17 11:51:56 2022
 
 ###################################################################
 set sdc_version 2.0
 
 set_units -time ns -resistance kOhm -capacitance pF -voltage V -current uA
-create_clock [get_ports clk]  -period 5  -waveform {0 2.5}
+create_clock [get_ports clk]  -period 20  -waveform {0 10}
 set_max_delay 5  -to [get_ports {AvgTxLen_new[7]}]
 set_max_delay 5  -to [get_ports {AvgTxLen_new[6]}]
 set_max_delay 5  -to [get_ports {AvgTxLen_new[5]}]

@@ -1,131 +1,97 @@
-// vmul module
-// inputs should be stable until ready
+// Verilog for multiplier
+//
 module multiplier(
-	input clk, reset,
+	input clk, reset, 
 	input in_v,
-	input [63:0] inA,
-	input [63:0] inB,
+	input [31:0] inA,
+	input [31:0] inB,
 	input [1:0] ww,
-	input odd,
 	output [63:0] mul_out,
-	output reg out_v
-	output ready;
+	output out_v,
+	output ready
 	);
 
-	reg [1:0] ps;
-	wire [7:0] pp [0:7][0:7];
-	reg [63:0] opA, opB;
+	wire [55:0] tr_0, tr_1, tr_2, tr_3;
+	wire [55:0] br_0, br_1, br_2, br_3;
+	wire [55:0] accum;
+	wire [7:0] bo;
+	wire reset_mac;
 
-	wire [7:0] sys_input [0:/**/][0:15];
-	wire [7:0] mac_A [0:15];
-	wire [7:0] mac_S [0:15];
-	wire [15:0] mac_out [0:15];
-	wire [15:0] mac_co, mac_ci;
+	reg [2:0] ps, ns;
+	reg [1:0] ct, nc;
+	reg [55:0] in_top, in_bot;
 
+	assign ready = (ps == 0);
+	assign out_v = (ct == 0);
 
-	assign ready = ps == 2'b00;
-
-	// generate byte macs
-	generate
-		genvar i
-		for (i = 0; i < 16; i = i + 1) begin
-			mac_byte mb(
-				clk, reset,
-				mac_A[i], mac_S[i],
-				mac_ci[i],
-				mac_out[i]
-				mac_co[i]
-				);
-		end
-	endgenerate
+	mult_gen gen(
+		.opA	(inA),
+		.opB	(inB),
+		.tr_0	(tr_0),
+		.tr_1	(tr_1),
+		.tr_2	(tr_2),
+		.tr_3	(tr_3),
+		.br_0	(br_0),
+		.br_1	(br_1),
+		.br_2	(br_2),
+		.br_3	(br_3)
+		);
+	
+	mac_units macs(
+		.clk	(clk),
+		.reset	(ready),
+		.ww	(ww),
+		.in_top	(in_top),
+		.in_bot	(in_bot),
+		.accum	(mul_out)
+		);
 
 	always @(*) begin
-		case(ps)
-			2'b00: out_v = 0;
-			2'b01: out_v = (ww == 2'b00);
-			2'b10: out_v = (ww == 2'b01);
-			2'b11: out_v = (ww == 2'b10);
+		nc = 3;
+		in_top = 0;
+		in_bot = 0;
+		case(ps) 
+			3'b000: ns = in_v ? 3'b001 : 3'b000;
+			3'b001: begin
+				ns = ww == 0 ? 3'b111 : 3'b010;
+				in_top = tr_0;
+				in_bot = br_0;
+				end
+			3'b010: begin 
+				ns = ww == 1 ? 3'b111 : 3'b011;
+				in_top = tr_1;
+				in_bot = br_1;
+				end
+			3'b011: begin
+				ns = 3'b100;
+				in_top = tr_2;
+				in_bot = br_2;
+				end
+			3'b100: begin
+				ns = 3'b111;
+				in_top = tr_3;
+				in_bot = br_3;
+				end
+			3'b111: begin
+				if (out_v) begin
+					ns = 3'b000;
+				end else begin
+					nc = ct - 1;
+					ns = ps;
+				end
+				end
+			default: ns = 3'b000;
 		endcase
+
 	end
-		
+			
 	always @(posedge clk) begin
-		case(ps)
-			2'b00: begin
-				if(in_v) begin
-					ps <= 2'b01;
-					// select odd or even 
-					case(ww)
-						2'b00: begin
-							opA <= odd ?
-								{
-								8'b0, inA[55:48], 
-								8'b0, inA[39:32],
-								8'b0, inA[23:16], 
-								8'b0, inA[7:0]
-								} : {
-								8'b0, inA[63:56],
-								8'b0, inA[47:40],
-								8'b0, inA[31:24], 
-								8'b0, inA[15:8]
-								};
-
-							opB <= odd ?
-								{
-								8'b0, inB[55:48], 
-								8'b0, inB[39:32],
-								8'b0, inB[23:16], 
-								8'b0, inB[7:0]
-								} : {
-								8'b0, inB[63:56], 
-								8'b0, inB[47:40],
-								8'b0, inB[31:24],
-								8'b0, inB[15:8]
-								};
-						end
-						2'b01: begin
-							opA <= odd ?
-								{
-								16'b0, inA[47:40], 
-								16'b0, inA[15:0]
-								} : {
-								16'b0, inA[63:48], 
-								16'b0, inA[31:16]
-								};
-
-							opB <= odd ?
-								{
-								16'b0, inB[47:40], 
-								16'b0, inB[15:0]
-								} : {
-								16'b0, inB[63:48], 
-								16'b0, inB[31:16]
-								};
-						end
-						default: begin
-							opA <= odd ?
-								{32'b0, inA[31:0]} :
-								{32'b0, inA[63:32]};
-							opB <= odd ?
-								{32'b0, inB[31:0]} :
-								{32'b0, inB[63:32]};
-						end
-					endcase
-
-						
-			end
-			2'b01: begin
-				if (ww == 2'b00) ps <= 2'b00;
-				else ps <= 2'b10;
-			end
-			2'b10: begin
-				if (ww == 2'b01) ps <= 2'b00;
-				else ps <= 2'b11;
-			end
-			2'b11: ps <= 2'b00;
-		endcase
-
-		if (reset) begin
-			ps <= 0;
+		ps <= ns;
+		ct <= nc;
+		
+		if(reset) begin
+			ps <= 3'b000;
+			ct <= 3;
 		end
 	end
 endmodule

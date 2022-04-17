@@ -1,55 +1,52 @@
 `timescale 1ns/1ns
+`define CLK_PER 4
 module tb_multiplier;
-	reg [0:63] op1, op2;
+	reg clk, reset;
+	reg in_v;
+	reg [31:0] inA, inB;
 	reg [1:0] ww;
-	wire [0:63] mul_out;
-	reg oe;
+	wire [63:0] mul_out;
+	wire out_v;
+	wire ready;
 
-	multiplier dut(op1, op2, ww, oe, mul_out);
+	multiplier dut(clk, reset, in_v, inA, inB, ww, mul_out, out_v, ready);
+
+	integer clk_cnt;
+	always #(`CLK_PER / 2) clk <= ~clk;
+	initial clk = 1;
+	initial clk_cnt = 0;
+	always @(posedge clk)
+		clk_cnt <= clk_cnt + 1;
 
 	initial begin
-		oe = 0;
-		ww = 2'b00;
-		op2 = 64'h0101010101010101;
-		op1 = 64'h0102030405060708;
-		#5
-		oe = 1;
-
-		#5;
+		$monitor("clk #%d: r=%b, ww= %b, inA= %h, inB= %h, mul_out= %h, out_v= %b", clk_cnt, ready, ww, inA, inB, mul_out, out_v);
 		
-		oe = 0;
-		ww = 2'b1;
-		op1 = 64'h00FF00FF00FF00FF;
-		op2 = 64'h00FF00FF00FF00FF;
-		#5;
-		oe = 1;
+		reset = 1;	#4;
+		reset = 0;
 
-		#5;
+		in_v = 1;
+		ww = 1;
+		inA = 'hABABABAB;
+		inB = 'hCDCDCDCD;
+		#4;
+		in_v = 0;
+		#36
 
-		oe = 0;
-		ww = 2'b10;
-		op1 = 64'h0000FFFF0000FFFF;
-		op2 = 64'h0000000100000001;
-		#5;
-		oe = 1;
+		in_v = 1;
+		ww = 2;
+		inA = 'hABCDEFAB;
+		inB = 'hDEADBEEF;
+		#4;
+		in_v = 0;
+		#36;
 
-		#5;
-		oe = 0;
-		op1 = 64'hFFFFFFFFFFFFFFFF;
-		op2 = 64'h0000000000000001;
-
-		#5
-		oe = 1;
-
-
-		#5;
-		oe = 0;
-		op2 = 64'hFFFFFFFFFFFFFFFF;
-		#5;
-		oe = 1;
-		#5;
-
-		$display("ww=%b, op1=%h, op2=%h, mul_out = %h", ww, op1, op2, mul_out);
+		in_v = 1;
+		ww = 0;
+		inA = 'hDEDEDEDE;
+		inB = 'hAFAFAFAF;
+		#4;
+		in_v = 0;
+		#36;
 
 		$finish;
 	end
