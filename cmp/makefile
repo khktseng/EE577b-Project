@@ -41,9 +41,9 @@
 
 
 # top level module
-TOP = tb_nic
+TOP = tb_multiplier
 TOP_SYN = tb_nic_syn
-DESIGN_NAME = cardinal_nic
+DESIGN_NAME = multiplier
 
 # List of the design files
 DESIGN_FILES = ./design/*.v

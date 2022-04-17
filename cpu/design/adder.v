@@ -27,7 +27,7 @@ module adder(
 		for (b = 0; b < 8; b = b + 2)
 			assign cins[b] = ww > 'b0 ? couts[b+1] : sub;
 		for (b = 1; b < 8; b = b + 4)
-			assign cins[b] = couts[b+1];
+			assign cins[b] = ww > 'b1 ? couts[b+1] : sub;
 		assign cins[3] = ww == 'b11 ? couts[4] : sub;
 	endgenerate
 

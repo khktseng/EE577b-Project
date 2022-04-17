@@ -1,5 +1,5 @@
 //lazy multiplier
-module multiplier(
+module lazy_multiplier(
 	input [0:63] op1, op2,
 	input [1:0] ww,
 	input oe,

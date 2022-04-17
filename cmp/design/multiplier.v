@@ -1,46 +1,97 @@
-//lazy multiplier
+// Verilog for multiplier
+//
 module multiplier(
-	input [0:63] op1, op2,
+	input clk, reset, 
+	input in_v,
+	input [31:0] inA,
+	input [31:0] inB,
 	input [1:0] ww,
-	input oe,
-	output reg [0:63] mul_out
+	output [63:0] mul_out,
+	output out_v,
+	output ready
 	);
 
-	integer i;
+	wire [55:0] tr_0, tr_1, tr_2, tr_3;
+	wire [55:0] br_0, br_1, br_2, br_3;
+	wire [55:0] accum;
+	wire [7:0] bo;
+	wire reset_mac;
+
+	reg [2:0] ps, ns;
+	reg [1:0] ct, nc;
+	reg [55:0] in_top, in_bot;
+
+	assign ready = (ps == 0);
+	assign out_v = (ct == 0);
+
+	mult_gen gen(
+		.opA	(inA),
+		.opB	(inB),
+		.tr_0	(tr_0),
+		.tr_1	(tr_1),
+		.tr_2	(tr_2),
+		.tr_3	(tr_3),
+		.br_0	(br_0),
+		.br_1	(br_1),
+		.br_2	(br_2),
+		.br_3	(br_3)
+		);
+	
+	mac_units macs(
+		.clk	(clk),
+		.reset	(ready),
+		.ww	(ww),
+		.in_top	(in_top),
+		.in_bot	(in_bot),
+		.accum	(mul_out)
+		);
+
 	always @(*) begin
-		case(ww)
-			2'b00: begin
-				if(oe) begin
-					mul_out[0:15] = op1[8:15] * op2[8:15];
-					mul_out[16:31] = op1[24:31] * op2[24:31];
-					mul_out[32:47] = op1[40:47] * op2[40:47];
-					mul_out[48:63] = op1[56:63] * op2[56:63];
-				end else begin
-					mul_out[0:15] = op1[0:7] * op2[0:7];
-					mul_out[16:31] = op1[16:23] * op2[16:23];
-					mul_out[32:47] = op1[32:39] * op2[32:39];
-					mul_out[48:63] = op1[48:55] * op2[48:55];
+		nc = 3;
+		in_top = 0;
+		in_bot = 0;
+		case(ps) 
+			3'b000: ns = in_v ? 3'b001 : 3'b000;
+			3'b001: begin
+				ns = ww == 0 ? 3'b111 : 3'b010;
+				in_top = tr_0;
+				in_bot = br_0;
 				end
-			end
-			2'b01: begin
-				if(oe) begin
-					mul_out[0:31] = op1[16:31] * op2[16:31];
-					mul_out[32:63] = op1[48:63] * op2[48:63];
-				end else begin
-					mul_out[0:31] = op1[0:15] * op2[0:15];
-					mul_out[32:63] = op1[32:47] * op2[32:47];
+			3'b010: begin 
+				ns = ww == 1 ? 3'b111 : 3'b011;
+				in_top = tr_1;
+				in_bot = br_1;
 				end
-			end
-			2'b10: begin
-				if(oe)
-					mul_out = op1[32:63] * op2[32:63];
-				else
-					mul_out = op1[0:31] * op2[0:31];
-			end
-			2'b11: begin
-				mul_out = 'bX;
-			end
+			3'b011: begin
+				ns = 3'b100;
+				in_top = tr_2;
+				in_bot = br_2;
+				end
+			3'b100: begin
+				ns = 3'b111;
+				in_top = tr_3;
+				in_bot = br_3;
+				end
+			3'b111: begin
+				if (out_v) begin
+					ns = 3'b000;
+				end else begin
+					nc = ct - 1;
+					ns = ps;
+				end
+				end
+			default: ns = 3'b000;
 		endcase
+
+	end
+			
+	always @(posedge clk) begin
+		ps <= ns;
+		ct <= nc;
+		
+		if(reset) begin
+			ps <= 3'b000;
+			ct <= 3;
+		end
 	end
 endmodule
-
