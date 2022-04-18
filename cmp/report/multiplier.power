@@ -1,0 +1,53 @@
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : multiplier
+Version: K-2015.06-SP5-5
+Date   : Mon Apr 18 12:27:20 2022
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 235.1660 uW   (83%)
+  Net Switching Power  =  48.8290 uW   (17%)
+                         ---------
+Total Dynamic Power    = 283.9950 uW  (100%)
+
+Cell Leakage Power     =  72.8343 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.1783        5.8478e-03        1.3030e+04            0.1972  (  55.26%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.6854e-02        4.2981e-02        5.9805e+04            0.1596  (  44.74%)
+--------------------------------------------------------------------------------------------------
+Total              0.2352 mW     4.8829e-02 mW     7.2834e+04 nW         0.3568 mW
+1

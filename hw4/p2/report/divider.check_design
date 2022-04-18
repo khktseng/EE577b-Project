@@ -1,0 +1,25 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Sun Apr 17 15:25:05 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               11
+    Unloaded nets (LINT-2)                                         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'divider', net 'out_v_32[1]' driven by pin 'genblk3[32].div_d/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_16[3]' driven by pin 'genblk2[48].div_d/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_16[2]' driven by pin 'genblk2[32].div_d/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_16[1]' driven by pin 'genblk2[16].div_d/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[7]' driven by pin 'genblk1[56].div_b/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[6]' driven by pin 'genblk1[48].div_b/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[5]' driven by pin 'genblk1[40].div_b/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[4]' driven by pin 'genblk1[32].div_b/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[3]' driven by pin 'genblk1[24].div_b/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[2]' driven by pin 'genblk1[16].div_b/complete' has no loads. (LINT-2)
+Warning: In design 'divider', net 'out_v_8[1]' driven by pin 'genblk1[8].div_b/complete' has no loads. (LINT-2)
+1

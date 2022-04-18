@@ -34,6 +34,8 @@ module cardinal_processor(
 	wire is_nic_op;
 	reg sel_nic_D, sel_nic_E;
 
+	wire stall;
+
 	// forwarding from wb to ex
 	wire fwdA_D, fwdB_D;
 	reg fwdA_E, fwdB_E;
@@ -45,12 +47,16 @@ module cardinal_processor(
 	wire [0:63] alu_out;
 	wire we;
 
+	wire alu_out_v;
+
+	wire [4:0] rD_out;
+
 	// Fetch
 	assign ins_addr = PC;
 
 	// Decode
-	assign fwdA_D = (rD_E == rA && we_E); // fwd a if ra = ex's rd and ex's rd is valid
-	assign fwdB_D = (rD_E == rB && we_E); // fwd b if rb is ex's rd and ex's rd is valid
+	assign fwdA_D = (rD_out == rA && alu_out_v); // fwd a if ra = ex's rd and ex's rd is valid
+	assign fwdB_D = (rD_out == rB && alu_out_v); // fwd b if rb is ex's rd and ex's rd is valid
 
 	assign rD = inst_D[6:10];
 	assign rA = inst_D[11:15];
@@ -75,11 +81,45 @@ module cardinal_processor(
 
 	// execute
 	wire [0:63] alu_opA, alu_opB;
+
 	assign alu_opA = fwdA_E ? wb : opA_E;
 	assign alu_opB = fwdB_E ? wb : opB_E;
 	assign we = we_E;
 
-	alu the_alu(alu_opA, alu_opB, alu_op, ww_E, alu_out);
+	wire [2:0] op_delay;
+	wire issue_ok;
+	wire rD_conflict;
+	alu_clk ALU(
+		.clk	(clk),
+		.reset	(reset),
+		.in_v	(issue_ok),
+		.op1	(alu_opA),
+		.op2	(alu_opB),
+		.opcode	(alu_op),
+		.ww	(ww_E),
+		.rD_addr(rD_E),
+		.alu_out(alu_out),
+		.out_v	(alu_out_v),
+		.mul_ready(mul_ready),
+		.add_ready(add_ready),
+		.op_delay(op_delay),
+		.rD_conflict(rD_conflict),
+		.rD_out(rD_out)
+		);
+
+	reg hdu_ins_v;
+	hdu HU(
+		.clk	(clk),
+		.reset	(reset),
+		.opcode	(alu_op),
+		.op_delay(op_delay),
+		.mul_ready(mul_ready),
+		.add_ready(add_ready),
+		.ins_v	(hdu_ins_v),
+		.stall	(stall),
+		.issue_ok(issue_ok),
+		.rD_conflict(rD_conflict)
+		);
 
 	always @(*) begin
 		// Default values 
@@ -136,6 +176,7 @@ module cardinal_processor(
 	end
 
 	always @(posedge clk) begin
+		if(~stall) begin	
 		PC <= next_PC;
 
 		// if branch is taken in ID, insert NOP into next slot
@@ -154,10 +195,12 @@ module cardinal_processor(
 		fwdA_E <= fwdA_D;
 		fwdB_E <= fwdB_D;
 		alu_op <= op;
+		hdu_ins_v <= ~is_imm_op;
 		
 		//if WE at execute, save value for forwarding to EX
 		if(we_E)
 			wb <= wd;
+		end
 
 		if (reset) begin
 			PC <= 'b0;
@@ -171,6 +214,7 @@ module cardinal_processor(
 			fwdA_E <= 'b0;
 			fwdB_E <= 'b0;
 			alu_op <= 'b0;
+			hdu_ins_v <= 'b0;
 		end
 	end
 endmodule

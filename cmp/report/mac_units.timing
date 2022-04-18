@@ -1,0 +1,149 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mac_units
+Version: K-2015.06-SP5-5
+Date   : Sun Apr 17 17:25:20 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: ww[1] (input port)
+  Endpoint: bo_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  ww[1] (in)                                              0.00       0.00 f
+  U82/Y (OR2X1)                                           0.07       0.07 f
+  U56/Y (AND2X1)                                          0.07       0.14 f
+  mb2/bi[0] (mac_byte_4)                                  0.00       0.14 f
+  mb2/add_1_root_add_27_2/A[0] (mac_byte_4_DW01_add_1)
+                                                          0.00       0.14 f
+  mb2/add_1_root_add_27_2/U1_0/YC (FAX1)                  0.09       0.23 f
+  mb2/add_1_root_add_27_2/U1_1/YC (FAX1)                  0.08       0.31 f
+  mb2/add_1_root_add_27_2/U1_2/YC (FAX1)                  0.08       0.39 f
+  mb2/add_1_root_add_27_2/U1_3/YC (FAX1)                  0.08       0.47 f
+  mb2/add_1_root_add_27_2/U1_4/YC (FAX1)                  0.08       0.56 f
+  mb2/add_1_root_add_27_2/U1_5/YC (FAX1)                  0.08       0.64 f
+  mb2/add_1_root_add_27_2/U1_6/YC (FAX1)                  0.08       0.72 f
+  mb2/add_1_root_add_27_2/U1_7/YC (FAX1)                  0.08       0.80 f
+  mb2/add_1_root_add_27_2/U1_8/YS (FAX1)                  0.09       0.89 f
+  mb2/add_1_root_add_27_2/SUM[8] (mac_byte_4_DW01_add_1)
+                                                          0.00       0.89 f
+  mb2/cob (mac_byte_4)                                    0.00       0.89 f
+  mb3/cib (mac_byte_3)                                    0.00       0.89 f
+  mb3/add_1_root_add_27_2/CI (mac_byte_3_DW01_add_1)      0.00       0.89 f
+  mb3/add_1_root_add_27_2/U1_0/YC (FAX1)                  0.08       0.97 f
+  mb3/add_1_root_add_27_2/U1_1/YC (FAX1)                  0.08       1.05 f
+  mb3/add_1_root_add_27_2/U1_2/YC (FAX1)                  0.08       1.13 f
+  mb3/add_1_root_add_27_2/U1_3/YC (FAX1)                  0.08       1.21 f
+  mb3/add_1_root_add_27_2/U1_4/YC (FAX1)                  0.08       1.29 f
+  mb3/add_1_root_add_27_2/U1_5/YC (FAX1)                  0.08       1.38 f
+  mb3/add_1_root_add_27_2/U1_6/YC (FAX1)                  0.08       1.46 f
+  mb3/add_1_root_add_27_2/U1_7/YC (FAX1)                  0.07       1.53 f
+  mb3/add_1_root_add_27_2/SUM[8] (mac_byte_3_DW01_add_1)
+                                                          0.00       1.53 f
+  mb3/cob (mac_byte_3)                                    0.00       1.53 f
+  U65/Y (AND2X1)                                          0.04       1.57 f
+  mb4/cib (mac_byte_2)                                    0.00       1.57 f
+  mb4/add_1_root_add_27_2/CI (mac_byte_2_DW01_add_1)      0.00       1.57 f
+  mb4/add_1_root_add_27_2/U1_0/YC (FAX1)                  0.08       1.65 f
+  mb4/add_1_root_add_27_2/U1_1/YC (FAX1)                  0.08       1.73 f
+  mb4/add_1_root_add_27_2/U1_2/YC (FAX1)                  0.08       1.82 f
+  mb4/add_1_root_add_27_2/U1_3/YC (FAX1)                  0.08       1.90 f
+  mb4/add_1_root_add_27_2/U1_4/YC (FAX1)                  0.08       1.98 f
+  mb4/add_1_root_add_27_2/U1_5/YC (FAX1)                  0.08       2.06 f
+  mb4/add_1_root_add_27_2/U1_6/YC (FAX1)                  0.08       2.14 f
+  mb4/add_1_root_add_27_2/U1_7/YC (FAX1)                  0.08       2.22 f
+  mb4/add_1_root_add_27_2/U1_8/YS (FAX1)                  0.09       2.31 f
+  mb4/add_1_root_add_27_2/SUM[8] (mac_byte_2_DW01_add_1)
+                                                          0.00       2.31 f
+  mb4/cob (mac_byte_2)                                    0.00       2.31 f
+  mb5/cib (mac_byte_1)                                    0.00       2.31 f
+  mb5/add_1_root_add_27_2/CI (mac_byte_1_DW01_add_1)      0.00       2.31 f
+  mb5/add_1_root_add_27_2/U1_0/YC (FAX1)                  0.08       2.39 f
+  mb5/add_1_root_add_27_2/U1_1/YC (FAX1)                  0.08       2.47 f
+  mb5/add_1_root_add_27_2/U1_2/YC (FAX1)                  0.08       2.55 f
+  mb5/add_1_root_add_27_2/U1_3/YC (FAX1)                  0.08       2.64 f
+  mb5/add_1_root_add_27_2/U1_4/YC (FAX1)                  0.08       2.72 f
+  mb5/add_1_root_add_27_2/U1_5/YC (FAX1)                  0.08       2.80 f
+  mb5/add_1_root_add_27_2/U1_6/YC (FAX1)                  0.08       2.88 f
+  mb5/add_1_root_add_27_2/U1_7/YC (FAX1)                  0.07       2.95 f
+  mb5/add_1_root_add_27_2/SUM[8] (mac_byte_1_DW01_add_1)
+                                                          0.00       2.95 f
+  mb5/cob (mac_byte_1)                                    0.00       2.95 f
+  U74/Y (AND2X1)                                          0.04       2.99 f
+  mb6/cib (mac_byte_0)                                    0.00       2.99 f
+  mb6/add_1_root_add_27_2/CI (mac_byte_0_DW01_add_1)      0.00       2.99 f
+  mb6/add_1_root_add_27_2/U1_0/YC (FAX1)                  0.08       3.07 f
+  mb6/add_1_root_add_27_2/U1_1/YC (FAX1)                  0.08       3.16 f
+  mb6/add_1_root_add_27_2/U1_2/YC (FAX1)                  0.08       3.24 f
+  mb6/add_1_root_add_27_2/U1_3/YC (FAX1)                  0.08       3.32 f
+  mb6/add_1_root_add_27_2/U1_4/YC (FAX1)                  0.08       3.40 f
+  mb6/add_1_root_add_27_2/U1_5/YC (FAX1)                  0.08       3.48 f
+  mb6/add_1_root_add_27_2/U1_6/YC (FAX1)                  0.08       3.56 f
+  mb6/add_1_root_add_27_2/U1_7/YC (FAX1)                  0.08       3.65 f
+  mb6/add_1_root_add_27_2/U1_8/YS (FAX1)                  0.09       3.73 f
+  mb6/add_1_root_add_27_2/SUM[8] (mac_byte_0_DW01_add_1)
+                                                          0.00       3.73 f
+  mb6/cob (mac_byte_0)                                    0.00       3.73 f
+  add_1_root_add_1_root_add_152_3/CI (mac_units_DW01_add_1)
+                                                          0.00       3.73 f
+  add_1_root_add_1_root_add_152_3/U1_0/YC (FAX1)          0.08       3.81 f
+  add_1_root_add_1_root_add_152_3/U1_1/YC (FAX1)          0.08       3.90 f
+  add_1_root_add_1_root_add_152_3/U1_2/YC (FAX1)          0.08       3.98 f
+  add_1_root_add_1_root_add_152_3/U1_3/YC (FAX1)          0.08       4.06 f
+  add_1_root_add_1_root_add_152_3/U1_4/YC (FAX1)          0.08       4.14 f
+  add_1_root_add_1_root_add_152_3/U1_5/YC (FAX1)          0.08       4.22 f
+  add_1_root_add_1_root_add_152_3/U1_6/YC (FAX1)          0.08       4.30 f
+  add_1_root_add_1_root_add_152_3/U1_7/YS (FAX1)          0.08       4.39 f
+  add_1_root_add_1_root_add_152_3/SUM[7] (mac_units_DW01_add_1)
+                                                          0.00       4.39 f
+  U89/Y (XOR2X1)                                          0.03       4.42 f
+  U85/Y (AND2X1)                                          0.03       4.45 f
+  bo_reg[7]/D (DFFPOSX1)                                  0.00       4.45 f
+  data arrival time                                                  4.45
+
+  max_delay                                               5.00       5.00
+  library setup time                                     -0.06       4.94
+  data required time                                                 4.94
+  --------------------------------------------------------------------------
+  data required time                                                 4.94
+  data arrival time                                                 -4.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: mb0/accum_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: accum[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  mb0/accum_reg[0]/CLK (DFFPOSX1)          0.00       0.00 r
+  mb0/accum_reg[0]/Q (DFFPOSX1)            0.11       0.11 f
+  mb0/accum[0] (mac_byte_6)                0.00       0.11 f
+  accum[0] (out)                           0.00       0.11 f
+  data arrival time                                   0.11
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -0.11
+  -----------------------------------------------------------
+  slack (MET)                                         4.89
+
+
+1

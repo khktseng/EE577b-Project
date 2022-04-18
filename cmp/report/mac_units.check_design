@@ -1,0 +1,45 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Sun Apr 17 17:25:15 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              15
+    Connected to power or ground (LINT-32)                         14
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mult_en' is connected to logic 1. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cib' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cia' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[7]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[6]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[5]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[4]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[3]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[2]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[1]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bi[0]' is connected to logic 0. 
+Warning: In design 'mac_units', a pin on submodule 'mb2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mult_en' is connected to logic 1. 
+Warning: In design 'mac_units', a pin on submodule 'mb4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mult_en' is connected to logic 1. 
+Warning: In design 'mac_units', a pin on submodule 'mb6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mult_en' is connected to logic 1. 
+Warning: In design 'mac_units', the same net is connected to more than one pin on submodule 'mb0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'cib', 'cia'', 'bi[7]', 'bi[6]', 'bi[5]', 'bi[4]', 'bi[3]', 'bi[2]', 'bi[1]', 'bi[0]'.
+1

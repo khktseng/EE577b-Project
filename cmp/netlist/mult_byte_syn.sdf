@@ -1,0 +1,4549 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "mult_byte")
+(DATE "Sun Apr 17 17:20:03 2022")
+(VENDOR "gscl45nm")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "K-2015.06-SP5-5")
+(DIVIDER /)
+(VOLTAGE 1.10:1.10:1.10)
+(PROCESS "typical")
+(TEMPERATURE 27.00:27.00:27.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "mult_byte")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT ba[0] U30/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U30/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] U29/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U29/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] U28/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U28/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] U27/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U27/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] U26/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U26/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] U25/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U25/B (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] U24/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U24/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] U23/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U23/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] U22/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U22/B (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] U21/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U21/B (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] U20/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U20/B (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] U19/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U19/B (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] U18/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U18/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U17/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[7] U17/B (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] U16/A (0.000:0.000:0.000))
+    (INTERCONNECT bb[0] U16/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_6__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U3/Y genblk3_6__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U1/Y genblk3_6__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U28/Y genblk3_6__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/U1/Y genblk3_6__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U28/Y genblk3_6__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/U1/Y genblk3_6__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U5/Y genblk3_6__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U6/Y genblk3_6__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U4/Y genblk3_6__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U6/Y genblk3_6__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U5/Y genblk3_6__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_6__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U3/Y genblk3_6__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U1/Y genblk3_6__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U27/Y genblk3_6__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/U1/Y genblk3_6__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U27/Y genblk3_6__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/U1/Y genblk3_6__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U5/Y genblk3_6__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U6/Y genblk3_6__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U4/Y genblk3_6__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U6/Y genblk3_6__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U5/Y genblk3_6__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_6__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U3/Y genblk3_6__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U1/Y genblk3_6__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y genblk3_6__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/U1/Y genblk3_6__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U26/Y genblk3_6__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/U1/Y genblk3_6__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U5/Y genblk3_6__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U6/Y genblk3_6__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U4/Y genblk3_6__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U6/Y genblk3_6__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U5/Y genblk3_6__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_6__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U3/Y genblk3_6__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U1/Y genblk3_6__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U25/Y genblk3_6__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/U1/Y genblk3_6__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U25/Y genblk3_6__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/U1/Y genblk3_6__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U5/Y genblk3_6__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U6/Y genblk3_6__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U4/Y genblk3_6__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U6/Y genblk3_6__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U5/Y genblk3_6__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_6__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U3/Y genblk3_6__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U1/Y genblk3_6__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U23/Y genblk3_6__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/U1/Y genblk3_6__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U23/Y genblk3_6__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/U1/Y genblk3_6__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U5/Y genblk3_6__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U6/Y genblk3_6__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U4/Y genblk3_6__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U6/Y genblk3_6__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U5/Y genblk3_6__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_6__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_1__genblk1_hb/h/U1/Y genblk3_6__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U1/Y genblk3_6__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U22/Y genblk3_6__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/U1/Y genblk3_6__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U22/Y genblk3_6__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/U1/Y genblk3_6__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U5/Y genblk3_6__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U6/Y genblk3_6__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U4/Y genblk3_6__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U6/Y genblk3_6__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U5/Y genblk3_6__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_6__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[6] genblk3_6__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U17/Y genblk3_6__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_1__genblk1_hb/U1/Y genblk3_6__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_1__genblk1_hb/U1/Y genblk3_6__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U17/Y genblk3_6__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_5__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U3/Y genblk3_5__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U1/Y genblk3_5__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U2/Y genblk3_5__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/U1/Y genblk3_5__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_6__genblk1_fb/f/U2/Y genblk3_5__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/U1/Y genblk3_5__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U5/Y genblk3_5__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U6/Y genblk3_5__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U4/Y genblk3_5__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U6/Y genblk3_5__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U5/Y genblk3_5__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_5__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U3/Y genblk3_5__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U1/Y genblk3_5__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U2/Y genblk3_5__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/U1/Y genblk3_5__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_5__genblk1_fb/f/U2/Y genblk3_5__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/U1/Y genblk3_5__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U5/Y genblk3_5__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U6/Y genblk3_5__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U4/Y genblk3_5__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U6/Y genblk3_5__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U5/Y genblk3_5__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_5__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U3/Y genblk3_5__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U1/Y genblk3_5__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U2/Y genblk3_5__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/U1/Y genblk3_5__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_4__genblk1_fb/f/U2/Y genblk3_5__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/U1/Y genblk3_5__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U5/Y genblk3_5__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U6/Y genblk3_5__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U4/Y genblk3_5__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U6/Y genblk3_5__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U5/Y genblk3_5__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_5__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U3/Y genblk3_5__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U1/Y genblk3_5__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U2/Y genblk3_5__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/U1/Y genblk3_5__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_3__genblk1_fb/f/U2/Y genblk3_5__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/U1/Y genblk3_5__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U5/Y genblk3_5__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U6/Y genblk3_5__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U4/Y genblk3_5__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U6/Y genblk3_5__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U5/Y genblk3_5__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_5__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U3/Y genblk3_5__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U1/Y genblk3_5__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U2/Y genblk3_5__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/U1/Y genblk3_5__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_2__genblk1_fb/f/U2/Y genblk3_5__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/U1/Y genblk3_5__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U5/Y genblk3_5__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U6/Y genblk3_5__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U4/Y genblk3_5__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U6/Y genblk3_5__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U5/Y genblk3_5__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_5__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_1__genblk1_hb/h/U1/Y genblk3_5__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U1/Y genblk3_5__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_1__genblk1_hb/h/U2/Y genblk3_5__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/U1/Y genblk3_5__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_1__genblk1_hb/h/U2/Y genblk3_5__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/U1/Y genblk3_5__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U5/Y genblk3_5__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U6/Y genblk3_5__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U4/Y genblk3_5__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U6/Y genblk3_5__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U5/Y genblk3_5__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_5__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[5] genblk3_5__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U18/Y genblk3_5__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_1__genblk1_hb/U1/Y genblk3_5__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_1__genblk1_hb/U1/Y genblk3_5__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U18/Y genblk3_5__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_4__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U3/Y genblk3_4__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U1/Y genblk3_4__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U2/Y genblk3_4__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/U1/Y genblk3_4__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_6__genblk1_fb/f/U2/Y genblk3_4__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/U1/Y genblk3_4__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U5/Y genblk3_4__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U6/Y genblk3_4__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U4/Y genblk3_4__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U6/Y genblk3_4__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U5/Y genblk3_4__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_4__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U3/Y genblk3_4__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U1/Y genblk3_4__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U2/Y genblk3_4__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/U1/Y genblk3_4__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_5__genblk1_fb/f/U2/Y genblk3_4__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/U1/Y genblk3_4__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U5/Y genblk3_4__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U6/Y genblk3_4__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U4/Y genblk3_4__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U6/Y genblk3_4__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U5/Y genblk3_4__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_4__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U3/Y genblk3_4__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U1/Y genblk3_4__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U2/Y genblk3_4__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/U1/Y genblk3_4__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_4__genblk1_fb/f/U2/Y genblk3_4__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/U1/Y genblk3_4__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U5/Y genblk3_4__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U6/Y genblk3_4__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U4/Y genblk3_4__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U6/Y genblk3_4__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U5/Y genblk3_4__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_4__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U3/Y genblk3_4__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U1/Y genblk3_4__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U2/Y genblk3_4__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/U1/Y genblk3_4__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_3__genblk1_fb/f/U2/Y genblk3_4__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/U1/Y genblk3_4__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U5/Y genblk3_4__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U6/Y genblk3_4__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U4/Y genblk3_4__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U6/Y genblk3_4__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U5/Y genblk3_4__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_4__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U3/Y genblk3_4__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U1/Y genblk3_4__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U2/Y genblk3_4__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/U1/Y genblk3_4__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_2__genblk1_fb/f/U2/Y genblk3_4__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/U1/Y genblk3_4__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U5/Y genblk3_4__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U6/Y genblk3_4__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U4/Y genblk3_4__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U6/Y genblk3_4__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U5/Y genblk3_4__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_4__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_1__genblk1_hb/h/U1/Y genblk3_4__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U1/Y genblk3_4__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_1__genblk1_hb/h/U2/Y genblk3_4__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/U1/Y genblk3_4__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_1__genblk1_hb/h/U2/Y genblk3_4__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/U1/Y genblk3_4__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U5/Y genblk3_4__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U6/Y genblk3_4__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U4/Y genblk3_4__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U6/Y genblk3_4__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U5/Y genblk3_4__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_4__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[4] genblk3_4__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U19/Y genblk3_4__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_1__genblk1_hb/U1/Y genblk3_4__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_1__genblk1_hb/U1/Y genblk3_4__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U19/Y genblk3_4__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_3__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U3/Y genblk3_3__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U1/Y genblk3_3__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U2/Y genblk3_3__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/U1/Y genblk3_3__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_6__genblk1_fb/f/U2/Y genblk3_3__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/U1/Y genblk3_3__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U5/Y genblk3_3__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U6/Y genblk3_3__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U4/Y genblk3_3__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U6/Y genblk3_3__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U5/Y genblk3_3__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_3__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U3/Y genblk3_3__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U1/Y genblk3_3__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U2/Y genblk3_3__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/U1/Y genblk3_3__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_5__genblk1_fb/f/U2/Y genblk3_3__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/U1/Y genblk3_3__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U5/Y genblk3_3__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U6/Y genblk3_3__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U4/Y genblk3_3__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U6/Y genblk3_3__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U5/Y genblk3_3__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_3__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U3/Y genblk3_3__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U1/Y genblk3_3__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U2/Y genblk3_3__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/U1/Y genblk3_3__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_4__genblk1_fb/f/U2/Y genblk3_3__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/U1/Y genblk3_3__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U5/Y genblk3_3__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U6/Y genblk3_3__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U4/Y genblk3_3__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U6/Y genblk3_3__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U5/Y genblk3_3__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_3__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U3/Y genblk3_3__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U1/Y genblk3_3__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U2/Y genblk3_3__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/U1/Y genblk3_3__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_3__genblk1_fb/f/U2/Y genblk3_3__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/U1/Y genblk3_3__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U5/Y genblk3_3__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U6/Y genblk3_3__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U4/Y genblk3_3__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U6/Y genblk3_3__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U5/Y genblk3_3__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_3__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U3/Y genblk3_3__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U1/Y genblk3_3__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U2/Y genblk3_3__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/U1/Y genblk3_3__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_2__genblk1_fb/f/U2/Y genblk3_3__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/U1/Y genblk3_3__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U5/Y genblk3_3__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U6/Y genblk3_3__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U4/Y genblk3_3__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U6/Y genblk3_3__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U5/Y genblk3_3__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_3__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_1__genblk1_hb/h/U1/Y genblk3_3__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U1/Y genblk3_3__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_1__genblk1_hb/h/U2/Y genblk3_3__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/U1/Y genblk3_3__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_1__genblk1_hb/h/U2/Y genblk3_3__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/U1/Y genblk3_3__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U5/Y genblk3_3__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U6/Y genblk3_3__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U4/Y genblk3_3__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U6/Y genblk3_3__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U5/Y genblk3_3__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_3__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[3] genblk3_3__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U20/Y genblk3_3__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_1__genblk1_hb/U1/Y genblk3_3__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_1__genblk1_hb/U1/Y genblk3_3__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U20/Y genblk3_3__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_2__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U3/Y genblk3_2__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U1/Y genblk3_2__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U2/Y genblk3_2__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/U1/Y genblk3_2__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_6__genblk1_fb/f/U2/Y genblk3_2__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/U1/Y genblk3_2__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U5/Y genblk3_2__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U6/Y genblk3_2__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U4/Y genblk3_2__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U6/Y genblk3_2__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U5/Y genblk3_2__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_2__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U3/Y genblk3_2__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U1/Y genblk3_2__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U2/Y genblk3_2__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/U1/Y genblk3_2__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_5__genblk1_fb/f/U2/Y genblk3_2__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/U1/Y genblk3_2__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U5/Y genblk3_2__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U6/Y genblk3_2__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U4/Y genblk3_2__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U6/Y genblk3_2__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U5/Y genblk3_2__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_2__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U3/Y genblk3_2__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U1/Y genblk3_2__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U2/Y genblk3_2__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/U1/Y genblk3_2__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_4__genblk1_fb/f/U2/Y genblk3_2__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/U1/Y genblk3_2__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U5/Y genblk3_2__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U6/Y genblk3_2__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U4/Y genblk3_2__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U6/Y genblk3_2__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U5/Y genblk3_2__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_2__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U3/Y genblk3_2__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U1/Y genblk3_2__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U2/Y genblk3_2__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/U1/Y genblk3_2__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_3__genblk1_fb/f/U2/Y genblk3_2__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/U1/Y genblk3_2__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U5/Y genblk3_2__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U6/Y genblk3_2__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U4/Y genblk3_2__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U6/Y genblk3_2__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U5/Y genblk3_2__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_2__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U3/Y genblk3_2__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U1/Y genblk3_2__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U2/Y genblk3_2__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/U1/Y genblk3_2__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_2__genblk1_fb/f/U2/Y genblk3_2__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/U1/Y genblk3_2__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U5/Y genblk3_2__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U6/Y genblk3_2__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U4/Y genblk3_2__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U6/Y genblk3_2__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U5/Y genblk3_2__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_2__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_1__genblk1_hb/h/U1/Y genblk3_2__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U1/Y genblk3_2__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_1__genblk1_hb/h/U2/Y genblk3_2__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/U1/Y genblk3_2__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_1__genblk1_hb/h/U2/Y genblk3_2__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/U1/Y genblk3_2__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U5/Y genblk3_2__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U6/Y genblk3_2__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U4/Y genblk3_2__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U6/Y genblk3_2__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U5/Y genblk3_2__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_2__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[2] genblk3_2__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U21/Y genblk3_2__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_1__genblk1_hb/U1/Y genblk3_2__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_1__genblk1_hb/U1/Y genblk3_2__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U21/Y genblk3_2__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_1__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U3/Y genblk3_1__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U1/Y genblk3_1__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U2/Y genblk3_1__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/U1/Y genblk3_1__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_6__genblk1_fb/f/U2/Y genblk3_1__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/U1/Y genblk3_1__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U5/Y genblk3_1__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U6/Y genblk3_1__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U4/Y genblk3_1__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U6/Y genblk3_1__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U5/Y genblk3_1__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_1__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U3/Y genblk3_1__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U1/Y genblk3_1__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U2/Y genblk3_1__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/U1/Y genblk3_1__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_5__genblk1_fb/f/U2/Y genblk3_1__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/U1/Y genblk3_1__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U5/Y genblk3_1__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U6/Y genblk3_1__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U4/Y genblk3_1__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U6/Y genblk3_1__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U5/Y genblk3_1__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_1__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U3/Y genblk3_1__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U1/Y genblk3_1__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U2/Y genblk3_1__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/U1/Y genblk3_1__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_4__genblk1_fb/f/U2/Y genblk3_1__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/U1/Y genblk3_1__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U5/Y genblk3_1__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U6/Y genblk3_1__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U4/Y genblk3_1__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U6/Y genblk3_1__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U5/Y genblk3_1__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_1__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U3/Y genblk3_1__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U1/Y genblk3_1__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U2/Y genblk3_1__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/U1/Y genblk3_1__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_3__genblk1_fb/f/U2/Y genblk3_1__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/U1/Y genblk3_1__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U5/Y genblk3_1__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U6/Y genblk3_1__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U4/Y genblk3_1__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U6/Y genblk3_1__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U5/Y genblk3_1__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_1__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U3/Y genblk3_1__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U1/Y genblk3_1__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U2/Y genblk3_1__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/U1/Y genblk3_1__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_2__genblk1_fb/f/U2/Y genblk3_1__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/U1/Y genblk3_1__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U5/Y genblk3_1__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U6/Y genblk3_1__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U4/Y genblk3_1__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U6/Y genblk3_1__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U5/Y genblk3_1__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_1__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_1__genblk1_hb/h/U1/Y genblk3_1__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U1/Y genblk3_1__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_1__genblk1_hb/h/U2/Y genblk3_1__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/U1/Y genblk3_1__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_1__genblk1_hb/h/U2/Y genblk3_1__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/U1/Y genblk3_1__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U5/Y genblk3_1__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U6/Y genblk3_1__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U4/Y genblk3_1__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U6/Y genblk3_1__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U5/Y genblk3_1__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_1__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[1] genblk3_1__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U16/Y genblk3_1__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_1__genblk1_hb/U1/Y genblk3_1__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_1__genblk1_hb/U1/Y genblk3_1__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U16/Y genblk3_1__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[7] genblk3_0__genblk1_7__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_7__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U3/Y genblk3_0__genblk1_7__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U1/Y genblk3_0__genblk1_7__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U2/Y genblk3_0__genblk1_7__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/U1/Y genblk3_0__genblk1_7__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_6__genblk1_fb/f/U2/Y genblk3_0__genblk1_7__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/U1/Y genblk3_0__genblk1_7__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U5/Y genblk3_0__genblk1_7__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U6/Y genblk3_0__genblk1_7__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U4/Y genblk3_0__genblk1_7__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U6/Y genblk3_0__genblk1_7__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U5/Y genblk3_0__genblk1_7__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[6] genblk3_0__genblk1_6__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_6__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U3/Y genblk3_0__genblk1_6__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U1/Y genblk3_0__genblk1_6__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U2/Y genblk3_0__genblk1_6__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/U1/Y genblk3_0__genblk1_6__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_5__genblk1_fb/f/U2/Y genblk3_0__genblk1_6__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/U1/Y genblk3_0__genblk1_6__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U5/Y genblk3_0__genblk1_6__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U6/Y genblk3_0__genblk1_6__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U4/Y genblk3_0__genblk1_6__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U6/Y genblk3_0__genblk1_6__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_6__genblk1_fb/f/U5/Y genblk3_0__genblk1_6__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[5] genblk3_0__genblk1_5__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_5__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U3/Y genblk3_0__genblk1_5__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U1/Y genblk3_0__genblk1_5__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U2/Y genblk3_0__genblk1_5__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/U1/Y genblk3_0__genblk1_5__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_4__genblk1_fb/f/U2/Y genblk3_0__genblk1_5__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/U1/Y genblk3_0__genblk1_5__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U5/Y genblk3_0__genblk1_5__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U6/Y genblk3_0__genblk1_5__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U4/Y genblk3_0__genblk1_5__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U6/Y genblk3_0__genblk1_5__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_5__genblk1_fb/f/U5/Y genblk3_0__genblk1_5__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[4] genblk3_0__genblk1_4__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_4__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U3/Y genblk3_0__genblk1_4__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U1/Y genblk3_0__genblk1_4__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U2/Y genblk3_0__genblk1_4__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/U1/Y genblk3_0__genblk1_4__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_3__genblk1_fb/f/U2/Y genblk3_0__genblk1_4__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/U1/Y genblk3_0__genblk1_4__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U5/Y genblk3_0__genblk1_4__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U6/Y genblk3_0__genblk1_4__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U4/Y genblk3_0__genblk1_4__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U6/Y genblk3_0__genblk1_4__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_4__genblk1_fb/f/U5/Y genblk3_0__genblk1_4__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[3] genblk3_0__genblk1_3__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_3__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U3/Y genblk3_0__genblk1_3__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U1/Y genblk3_0__genblk1_3__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U2/Y genblk3_0__genblk1_3__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/U1/Y genblk3_0__genblk1_3__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_2__genblk1_fb/f/U2/Y genblk3_0__genblk1_3__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/U1/Y genblk3_0__genblk1_3__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U5/Y genblk3_0__genblk1_3__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U6/Y genblk3_0__genblk1_3__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U4/Y genblk3_0__genblk1_3__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U6/Y genblk3_0__genblk1_3__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_3__genblk1_fb/f/U5/Y genblk3_0__genblk1_3__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[2] genblk3_0__genblk1_2__genblk1_fb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_2__genblk1_fb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_1__genblk1_hb/h/U1/Y genblk3_0__genblk1_2__genblk1_fb/f/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U1/Y genblk3_0__genblk1_2__genblk1_fb/f/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_1__genblk1_hb/h/U2/Y genblk3_0__genblk1_2__genblk1_fb/f/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/U1/Y genblk3_0__genblk1_2__genblk1_fb/f/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_1__genblk1_hb/h/U2/Y genblk3_0__genblk1_2__genblk1_fb/f/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/U1/Y genblk3_0__genblk1_2__genblk1_fb/f/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U5/Y genblk3_0__genblk1_2__genblk1_fb/f/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U6/Y genblk3_0__genblk1_2__genblk1_fb/f/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U4/Y genblk3_0__genblk1_2__genblk1_fb/f/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U6/Y genblk3_0__genblk1_2__genblk1_fb/f/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_2__genblk1_fb/f/U5/Y genblk3_0__genblk1_2__genblk1_fb/f/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT bb[1] genblk3_0__genblk1_1__genblk1_hb/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT ba[0] genblk3_0__genblk1_1__genblk1_hb/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U24/Y genblk3_0__genblk1_1__genblk1_hb/h/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_1__genblk1_hb/U1/Y genblk3_0__genblk1_1__genblk1_hb/h/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_1__genblk1_hb/U1/Y genblk3_0__genblk1_1__genblk1_hb/h/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT U24/Y genblk3_0__genblk1_1__genblk1_hb/h/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U3/Y genblk2_6__full/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_6__full/U1/Y genblk2_6__full/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U29/Y genblk2_6__full/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U3/Y genblk2_6__full/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT U29/Y genblk2_6__full/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U3/Y genblk2_6__full/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_6__full/U5/Y genblk2_6__full/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_6__full/U6/Y genblk2_6__full/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_6__full/U4/Y genblk2_6__full/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_6__full/U6/Y genblk2_6__full/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_6__full/U5/Y genblk2_6__full/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U3/Y genblk2_5__full/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U1/Y genblk2_5__full/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U2/Y genblk2_5__full/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U3/Y genblk2_5__full/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_6__genblk1_7__genblk1_fb/f/U2/Y genblk2_5__full/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U3/Y genblk2_5__full/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U5/Y genblk2_5__full/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U6/Y genblk2_5__full/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U4/Y genblk2_5__full/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U6/Y genblk2_5__full/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_5__full/U5/Y genblk2_5__full/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U3/Y genblk2_4__full/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U1/Y genblk2_4__full/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U2/Y genblk2_4__full/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U3/Y genblk2_4__full/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_5__genblk1_7__genblk1_fb/f/U2/Y genblk2_4__full/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U3/Y genblk2_4__full/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U5/Y genblk2_4__full/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U6/Y genblk2_4__full/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U4/Y genblk2_4__full/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U6/Y genblk2_4__full/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_4__full/U5/Y genblk2_4__full/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U3/Y genblk2_3__full/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U1/Y genblk2_3__full/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U2/Y genblk2_3__full/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U3/Y genblk2_3__full/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_4__genblk1_7__genblk1_fb/f/U2/Y genblk2_3__full/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U3/Y genblk2_3__full/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U5/Y genblk2_3__full/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U6/Y genblk2_3__full/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U4/Y genblk2_3__full/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U6/Y genblk2_3__full/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_3__full/U5/Y genblk2_3__full/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U3/Y genblk2_2__full/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U1/Y genblk2_2__full/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U2/Y genblk2_2__full/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U3/Y genblk2_2__full/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_3__genblk1_7__genblk1_fb/f/U2/Y genblk2_2__full/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U3/Y genblk2_2__full/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U5/Y genblk2_2__full/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U6/Y genblk2_2__full/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U4/Y genblk2_2__full/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U6/Y genblk2_2__full/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_2__full/U5/Y genblk2_2__full/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT half/U1/Y genblk2_1__full/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U1/Y genblk2_1__full/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U2/Y genblk2_1__full/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U3/Y genblk2_1__full/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_2__genblk1_7__genblk1_fb/f/U2/Y genblk2_1__full/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U3/Y genblk2_1__full/U5/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U5/Y genblk2_1__full/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U6/Y genblk2_1__full/U3/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U4/Y genblk2_1__full/U3/C (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U6/Y genblk2_1__full/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk2_1__full/U5/Y genblk2_1__full/U2/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U2/Y half/U1/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U3/Y half/U1/B (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_0__genblk1_7__genblk1_fb/f/U3/Y half/U2/A (0.000:0.000:0.000))
+    (INTERCONNECT genblk3_1__genblk1_7__genblk1_fb/f/U2/Y half/U2/B (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U30)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.024:0.024:0.024) (0.026:0.026:0.026))
+    (IOPATH B Y (0.037:0.037:0.037) (0.038:0.038:0.038))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U29)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U28)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U27)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U26)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U25)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U24)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U23)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U22)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.046:0.046:0.046) (0.039:0.039:0.039))
+    (IOPATH B Y (0.059:0.059:0.059) (0.051:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U21)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U20)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U19)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U18)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U17)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE U16)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.049:0.049:0.049) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.064:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.062:0.062:0.062) (0.023:0.023:0.023))
+    (IOPATH C Y (0.037:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_6__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_6__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.054:0.056:0.056) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.051:0.052:0.052) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.069:0.070:0.070) (0.043:0.045:0.045))
+    (IOPATH (negedge B) Y (0.066:0.067:0.067) (0.039:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.064:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.062:0.062:0.062) (0.023:0.023:0.023))
+    (IOPATH C Y (0.037:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.046:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_5__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_5__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.054:0.056:0.056) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.051:0.052:0.052) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.069:0.070:0.070) (0.043:0.045:0.045))
+    (IOPATH (negedge B) Y (0.066:0.067:0.067) (0.039:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.064:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.062:0.062:0.062) (0.023:0.023:0.023))
+    (IOPATH C Y (0.037:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.046:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_4__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_4__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.054:0.056:0.056) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.051:0.052:0.052) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.069:0.070:0.070) (0.043:0.045:0.045))
+    (IOPATH (negedge B) Y (0.066:0.067:0.067) (0.039:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.064:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.062:0.062:0.062) (0.023:0.023:0.023))
+    (IOPATH C Y (0.037:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.046:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_3__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_3__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.054:0.056:0.056) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.051:0.052:0.052) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.069:0.070:0.070) (0.043:0.045:0.045))
+    (IOPATH (negedge B) Y (0.066:0.067:0.067) (0.039:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.064:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.062:0.062:0.062) (0.023:0.023:0.023))
+    (IOPATH C Y (0.037:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.046:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_2__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_2__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.054:0.056:0.056) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.051:0.052:0.052) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.069:0.070:0.070) (0.043:0.045:0.045))
+    (IOPATH (negedge B) Y (0.066:0.067:0.067) (0.039:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.064:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.062:0.062:0.062) (0.023:0.023:0.023))
+    (IOPATH C Y (0.037:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.051:0.051:0.051) (0.036:0.036:0.036))
+    (IOPATH (negedge A) Y (0.054:0.054:0.054) (0.039:0.039:0.039))
+    (IOPATH (posedge B) Y (0.073:0.073:0.073) (0.046:0.047:0.047))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.041:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.046:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.049:0.049:0.049) (0.035:0.035:0.035))
+    (IOPATH (negedge A) Y (0.052:0.051:0.051) (0.039:0.038:0.038))
+    (IOPATH (posedge B) Y (0.070:0.071:0.071) (0.045:0.046:0.046))
+    (IOPATH (negedge B) Y (0.067:0.068:0.068) (0.040:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_1__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_1__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.054:0.056:0.056) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.051:0.052:0.052) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.069:0.070:0.070) (0.043:0.045:0.045))
+    (IOPATH (negedge B) Y (0.066:0.067:0.067) (0.039:0.041:0.041))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.063:0.065:0.065) (0.036:0.038:0.038))
+    (IOPATH B Y (0.061:0.061:0.061) (0.023:0.023:0.023))
+    (IOPATH C Y (0.036:0.036:0.036) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_7__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_6__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_5__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_4__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_3__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.061:0.061:0.061) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/f/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/f/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/f/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/f/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.046:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.074:0.074) (0.045:0.047:0.047))
+    (IOPATH (negedge B) Y (0.070:0.071:0.071) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/f/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_2__genblk1_fb/f/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_1__genblk1_hb/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.048:0.048) (0.040:0.040:0.040))
+    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk3_0__genblk1_1__genblk1_hb/h/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.038:0.037:0.037) (0.043:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk3_0__genblk1_1__genblk1_hb/h/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.030:0.032:0.032) (0.030:0.033:0.033))
+    (IOPATH (negedge A) Y (0.027:0.028:0.028) (0.026:0.028:0.028))
+    (IOPATH (posedge B) Y (0.045:0.047:0.047) (0.031:0.034:0.034))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.028:0.029:0.029))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_6__full/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_6__full/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk2_6__full/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk2_6__full/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.059:0.061:0.061) (0.041:0.044:0.044))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.075:0.075) (0.044:0.048:0.048))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.040:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk2_6__full/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.038:0.040:0.040) (0.024:0.026:0.026))
+    (IOPATH B Y (0.037:0.036:0.036) (0.011:0.011:0.011))
+    (IOPATH C Y (0.012:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk2_6__full/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_5__full/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_5__full/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk2_5__full/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk2_5__full/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.075:0.075) (0.044:0.048:0.048))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.040:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk2_5__full/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk2_5__full/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_4__full/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_4__full/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk2_4__full/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk2_4__full/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.075:0.075) (0.044:0.048:0.048))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.040:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk2_4__full/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk2_4__full/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_3__full/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_3__full/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk2_3__full/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk2_3__full/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.075:0.075) (0.044:0.048:0.048))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.040:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk2_3__full/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk2_3__full/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_2__full/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.017:0.019:0.019) (0.026:0.034:0.034))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_2__full/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk2_2__full/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk2_2__full/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.075:0.075) (0.044:0.048:0.048))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.040:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk2_2__full/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.013:0.013))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk2_2__full/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_1__full/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.018:0.022:0.022) (0.027:0.031:0.031))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1")
+  (INSTANCE genblk2_1__full/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (-0.002:0.002:0.002) (0.015:0.019:0.019))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE genblk2_1__full/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.033:0.033))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XNOR2X1")
+  (INSTANCE genblk2_1__full/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.062:0.062:0.062) (0.045:0.046:0.046))
+    (IOPATH (negedge A) Y (0.056:0.057:0.057) (0.037:0.039:0.039))
+    (IOPATH (posedge B) Y (0.072:0.075:0.075) (0.044:0.048:0.048))
+    (IOPATH (negedge B) Y (0.069:0.070:0.070) (0.040:0.042:0.042))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "OAI21X1")
+  (INSTANCE genblk2_1__full/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.043:0.045:0.045) (0.027:0.029:0.029))
+    (IOPATH B Y (0.042:0.041:0.041) (0.013:0.014:0.014))
+    (IOPATH C Y (0.017:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE genblk2_1__full/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.025:0.025:0.025) (0.024:0.024:0.024))
+    (IOPATH (negedge A) Y (0.028:0.028:0.028) (0.027:0.027:0.027))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.034:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.029:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "AND2X1")
+  (INSTANCE half/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.028:0.028:0.028) (0.032:0.034:0.034))
+    (IOPATH B Y (0.039:0.036:0.036) (0.042:0.043:0.043))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "XOR2X1")
+  (INSTANCE half/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge A) Y (0.029:0.033:0.033))
+    (IOPATH (negedge A) Y (0.025:0.027:0.027) (0.024:0.026:0.026))
+    (IOPATH (posedge B) Y (0.047:0.047:0.047) (0.035:0.035:0.035))
+    (IOPATH (negedge B) Y (0.043:0.044:0.044) (0.028:0.029:0.029))
+    )
+  )
+)
+)

@@ -1,0 +1,132 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : lazy_multiplier
+Version: K-2015.06-SP5-5
+Date   : Mon Apr 18 03:18:31 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: op1[28] (input port)
+  Endpoint: mul_out[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  op1[28] (in)                                            0.00       0.00 f
+  mult_38/a[3] (lazy_multiplier_DW_mult_uns_15)           0.00       0.00 f
+  mult_38/U2719/Y (XNOR2X1)                               0.04       0.04 f
+  mult_38/U4384/Y (OR2X1)                                 0.05       0.09 f
+  mult_38/U4071/Y (INVX1)                                 0.28       0.37 r
+  mult_38/U4500/Y (AOI22X1)                               0.12       0.50 f
+  mult_38/U3100/Y (BUFX2)                                 0.05       0.54 f
+  mult_38/U2375/Y (OAI21X1)                               0.03       0.57 r
+  mult_38/U2374/Y (XOR2X1)                                0.04       0.62 r
+  mult_38/U764/YC (HAX1)                                  0.05       0.67 r
+  mult_38/U763/YC (HAX1)                                  0.06       0.73 r
+  mult_38/U761/YS (FAX1)                                  0.09       0.81 f
+  mult_38/U3736/Y (AND2X1)                                0.04       0.85 f
+  mult_38/U3737/Y (INVX1)                                 0.01       0.86 r
+  mult_38/U393/Y (OAI21X1)                                0.02       0.88 f
+  mult_38/U385/Y (AOI21X1)                                0.04       0.92 r
+  mult_38/U3601/Y (INVX1)                                 0.02       0.94 f
+  mult_38/U3603/Y (INVX1)                                 0.00       0.94 r
+  mult_38/U379/Y (OAI21X1)                                0.02       0.97 f
+  mult_38/U371/Y (AOI21X1)                                0.04       1.00 r
+  mult_38/U3604/Y (INVX1)                                 0.02       1.02 f
+  mult_38/U3605/Y (INVX1)                                 0.02       1.04 r
+  mult_38/U365/Y (OAI21X1)                                0.02       1.06 f
+  mult_38/U357/Y (AOI21X1)                                0.04       1.10 r
+  mult_38/U3606/Y (INVX1)                                 0.02       1.12 f
+  mult_38/U3607/Y (INVX1)                                 0.02       1.14 r
+  mult_38/U351/Y (OAI21X1)                                0.02       1.16 f
+  mult_38/U343/Y (AOI21X1)                                0.04       1.19 r
+  mult_38/U3608/Y (INVX1)                                 0.02       1.22 f
+  mult_38/U3610/Y (INVX1)                                 0.00       1.22 r
+  mult_38/U337/Y (OAI21X1)                                0.02       1.24 f
+  mult_38/U329/Y (AOI21X1)                                0.04       1.28 r
+  mult_38/U3611/Y (INVX1)                                 0.02       1.30 f
+  mult_38/U3612/Y (INVX1)                                 0.02       1.31 r
+  mult_38/U323/Y (OAI21X1)                                0.02       1.34 f
+  mult_38/U315/Y (AOI21X1)                                0.04       1.37 r
+  mult_38/U3613/Y (INVX1)                                 0.02       1.39 f
+  mult_38/U3614/Y (INVX1)                                 0.02       1.41 r
+  mult_38/U309/Y (OAI21X1)                                0.02       1.44 f
+  mult_38/U301/Y (AOI21X1)                                0.04       1.47 r
+  mult_38/U3615/Y (INVX1)                                 0.02       1.49 f
+  mult_38/U3616/Y (INVX1)                                 0.02       1.51 r
+  mult_38/U295/Y (OAI21X1)                                0.02       1.53 f
+  mult_38/U287/Y (AOI21X1)                                0.04       1.57 r
+  mult_38/U3617/Y (INVX1)                                 0.02       1.58 f
+  mult_38/U3618/Y (INVX1)                                 0.02       1.60 r
+  mult_38/U281/Y (OAI21X1)                                0.02       1.63 f
+  mult_38/U273/Y (AOI21X1)                                0.04       1.66 r
+  mult_38/U3619/Y (INVX1)                                 0.02       1.68 f
+  mult_38/U3620/Y (INVX1)                                 0.02       1.70 r
+  mult_38/U267/Y (OAI21X1)                                0.02       1.72 f
+  mult_38/U265/YC (FAX1)                                  0.08       1.80 f
+  mult_38/U264/YC (FAX1)                                  0.08       1.89 f
+  mult_38/U263/YC (FAX1)                                  0.08       1.97 f
+  mult_38/U262/YC (FAX1)                                  0.08       2.05 f
+  mult_38/U261/YC (FAX1)                                  0.08       2.13 f
+  mult_38/U260/YC (FAX1)                                  0.08       2.21 f
+  mult_38/U259/YC (FAX1)                                  0.08       2.29 f
+  mult_38/U258/YC (FAX1)                                  0.08       2.37 f
+  mult_38/U257/YC (FAX1)                                  0.08       2.46 f
+  mult_38/U256/YC (FAX1)                                  0.08       2.54 f
+  mult_38/U255/YC (FAX1)                                  0.08       2.62 f
+  mult_38/U254/YC (FAX1)                                  0.08       2.70 f
+  mult_38/U253/YC (FAX1)                                  0.08       2.78 f
+  mult_38/U252/YC (FAX1)                                  0.08       2.86 f
+  mult_38/U251/YC (FAX1)                                  0.08       2.94 f
+  mult_38/U250/YC (FAX1)                                  0.08       3.03 f
+  mult_38/U249/YC (FAX1)                                  0.08       3.11 f
+  mult_38/U248/YC (FAX1)                                  0.08       3.19 f
+  mult_38/U247/YC (FAX1)                                  0.08       3.27 f
+  mult_38/U246/YC (FAX1)                                  0.08       3.35 f
+  mult_38/U245/YC (FAX1)                                  0.08       3.43 f
+  mult_38/U244/YC (FAX1)                                  0.08       3.51 f
+  mult_38/U243/YC (FAX1)                                  0.08       3.60 f
+  mult_38/U242/YC (FAX1)                                  0.08       3.68 f
+  mult_38/U241/YC (FAX1)                                  0.08       3.76 f
+  mult_38/U240/YC (FAX1)                                  0.08       3.84 f
+  mult_38/U239/YC (FAX1)                                  0.08       3.92 f
+  mult_38/U238/YC (FAX1)                                  0.08       4.00 f
+  mult_38/U237/YC (FAX1)                                  0.08       4.09 f
+  mult_38/U236/YC (FAX1)                                  0.08       4.17 f
+  mult_38/U235/YC (FAX1)                                  0.08       4.25 f
+  mult_38/U234/YC (FAX1)                                  0.08       4.33 f
+  mult_38/U233/YC (FAX1)                                  0.08       4.41 f
+  mult_38/U232/YC (FAX1)                                  0.08       4.49 f
+  mult_38/U231/YC (FAX1)                                  0.08       4.57 f
+  mult_38/U230/YC (FAX1)                                  0.08       4.66 f
+  mult_38/U229/YC (FAX1)                                  0.08       4.74 f
+  mult_38/U228/YC (FAX1)                                  0.08       4.81 f
+  mult_38/U226/Y (XOR2X1)                                 0.04       4.85 r
+  mult_38/product[63] (lazy_multiplier_DW_mult_uns_15)
+                                                          0.00       4.85 r
+  U931/Y (AOI22X1)                                        0.02       4.87 f
+  U737/Y (BUFX2)                                          0.08       4.95 f
+  U933/Y (NAND3X1)                                        0.05       5.00 r
+  mul_out[0] (out)                                        0.00       5.00 r
+  data arrival time                                                  5.00
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -5.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

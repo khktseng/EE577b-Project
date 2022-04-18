@@ -1,55 +1,48 @@
 `timescale 1ns/1ns
-module tb_multiplier;
-	reg [0:63] op1, op2;
+`define CLK_PER 4
+module tb_divider;
+	reg clk, reset;
+	reg in_v;
+	reg hold;
+	reg [63:0] op1, op2;
 	reg [1:0] ww;
-	wire [0:63] mul_out;
-	reg oe;
+	wire [63:0] quotient;
+	wire [63:0] remainder;
+	wire dbz;
+	wire out_v;
 
-	multiplier dut(op1, op2, ww, oe, mul_out);
+	divider dut(clk, reset, in_v, hold, op1, op2, ww, quotient, remainder, dbz, out_v);
+
+	integer clk_cnt;
+	always #(`CLK_PER / 2) clk <= ~clk;
+	initial clk = 1;
+	initial clk_cnt = 0;
+	always @(posedge clk)
+		clk_cnt <= clk_cnt + 1;
 
 	initial begin
-		oe = 0;
-		ww = 2'b00;
-		op2 = 64'h0101010101010101;
-		op1 = 64'h0102030405060708;
-		#5
-		oe = 1;
+		$monitor("clk #%d: ww= %b, op1= %h, op2= %h, quo= %h, rem= %h, out_v= %b", clk_cnt, ww, op1, op2, quotient, remainder, out_v);
+		hold = 0;
+		reset = 1;	#4;
+		reset = 0;
 
-		#5;
-		
-		oe = 0;
-		ww = 2'b1;
-		op1 = 64'h00FF00FF00FF00FF;
-		op2 = 64'h00FF00FF00FF00FF;
-		#5;
-		oe = 1;
+		in_v = 1;
+		ww = 1;
+		op1 = 'h88888888;
+		op2 = 'h22222222;
+		#360;
 
-		#5;
+		in_v = 1;
+		ww = 2;
+		op1 = 'h88664422;
+		op2 = 'h22222222;
+		#360;
 
-		oe = 0;
-		ww = 2'b10;
-		op1 = 64'h0000FFFF0000FFFF;
-		op2 = 64'h0000000100000001;
-		#5;
-		oe = 1;
-
-		#5;
-		oe = 0;
-		op1 = 64'hFFFFFFFFFFFFFFFF;
-		op2 = 64'h0000000000000001;
-
-		#5
-		oe = 1;
-
-
-		#5;
-		oe = 0;
-		op2 = 64'hFFFFFFFFFFFFFFFF;
-		#5;
-		oe = 1;
-		#5;
-
-		$display("ww=%b, op1=%h, op2=%h, mul_out = %h", ww, op1, op2, mul_out);
+		in_v = 1;
+		ww = 0;
+		op1 = 'hDEDEDEDE;
+		op2 = 'hAFAFAFAF;
+		#36;
 
 		$finish;
 	end

@@ -41,9 +41,9 @@
 
 
 # top level module
-TOP = tb_tm_alu
-TOP_SYN = tb_tm_alu_syn
-DESIGN_NAME = tm_alu
+TOP = tb_divider
+TOP_SYN = tb_divider_syn
+DESIGN_NAME = divider
 
 # List of the design files
 DESIGN_FILES = ./design/*.v

@@ -1,0 +1,15 @@
+ncelab(64): 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncelab(64)	15.20-s079: Started on Apr 17, 2022 at 15:24:53 PDT
+ncelab
+    -ACCESS +rwc
+    -NCFATAL INVSUP
+    -NCFATAL CUNOTB
+    -ERRORMAX 5
+    -UPDATE
+    -MESSAGES
+    -TIMESCALE 1ns/10ps
+    -LIBVERBOSE
+    work.tb_divider
+
+ncelab: *E,NOUNIT: Unable to find a unit named 'work.tb_divider' in the libraries.
+TOOL:	ncelab(64)	15.20-s079: Exiting on Apr 17, 2022 at 15:24:53 PDT  (total: 00:00:00)

@@ -27,6 +27,8 @@ read_verilog ./src/${design_name}.v ;
 # Use this command before setting any constraints.
 current_design $design_name ;
 
+
+
 # If you have multiple instances of the same module,
 # use this so that DesignCompiler optimizes each instance separately.
 uniquify ;
@@ -36,7 +38,7 @@ uniquify ;
 link ;
 
 # Create a clock with period of 5.
-create_clock -name clk -period 5.0 -waveform [list 0 2.5] [get_ports clk]
+create_clock -name clk -period 20.0 -waveform [list 0 10.0] [get_ports clk]
 
 # Setting timing constraints for combinational logic.
 # Specifying maximum delay from inputs to outputs
@@ -65,6 +67,7 @@ compile ;
 # Generating timing and are report of the synthezied design.
 report_timing > report/$design_name.timing ;
 report_area > report/$design_name.area ;
+report_power > report/$design_name.power;
 
 # Writing synthesized gate-level verilog netlist.
 # This verilog netlist will be used for post-synthesis gate-level simulation.
@@ -76,3 +79,6 @@ write -format verilog -hierarchy -out netlist/${design_name}_syn.v ;
 write_sdf netlist/${design_name}_syn.sdf;
 write_sdc netlist/${design_name}_syn.sdc
 
+#Design Ware
+analyze -format verilog /usr/local/synopsys/Design_Compiler/K-2015.06-SP5-5/dw/sim_ver/DW_div_seq.v
+elaborate DW_div_seq

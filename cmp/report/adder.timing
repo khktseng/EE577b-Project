@@ -1,0 +1,237 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : adder
+Version: K-2015.06-SP5-5
+Date   : Sun Apr 17 22:28:43 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: sub (input port)
+  Endpoint: adder_out[0]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  sub (in)                                                0.00       0.00 f
+  U122/Y (XOR2X1)                                         0.03       0.03 f
+  genblk3[7].a_i/b2[7] (adder_byte_0)                     0.00       0.03 f
+  genblk3[7].a_i/add_1_root_add_57_2/B[0] (adder_byte_0_DW01_add_0)
+                                                          0.00       0.03 f
+  genblk3[7].a_i/add_1_root_add_57_2/U15/Y (AND2X2)       0.04       0.07 f
+  genblk3[7].a_i/add_1_root_add_57_2/U16/Y (INVX1)        0.00       0.07 r
+  genblk3[7].a_i/add_1_root_add_57_2/U27/Y (NAND3X1)      0.01       0.08 f
+  genblk3[7].a_i/add_1_root_add_57_2/U23/Y (BUFX2)        0.04       0.11 f
+  genblk3[7].a_i/add_1_root_add_57_2/U11/Y (AND2X2)       0.03       0.15 f
+  genblk3[7].a_i/add_1_root_add_57_2/U6/Y (OR2X2)         0.04       0.18 f
+  genblk3[7].a_i/add_1_root_add_57_2/U10/Y (OR2X2)        0.04       0.22 f
+  genblk3[7].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       0.30 f
+  genblk3[7].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       0.38 f
+  genblk3[7].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       0.47 f
+  genblk3[7].a_i/add_1_root_add_57_2/U1_5/YC (FAX1)       0.08       0.55 f
+  genblk3[7].a_i/add_1_root_add_57_2/U1_6/YC (FAX1)       0.08       0.63 f
+  genblk3[7].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.07       0.70 f
+  genblk3[7].a_i/add_1_root_add_57_2/U5/Y (AND2X1)        0.03       0.73 f
+  genblk3[7].a_i/add_1_root_add_57_2/U14/Y (INVX1)        0.00       0.73 r
+  genblk3[7].a_i/add_1_root_add_57_2/U7/Y (AND2X2)        0.03       0.76 r
+  genblk3[7].a_i/add_1_root_add_57_2/U8/Y (INVX1)         0.01       0.78 f
+  genblk3[7].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_0_DW01_add_0)
+                                                          0.00       0.78 f
+  genblk3[7].a_i/cout (adder_byte_0)                      0.00       0.78 f
+  U126/Y (OAI21X1)                                        0.04       0.82 r
+  U94/Y (INVX2)                                           0.02       0.84 f
+  genblk3[6].a_i/cin (adder_byte_1)                       0.00       0.84 f
+  genblk3[6].a_i/add_1_root_add_57_2/CI (adder_byte_1_DW01_add_0)
+                                                          0.00       0.84 f
+  genblk3[6].a_i/add_1_root_add_57_2/U15/Y (AND2X2)       0.03       0.88 f
+  genblk3[6].a_i/add_1_root_add_57_2/U16/Y (INVX1)        0.00       0.88 r
+  genblk3[6].a_i/add_1_root_add_57_2/U26/Y (NAND3X1)      0.01       0.89 f
+  genblk3[6].a_i/add_1_root_add_57_2/U14/Y (BUFX2)        0.04       0.92 f
+  genblk3[6].a_i/add_1_root_add_57_2/U10/Y (AND2X2)       0.03       0.95 f
+  genblk3[6].a_i/add_1_root_add_57_2/U5/Y (OR2X2)         0.04       0.99 f
+  genblk3[6].a_i/add_1_root_add_57_2/U8/Y (OR2X2)         0.04       1.03 f
+  genblk3[6].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       1.11 f
+  genblk3[6].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       1.19 f
+  genblk3[6].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       1.27 f
+  genblk3[6].a_i/add_1_root_add_57_2/U1_5/YC (FAX1)       0.08       1.35 f
+  genblk3[6].a_i/add_1_root_add_57_2/U1_6/YC (FAX1)       0.08       1.44 f
+  genblk3[6].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.07       1.51 f
+  genblk3[6].a_i/add_1_root_add_57_2/U4/Y (AND2X1)        0.03       1.54 f
+  genblk3[6].a_i/add_1_root_add_57_2/U13/Y (INVX1)        0.00       1.54 r
+  genblk3[6].a_i/add_1_root_add_57_2/U6/Y (AND2X2)        0.03       1.57 r
+  genblk3[6].a_i/add_1_root_add_57_2/U7/Y (INVX1)         0.01       1.58 f
+  genblk3[6].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_1_DW01_add_0)
+                                                          0.00       1.58 f
+  genblk3[6].a_i/cout (adder_byte_1)                      0.00       1.58 f
+  U113/Y (INVX1)                                          0.00       1.58 r
+  U98/Y (AOI21X1)                                         0.01       1.60 f
+  genblk3[5].a_i/cin (adder_byte_2)                       0.00       1.60 f
+  genblk3[5].a_i/add_1_root_add_57_2/CI (adder_byte_2_DW01_add_0)
+                                                          0.00       1.60 f
+  genblk3[5].a_i/add_1_root_add_57_2/U15/Y (BUFX2)        0.04       1.63 f
+  genblk3[5].a_i/add_1_root_add_57_2/U20/Y (AND2X2)       0.03       1.67 f
+  genblk3[5].a_i/add_1_root_add_57_2/U21/Y (INVX1)        0.00       1.66 r
+  genblk3[5].a_i/add_1_root_add_57_2/U32/Y (NAND3X1)      0.01       1.67 f
+  genblk3[5].a_i/add_1_root_add_57_2/U14/Y (BUFX2)        0.04       1.71 f
+  genblk3[5].a_i/add_1_root_add_57_2/U12/Y (AND2X2)       0.03       1.74 f
+  genblk3[5].a_i/add_1_root_add_57_2/U6/Y (OR2X2)         0.04       1.78 f
+  genblk3[5].a_i/add_1_root_add_57_2/U9/Y (OR2X2)         0.04       1.82 f
+  genblk3[5].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       1.90 f
+  genblk3[5].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       1.98 f
+  genblk3[5].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       2.06 f
+  genblk3[5].a_i/add_1_root_add_57_2/U18/Y (AND2X2)       0.04       2.09 f
+  genblk3[5].a_i/add_1_root_add_57_2/U19/Y (INVX1)        0.00       2.09 r
+  genblk3[5].a_i/add_1_root_add_57_2/U30/Y (NAND3X1)      0.01       2.10 f
+  genblk3[5].a_i/add_1_root_add_57_2/U13/Y (BUFX2)        0.04       2.14 f
+  genblk3[5].a_i/add_1_root_add_57_2/U11/Y (AND2X2)       0.03       2.17 f
+  genblk3[5].a_i/add_1_root_add_57_2/U5/Y (OR2X2)         0.04       2.21 f
+  genblk3[5].a_i/add_1_root_add_57_2/U8/Y (OR2X2)         0.04       2.25 f
+  genblk3[5].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.07       2.32 f
+  genblk3[5].a_i/add_1_root_add_57_2/U35/Y (XNOR2X1)      0.03       2.35 f
+  genblk3[5].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_2_DW01_add_0)
+                                                          0.00       2.35 f
+  genblk3[5].a_i/cout (adder_byte_2)                      0.00       2.35 f
+  U127/Y (OAI21X1)                                        0.04       2.39 r
+  U96/Y (INVX2)                                           0.02       2.42 f
+  genblk3[4].a_i/cin (adder_byte_3)                       0.00       2.42 f
+  genblk3[4].a_i/add_1_root_add_57_2/CI (adder_byte_3_DW01_add_0)
+                                                          0.00       2.42 f
+  genblk3[4].a_i/add_1_root_add_57_2/U21/Y (AND2X2)       0.03       2.45 f
+  genblk3[4].a_i/add_1_root_add_57_2/U22/Y (INVX1)        0.00       2.45 r
+  genblk3[4].a_i/add_1_root_add_57_2/U35/Y (NAND3X1)      0.01       2.46 f
+  genblk3[4].a_i/add_1_root_add_57_2/U20/Y (BUFX2)        0.04       2.50 f
+  genblk3[4].a_i/add_1_root_add_57_2/U17/Y (AND2X2)       0.03       2.53 f
+  genblk3[4].a_i/add_1_root_add_57_2/U9/Y (OR2X2)         0.04       2.56 f
+  genblk3[4].a_i/add_1_root_add_57_2/U14/Y (OR2X2)        0.04       2.61 f
+  genblk3[4].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       2.68 f
+  genblk3[4].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       2.77 f
+  genblk3[4].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       2.85 f
+  genblk3[4].a_i/add_1_root_add_57_2/U1_5/YC (FAX1)       0.07       2.92 f
+  genblk3[4].a_i/add_1_root_add_57_2/U15/Y (AND2X2)       0.04       2.96 f
+  genblk3[4].a_i/add_1_root_add_57_2/U11/Y (OR2X2)        0.04       2.99 f
+  genblk3[4].a_i/add_1_root_add_57_2/U10/Y (OR2X2)        0.04       3.04 f
+  genblk3[4].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.07       3.11 f
+  genblk3[4].a_i/add_1_root_add_57_2/U8/Y (AND2X1)        0.03       3.14 f
+  genblk3[4].a_i/add_1_root_add_57_2/U19/Y (INVX1)        0.00       3.14 r
+  genblk3[4].a_i/add_1_root_add_57_2/U12/Y (AND2X2)       0.03       3.17 r
+  genblk3[4].a_i/add_1_root_add_57_2/U13/Y (INVX1)        0.01       3.18 f
+  genblk3[4].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_3_DW01_add_0)
+                                                          0.00       3.18 f
+  genblk3[4].a_i/cout (adder_byte_3)                      0.00       3.18 f
+  U114/Y (INVX1)                                          0.00       3.18 r
+  U130/Y (AOI21X1)                                        0.01       3.19 f
+  genblk3[3].a_i/cin (adder_byte_4)                       0.00       3.19 f
+  genblk3[3].a_i/add_1_root_add_57_2/CI (adder_byte_4_DW01_add_0)
+                                                          0.00       3.19 f
+  genblk3[3].a_i/add_1_root_add_57_2/U25/Y (BUFX2)        0.03       3.23 f
+  genblk3[3].a_i/add_1_root_add_57_2/U15/Y (AND2X2)       0.03       3.26 f
+  genblk3[3].a_i/add_1_root_add_57_2/U7/Y (OR2X2)         0.04       3.30 f
+  genblk3[3].a_i/add_1_root_add_57_2/U6/Y (OR2X2)         0.04       3.33 f
+  genblk3[3].a_i/add_1_root_add_57_2/U17/Y (AND2X2)       0.03       3.37 f
+  genblk3[3].a_i/add_1_root_add_57_2/U12/Y (OR2X2)        0.04       3.41 f
+  genblk3[3].a_i/add_1_root_add_57_2/U11/Y (OR2X2)        0.04       3.45 f
+  genblk3[3].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       3.53 f
+  genblk3[3].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       3.61 f
+  genblk3[3].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       3.69 f
+  genblk3[3].a_i/add_1_root_add_57_2/U22/Y (AND2X2)       0.04       3.73 f
+  genblk3[3].a_i/add_1_root_add_57_2/U24/Y (INVX1)        0.00       3.73 r
+  genblk3[3].a_i/add_1_root_add_57_2/U32/Y (NAND3X1)      0.01       3.74 f
+  genblk3[3].a_i/add_1_root_add_57_2/U19/Y (BUFX2)        0.04       3.77 f
+  genblk3[3].a_i/add_1_root_add_57_2/U14/Y (AND2X2)       0.03       3.80 f
+  genblk3[3].a_i/add_1_root_add_57_2/U8/Y (OR2X2)         0.04       3.84 f
+  genblk3[3].a_i/add_1_root_add_57_2/U10/Y (OR2X2)        0.04       3.88 f
+  genblk3[3].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.07       3.96 f
+  genblk3[3].a_i/add_1_root_add_57_2/U34/Y (XNOR2X1)      0.03       3.99 f
+  genblk3[3].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_4_DW01_add_0)
+                                                          0.00       3.99 f
+  genblk3[3].a_i/cout (adder_byte_4)                      0.00       3.99 f
+  U131/Y (OAI21X1)                                        0.04       4.03 r
+  U95/Y (INVX2)                                           0.02       4.05 f
+  genblk3[2].a_i/cin (adder_byte_5)                       0.00       4.05 f
+  genblk3[2].a_i/add_1_root_add_57_2/CI (adder_byte_5_DW01_add_0)
+                                                          0.00       4.05 f
+  genblk3[2].a_i/add_1_root_add_57_2/U8/Y (AND2X2)        0.03       4.09 f
+  genblk3[2].a_i/add_1_root_add_57_2/U9/Y (INVX1)         0.00       4.09 r
+  genblk3[2].a_i/add_1_root_add_57_2/U19/Y (NAND3X1)      0.01       4.10 f
+  genblk3[2].a_i/add_1_root_add_57_2/U7/Y (BUFX2)         0.04       4.13 f
+  genblk3[2].a_i/add_1_root_add_57_2/U6/Y (AND2X2)        0.03       4.16 f
+  genblk3[2].a_i/add_1_root_add_57_2/U3/Y (OR2X2)         0.04       4.20 f
+  genblk3[2].a_i/add_1_root_add_57_2/U4/Y (OR2X2)         0.04       4.24 f
+  genblk3[2].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       4.32 f
+  genblk3[2].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       4.40 f
+  genblk3[2].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       4.48 f
+  genblk3[2].a_i/add_1_root_add_57_2/U1_5/YC (FAX1)       0.08       4.56 f
+  genblk3[2].a_i/add_1_root_add_57_2/U1_6/YC (FAX1)       0.08       4.65 f
+  genblk3[2].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.08       4.72 f
+  genblk3[2].a_i/add_1_root_add_57_2/U17/Y (XNOR2X1)      0.03       4.75 f
+  genblk3[2].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_5_DW01_add_0)
+                                                          0.00       4.75 f
+  genblk3[2].a_i/cout (adder_byte_5)                      0.00       4.75 f
+  U132/Y (OAI21X1)                                        0.04       4.79 r
+  U93/Y (INVX2)                                           0.02       4.82 f
+  genblk3[1].a_i/cin (adder_byte_6)                       0.00       4.82 f
+  genblk3[1].a_i/add_1_root_add_57_2/CI (adder_byte_6_DW01_add_0)
+                                                          0.00       4.82 f
+  genblk3[1].a_i/add_1_root_add_57_2/U26/Y (AND2X2)       0.04       4.86 f
+  genblk3[1].a_i/add_1_root_add_57_2/U6/Y (OR2X2)         0.04       4.89 f
+  genblk3[1].a_i/add_1_root_add_57_2/U13/Y (OR2X2)        0.04       4.93 f
+  genblk3[1].a_i/add_1_root_add_57_2/U14/Y (AND2X2)       0.03       4.96 f
+  genblk3[1].a_i/add_1_root_add_57_2/U16/Y (OR2X2)        0.05       5.01 f
+  genblk3[1].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       5.09 f
+  genblk3[1].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       5.17 f
+  genblk3[1].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.07       5.24 f
+  genblk3[1].a_i/add_1_root_add_57_2/U22/Y (AND2X2)       0.04       5.28 f
+  genblk3[1].a_i/add_1_root_add_57_2/U18/Y (OR2X2)        0.04       5.32 f
+  genblk3[1].a_i/add_1_root_add_57_2/U17/Y (OR2X2)        0.04       5.35 f
+  genblk3[1].a_i/add_1_root_add_57_2/U24/Y (AND2X2)       0.03       5.39 f
+  genblk3[1].a_i/add_1_root_add_57_2/U21/Y (OR2X2)        0.04       5.43 f
+  genblk3[1].a_i/add_1_root_add_57_2/U20/Y (OR2X2)        0.04       5.47 f
+  genblk3[1].a_i/add_1_root_add_57_2/U1_7/YC (FAX1)       0.07       5.55 f
+  genblk3[1].a_i/add_1_root_add_57_2/U33/Y (XNOR2X1)      0.03       5.57 f
+  genblk3[1].a_i/add_1_root_add_57_2/SUM[8] (adder_byte_6_DW01_add_0)
+                                                          0.00       5.57 f
+  genblk3[1].a_i/cout (adder_byte_6)                      0.00       5.57 f
+  U133/Y (OAI21X1)                                        0.04       5.62 r
+  U92/Y (INVX2)                                           0.02       5.64 f
+  genblk3[0].a_i/cin (adder_byte_7)                       0.00       5.64 f
+  genblk3[0].a_i/add_1_root_add_57_2/CI (adder_byte_7_DW01_add_0)
+                                                          0.00       5.64 f
+  genblk3[0].a_i/add_1_root_add_57_2/U8/Y (AND2X2)        0.04       5.68 f
+  genblk3[0].a_i/add_1_root_add_57_2/U9/Y (INVX1)         0.00       5.68 r
+  genblk3[0].a_i/add_1_root_add_57_2/U25/Y (NAND3X1)      0.01       5.69 f
+  genblk3[0].a_i/add_1_root_add_57_2/U7/Y (BUFX2)         0.04       5.72 f
+  genblk3[0].a_i/add_1_root_add_57_2/U6/Y (AND2X2)        0.03       5.75 f
+  genblk3[0].a_i/add_1_root_add_57_2/U3/Y (OR2X2)         0.04       5.79 f
+  genblk3[0].a_i/add_1_root_add_57_2/U4/Y (OR2X2)         0.04       5.83 f
+  genblk3[0].a_i/add_1_root_add_57_2/U1_2/YC (FAX1)       0.08       5.91 f
+  genblk3[0].a_i/add_1_root_add_57_2/U1_3/YC (FAX1)       0.08       5.99 f
+  genblk3[0].a_i/add_1_root_add_57_2/U1_4/YC (FAX1)       0.08       6.07 f
+  genblk3[0].a_i/add_1_root_add_57_2/U1_5/YC (FAX1)       0.08       6.15 f
+  genblk3[0].a_i/add_1_root_add_57_2/U1_6/YC (FAX1)       0.08       6.23 f
+  genblk3[0].a_i/add_1_root_add_57_2/U20/Y (XOR2X1)       0.03       6.26 r
+  genblk3[0].a_i/add_1_root_add_57_2/SUM[7] (adder_byte_7_DW01_add_0)
+                                                          0.00       6.26 r
+  genblk3[0].a_i/sum[0] (adder_byte_7)                    0.00       6.26 r
+  adder_out[0] (out)                                      0.00       6.26 r
+  data arrival time                                                  6.26
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -6.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.26
+
+
+1

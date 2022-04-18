@@ -1,0 +1,20 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Mon Apr 18 03:17:54 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               6
+    Cells do not drive (LINT-1)                                     6
+--------------------------------------------------------------------------------
+
+Warning: In design 'lazy_multiplier', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C375' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C379' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C380' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C384' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C385' does not drive any nets. (LINT-1)
+1

@@ -10,12 +10,14 @@
 
 module tb_cardinal_processor;
 	reg clk, reset;
+	reg [0:63] d_out_nic;
 	wire [0:31] ins_addr, inst;
 	wire [0:15] mem_addr;
-	wire mem_en, mem_sl;
-	wire [0:63] st_data, ld_data;
+	wire mem_en, mem_sl, nicEn, nicWrEn;
+	wire [0:1] addr_nic;
+	wire [0:63] st_data, ld_data, d_in_nic;
 	
-	cardinal_processor dut(clk, reset, ins_addr, inst, mem_addr, mem_en, mem_sl, st_data, ld_data);
+	cardinal_processor dut(clk, reset, ins_addr, inst, mem_addr, mem_en, mem_sl, st_data, d_in_nic, ld_data, d_out_nic, addr_nic, nicEn, nicWrEn);
 
 	integer dmem_dump_file;
 	integer i;
@@ -34,8 +36,8 @@ module tb_cardinal_processor;
 	end
 
 	initial begin
-		$readmemh("./memory_fill/inst_arith.fill", IM.MEM);
-		$readmemh("./memory_fill/dmem.fill", DM.MEM);
+		$readmemh("./inst_ooe.fill", IM.MEM);
+		$readmemh("./cpu_dmem.fill", DM.MEM);
 
 		clk <= 0;
 		reset <= 1'b1;
