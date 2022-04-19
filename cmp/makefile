@@ -43,7 +43,7 @@
 # top level module
 TOP = tb_multiplier
 TOP_SYN = tb_multiplier_syn
-DESIGN_NAME = multiplier
+DESIGN_NAME = alu_clk
 
 # List of the design files
 DESIGN_FILES = ./design/*.v

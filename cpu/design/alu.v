@@ -9,6 +9,13 @@
 //`include "./include/sim_ver/DW_div.v"
 //`include "./include/sim_ver/DW02_mult.v"
 //`include "./include/sim_ver/DW_sqrt.v"
+`include "./design/adder.v"
+`include "./design/lazy_multiplier.v"
+`include "./design/shifter.v"
+`include "./design/rotator.v"
+`include "./design/modulo.v"
+//`include "./design/rooter.v"
+`include "./design/divider.v"
 
 module alu(
 	input [0:63] op1, op2,
@@ -22,12 +29,12 @@ module alu(
 	wire [0:63] adder_out, mult_out, shift_out, rotate_out, div_out, mod_out, sqrt_out;
 
 	adder add(op1, op2, ww, adder_out, opcode[0]);
-	multiplier mult(op1, mop2, ww, opcode[0], mult_out);
+	lazy_multiplier mult(op1, mop2, ww, opcode[0], mult_out);
 	shifter shift(op1, op2, ww, la_lr, shift_out);
 	rotator rotate(op1, ww, rotate_out);
 	divider div(op1, op2, ww, div_out);
 	modulo mod(op1, op2, ww, mod_out);
-	rooter sqrt(op1, ww, sqrt_out);
+	//rooter sqrt(op1, ww, sqrt_out);
 
 	always @(opcode) begin
 		if (opcode[5:1] == 5'b01000)

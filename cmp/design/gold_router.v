@@ -1,5 +1,9 @@
 // cardinal NOC verilog
 
+`include "./design/input_handler.v"
+`include "./design/output_handler.v"
+`include "./design/rte_handler.v"
+
 module gold_router(
 	input cwsi,
 	output cwri,

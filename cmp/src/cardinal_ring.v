@@ -1,5 +1,8 @@
 // verilog for ring routers
 //
+//
+`include "./design/gold_router.v"
+
 module cardinal_ring(
 	input clk, reset,
 	input [0:3] pesi,

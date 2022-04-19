@@ -2,6 +2,9 @@
 
 `define NOP 32'hF0000000
 
+`include "./design/alu.v"
+`include "./design/reg_file.v"
+
 module gold_cpu(
 	input clk, reset,
 	output [0:31] ins_addr,

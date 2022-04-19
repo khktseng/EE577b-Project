@@ -9,6 +9,9 @@
 //`include "./include/sim_ver/DW_div.v"
 //`include "./include/sim_ver/DW02_mult.v"
 //`include "./include/sim_ver/DW_sqrt.v"
+`include "./design/adder_clk.v"
+`include "./design/oe_selector.v"
+`include "./design/multiplier.v"
 
 module alu_clk(
 	input clk, reset,

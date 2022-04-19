@@ -1,0 +1,38 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Mon Apr 18 16:03:07 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     24
+    Unconnected ports (LINT-28)                                    24
+--------------------------------------------------------------------------------
+
+Warning: In design 'output_handler_11', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_11', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_0', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_0', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_1', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_1', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_2', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_2', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_3', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_3', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_4', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_4', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_5', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_5', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_6', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_6', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_7', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_7', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_8', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_8', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_9', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_9', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_10', port 'fwd_d_1[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'output_handler_10', port 'fwd_d_2[48]' is not connected to any nets. (LINT-28)
+1

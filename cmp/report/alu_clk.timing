@@ -1,0 +1,209 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu_clk
+Version: K-2015.06-SP5-5
+Date   : Mon Apr 18 17:10:00 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: opcode[0] (input port)
+  Endpoint: inB_mul_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  opcode[0] (in)                           0.00       0.00 f
+  oe_sel/odd (oe_selector)                 0.00       0.00 f
+  oe_sel/U397/Y (INVX1)                    0.03       0.03 r
+  oe_sel/U391/Y (INVX1)                    0.13       0.16 f
+  oe_sel/U170/Y (AND2X1)                   0.16       0.32 f
+  oe_sel/U398/Y (INVX1)                    0.05       0.37 r
+  oe_sel/U395/Y (INVX1)                    0.09       0.46 f
+  oe_sel/U82/Y (AOI22X1)                   0.07       0.52 r
+  oe_sel/U237/Y (BUFX2)                    0.04       0.56 r
+  oe_sel/U113/Y (AND2X1)                   0.03       0.59 r
+  oe_sel/U365/Y (INVX1)                    0.02       0.61 f
+  oe_sel/opB[18] (oe_selector)             0.00       0.61 f
+  U576/Y (AOI22X1)                         0.03       0.64 r
+  U2900/Y (INVX1)                          0.02       0.67 f
+  inB_mul_reg[18]/D (DFFPOSX1)             0.00       0.67 f
+  data arrival time                                   0.67
+
+  max_delay                                5.00       5.00
+  library setup time                      -0.06       4.94
+  data required time                                  4.94
+  -----------------------------------------------------------
+  data required time                                  4.94
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         4.28
+
+
+  Startpoint: add_sub_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu_out[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  add_sub_reg/CLK (DFFPOSX1)                              0.00       0.00 r
+  add_sub_reg/Q (DFFPOSX1)                                0.07       0.07 r
+  add/sub (adder_clk)                                     0.00       0.07 r
+  add/U98/Y (INVX1)                                       0.02       0.08 f
+  add/U97/Y (INVX1)                                       0.23       0.31 r
+  add/U116/Y (XOR2X1)                                     0.08       0.39 r
+  add/genblk3[7].a_i/b2[3] (adder_byte_0)                 0.00       0.39 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/B[4] (adder_byte_0_DW01_add_1)
+                                                          0.00       0.39 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/U121/Y (OR2X1)
+                                                          0.04       0.43 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/U122/Y (INVX1)
+                                                          0.03       0.46 f
+  add/genblk3[7].a_i/add_1_root_add_74_2/U81/Y (OR2X1)
+                                                          0.05       0.51 f
+  add/genblk3[7].a_i/add_1_root_add_74_2/U82/Y (INVX1)
+                                                          0.01       0.52 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/U68/Y (AND2X1)
+                                                          0.04       0.56 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/U76/Y (INVX1)
+                                                          0.02       0.58 f
+  add/genblk3[7].a_i/add_1_root_add_74_2/U11/Y (OAI21X1)
+                                                          0.06       0.64 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.03       0.67 f
+  add/genblk3[7].a_i/add_1_root_add_74_2/U105/Y (BUFX2)
+                                                          0.03       0.70 f
+  add/genblk3[7].a_i/add_1_root_add_74_2/U130/Y (INVX1)
+                                                          0.00       0.70 r
+  add/genblk3[7].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_0_DW01_add_1)
+                                                          0.00       0.70 r
+  add/genblk3[7].a_i/cout (adder_byte_0)                  0.00       0.70 r
+  add/U4/Y (AND2X1)                                       0.03       0.73 r
+  add/U84/Y (INVX1)                                       0.02       0.75 f
+  add/U3/Y (AND2X1)                                       0.04       0.79 f
+  add/U80/Y (INVX1)                                       0.07       0.86 r
+  add/genblk3[6].a_i/cin (adder_byte_1)                   0.00       0.86 r
+  add/genblk3[6].a_i/add_1_root_add_74_2/CI (adder_byte_1_DW01_add_1)
+                                                          0.00       0.86 r
+  add/genblk3[6].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.03       0.90 f
+  add/genblk3[6].a_i/add_1_root_add_74_2/U149/Y (INVX1)
+                                                          0.00       0.90 r
+  add/genblk3[6].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_1_DW01_add_1)
+                                                          0.00       0.90 r
+  add/genblk3[6].a_i/cout (adder_byte_1)                  0.00       0.90 r
+  add/U122/Y (MUX2X1)                                     0.02       0.92 f
+  add/U104/Y (INVX1)                                      0.10       1.02 r
+  add/genblk3[5].a_i/cin (adder_byte_2)                   0.00       1.02 r
+  add/genblk3[5].a_i/add_1_root_add_74_2/CI (adder_byte_2_DW01_add_1)
+                                                          0.00       1.02 r
+  add/genblk3[5].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.04       1.06 f
+  add/genblk3[5].a_i/add_1_root_add_74_2/U145/Y (BUFX2)
+                                                          0.03       1.09 f
+  add/genblk3[5].a_i/add_1_root_add_74_2/U149/Y (INVX1)
+                                                          0.00       1.09 r
+  add/genblk3[5].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_2_DW01_add_1)
+                                                          0.00       1.09 r
+  add/genblk3[5].a_i/cout (adder_byte_2)                  0.00       1.09 r
+  add/U6/Y (AND2X1)                                       0.03       1.12 r
+  add/U95/Y (INVX1)                                       0.02       1.14 f
+  add/U5/Y (AND2X1)                                       0.04       1.18 f
+  add/U94/Y (INVX1)                                       0.07       1.25 r
+  add/genblk3[4].a_i/cin (adder_byte_3)                   0.00       1.25 r
+  add/genblk3[4].a_i/add_1_root_add_74_2/CI (adder_byte_3_DW01_add_1)
+                                                          0.00       1.25 r
+  add/genblk3[4].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.03       1.29 f
+  add/genblk3[4].a_i/add_1_root_add_74_2/U151/Y (INVX1)
+                                                          0.00       1.29 r
+  add/genblk3[4].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_3_DW01_add_1)
+                                                          0.00       1.29 r
+  add/genblk3[4].a_i/cout (adder_byte_3)                  0.00       1.29 r
+  add/U109/Y (INVX1)                                      0.01       1.30 f
+  add/U123/Y (MUX2X1)                                     0.11       1.41 r
+  add/genblk3[3].a_i/cin (adder_byte_4)                   0.00       1.41 r
+  add/genblk3[3].a_i/add_1_root_add_74_2/CI (adder_byte_4_DW01_add_1)
+                                                          0.00       1.41 r
+  add/genblk3[3].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.05       1.46 f
+  add/genblk3[3].a_i/add_1_root_add_74_2/U133/Y (BUFX2)
+                                                          0.03       1.49 f
+  add/genblk3[3].a_i/add_1_root_add_74_2/U150/Y (INVX1)
+                                                          0.00       1.49 r
+  add/genblk3[3].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_4_DW01_add_1)
+                                                          0.00       1.49 r
+  add/genblk3[3].a_i/cout (adder_byte_4)                  0.00       1.49 r
+  add/U8/Y (AND2X1)                                       0.03       1.52 r
+  add/U92/Y (INVX1)                                       0.02       1.54 f
+  add/U7/Y (AND2X1)                                       0.04       1.58 f
+  add/U87/Y (INVX1)                                       0.07       1.65 r
+  add/genblk3[2].a_i/cin (adder_byte_5)                   0.00       1.65 r
+  add/genblk3[2].a_i/add_1_root_add_74_2/CI (adder_byte_5_DW01_add_1)
+                                                          0.00       1.65 r
+  add/genblk3[2].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.03       1.69 f
+  add/genblk3[2].a_i/add_1_root_add_74_2/U149/Y (INVX1)
+                                                          0.00       1.69 r
+  add/genblk3[2].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_5_DW01_add_1)
+                                                          0.00       1.69 r
+  add/genblk3[2].a_i/cout (adder_byte_5)                  0.00       1.69 r
+  add/U124/Y (MUX2X1)                                     0.02       1.71 f
+  add/U105/Y (INVX1)                                      0.10       1.81 r
+  add/genblk3[1].a_i/cin (adder_byte_6)                   0.00       1.81 r
+  add/genblk3[1].a_i/add_1_root_add_74_2/CI (adder_byte_6_DW01_add_1)
+                                                          0.00       1.81 r
+  add/genblk3[1].a_i/add_1_root_add_74_2/U3/Y (AOI21X1)
+                                                          0.04       1.85 f
+  add/genblk3[1].a_i/add_1_root_add_74_2/U118/Y (BUFX2)
+                                                          0.03       1.88 f
+  add/genblk3[1].a_i/add_1_root_add_74_2/U148/Y (INVX1)
+                                                          0.00       1.88 r
+  add/genblk3[1].a_i/add_1_root_add_74_2/SUM[8] (adder_byte_6_DW01_add_1)
+                                                          0.00       1.88 r
+  add/genblk3[1].a_i/cout (adder_byte_6)                  0.00       1.88 r
+  add/U10/Y (AND2X1)                                      0.03       1.91 r
+  add/U28/Y (INVX1)                                       0.02       1.93 f
+  add/U9/Y (AND2X1)                                       0.04       1.97 f
+  add/U27/Y (INVX1)                                       0.07       2.04 r
+  add/genblk3[0].a_i/cin (adder_byte_7)                   0.00       2.04 r
+  add/genblk3[0].a_i/add_1_root_add_74_2/CI (adder_byte_7_DW01_add_1)
+                                                          0.00       2.04 r
+  add/genblk3[0].a_i/add_1_root_add_74_2/U9/Y (AOI21X1)
+                                                          0.03       2.08 f
+  add/genblk3[0].a_i/add_1_root_add_74_2/U102/Y (BUFX2)
+                                                          0.04       2.11 f
+  add/genblk3[0].a_i/add_1_root_add_74_2/U2/Y (XOR2X1)
+                                                          0.03       2.15 r
+  add/genblk3[0].a_i/add_1_root_add_74_2/SUM[7] (adder_byte_7_DW01_add_1)
+                                                          0.00       2.15 r
+  add/genblk3[0].a_i/sum[0] (adder_byte_7)                0.00       2.15 r
+  add/adder_out[0] (adder_clk)                            0.00       2.15 r
+  U3328/Y (AOI22X1)                                       0.02       2.17 f
+  U2198/Y (BUFX2)                                         0.07       2.25 f
+  U3329/Y (NAND2X1)                                       0.04       2.28 r
+  alu_out[0] (out)                                        0.00       2.28 r
+  data arrival time                                                  2.28
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.72
+
+
+1

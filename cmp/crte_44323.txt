@@ -1,0 +1,68 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+44323
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Mon Apr 18 12:38:42 PDT 2022 (1650310722)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: viterbi-scf1
+arch: x86_64
+release_version: 3.10.0-1160.59.1.el7.x86_64
+
+SECTION_IPC_INFO
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 77234176   cchen527   600        3579904    2          dest         
+0xabbaca01 7          tliang23   666        4          6                       
+0xabbaca02 8          tliang23   666        4          6                       
+0x00000000 50855972   sanghpar   600        65536      0                       
+0x00000000 77201470   cchen527   600        3579904    2          dest         
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+0x00004155 3          tliang23   666        1         
+
+
+SECTION_ULIMIT
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 4125750
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 4096
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 2097152
+_SC_CHILD_MAX= 4096
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/usr/local/synopsys//Design_Compiler/default/linux64/syn/bin/common_shell_exec -shell dc_shell -r /usr/local/synopsys//Design_Compiler/default -f scripts/syn.tcl -output_log_file dc.log
+
+SECTION_CPUINFO

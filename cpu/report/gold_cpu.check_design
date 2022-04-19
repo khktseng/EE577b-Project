@@ -1,0 +1,80 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Mon Apr 18 16:15:06 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     33
+    Unconnected ports (LINT-28)                                    33
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    26
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'lazy_multiplier', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C375' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C379' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C380' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C384' does not drive any nets. (LINT-1)
+Warning: In design 'lazy_multiplier', cell 'C385' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C414' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C416' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C421' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C423' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C428' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C430' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C435' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C437' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C440' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C443' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C446' does not drive any nets. (LINT-1)
+Warning: In design 'shifter', cell 'C449' does not drive any nets. (LINT-1)
+Warning: In design 'divider', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'divider', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'divider', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'divider', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'modulo', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'modulo', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'modulo', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'modulo', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'gold_cpu', net 'the_alu/add/couts[0]' driven by pin 'the_alu/add/genblk3[0].a_i/cout' has no loads. (LINT-2)
+Warning: In design 'shifter', port 'op2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'op2[57]' is not connected to any nets. (LINT-28)
+1

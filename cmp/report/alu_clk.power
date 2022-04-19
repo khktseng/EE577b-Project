@@ -1,0 +1,53 @@
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : alu_clk
+Version: K-2015.06-SP5-5
+Date   : Mon Apr 18 17:10:00 2022
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 351.9410 uW   (94%)
+  Net Switching Power  =  23.5616 uW    (6%)
+                         ---------
+Total Dynamic Power    = 375.5026 uW  (100%)
+
+Cell Leakage Power     = 116.1813 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.3163        5.7143e-04        2.4630e+04            0.3415  (  69.46%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.5626e-02        2.2990e-02        9.1551e+04            0.1502  (  30.54%)
+--------------------------------------------------------------------------------------------------
+Total              0.3519 mW     2.3562e-02 mW     1.1618e+05 nW         0.4917 mW
+1
