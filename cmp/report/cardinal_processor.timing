@@ -1,11 +1,23 @@
-Information: Building the design 'reg_file'. (HDL-193)
-Warning: Cannot find the design 'reg_file' in the library 'WORK'. (LBR-1)
-Error: Width mismatch on port 'op_delay' of reference to 'hdu' in 'cardinal_processor'. (LINK-3)
-Warning: Unable to resolve reference 'hdu' in 'cardinal_processor'. (LINK-5)
-Warning: Unable to resolve reference 'reg_file' in 'cardinal_processor'. (LINK-5)
-Warning: Design 'cardinal_processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Information: Updating design information... (UID-85)
 Warning: Design 'cardinal_processor' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Timing loop detected. (OPT-150)
+	ALU/U1290/B ALU/U1290/Y ALU/U1702/A ALU/U1702/Y ALU/U1700/A ALU/U1700/Y ALU/U1701/A ALU/U1701/Y ALU/add/U92/A ALU/add/U92/Y ALU/add/U70/A ALU/add/U70/Y HU/U264/A HU/U264/Y HU/U118/A HU/U118/Y HU/U256/A HU/U256/Y HU/U120/A HU/U120/Y HU/U185/A HU/U185/Y HU/U394/A HU/U394/Y ALU/U2471/A ALU/U2471/Y ALU/U2472/A ALU/U2472/Y 
+Information: Timing loop detected. (OPT-150)
+	ALU/U2503/A ALU/U2503/Y ALU/div/U730/A ALU/div/U730/Y ALU/div/U729/A ALU/div/U729/Y ALU/div/U728/A ALU/div/U728/Y ALU/div/U726/A ALU/div/U726/Y ALU/div/genblk3[0].div_w/U81/A ALU/div/genblk3[0].div_w/U81/Y ALU/div/genblk3[0].div_w/U82/A ALU/div/genblk3[0].div_w/U82/Y ALU/div/U4/A ALU/div/U4/Y ALU/div/U85/A ALU/div/U85/Y ALU/div/U751/A ALU/div/U751/Y HU/U263/C HU/U263/Y HU/U70/A HU/U70/Y HU/U262/C HU/U262/Y HU/U133/A HU/U133/Y HU/U135/A HU/U135/Y HU/U256/B HU/U256/Y HU/U120/A HU/U120/Y HU/U185/A HU/U185/Y HU/U394/A HU/U394/Y ALU/U2471/A ALU/U2471/Y ALU/U2472/A ALU/U2472/Y ALU/U2593/A ALU/U2593/Y ALU/U243/A ALU/U243/Y ALU/U244/A ALU/U244/Y ALU/U2595/A ALU/U2595/Y ALU/U2594/A ALU/U2594/Y 
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'ALU/U1290'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'ALU/div/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'ALU/U1274'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'HU/U185'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'ALU/div/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'ALU/div/U85'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Y' on cell 'ALU/div/U85'
+         to break a timing loop. (OPT-314)
  
 ****************************************
 Report : timing
@@ -14,7 +26,7 @@ Report : timing
         -max_paths 1
 Design : cardinal_processor
 Version: K-2015.06-SP5-5
-Date   : Thu Apr 28 19:58:04 2022
+Date   : Thu Apr 28 20:39:00 2022
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -22,9 +34,9 @@ Date   : Thu Apr 28 19:58:04 2022
 Operating Conditions: typical   Library: gscl45nm
 Wire Load Model Mode: top
 
-  Startpoint: alu_op_reg[4]
+  Startpoint: alu_op_reg[0]
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: PC_reg[26] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PC_reg[29] (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
@@ -32,267 +44,279 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  alu_op_reg[4]/CLK (DFFPOSX1)                            0.00 #     0.00 r
-  alu_op_reg[4]/Q (DFFPOSX1)                              0.31       0.31 f
-  ALU/opcode[4] (alu_clk)                                 0.00       0.31 f
-  ALU/U2752/Y (INVX1)                                     0.68       0.99 r
-  ALU/U1275/Y (NOR3X1)                                    0.23       1.22 f
-  ALU/U1271/Y (NAND3X1)                                   0.10       1.32 r
-  ALU/U2755/Y (INVX1)                                     0.03       1.35 f
-  ALU/U2563/Y (AND2X1)                                    0.03       1.38 f
-  ALU/U2487/Y (INVX1)                                     0.76       2.14 r
-  ALU/U2477/Y (INVX1)                                     0.19       2.33 f
-  ALU/U2474/Y (INVX1)                                     0.45       2.78 r
-  ALU/U2460/Y (INVX1)                                     0.20       2.98 f
-  ALU/sqrt/in_v (rooter)                                  0.00       2.98 f
-  ALU/sqrt/U164/Y (INVX1)                                 0.07       3.05 r
-  ALU/sqrt/U163/Y (INVX1)                                 0.04       3.09 f
-  ALU/sqrt/sqrt_dw/start (rooter_DW_sqrt_seq_14)          0.00       3.09 f
-  ALU/sqrt/sqrt_dw/U267/Y (INVX1)                         0.59       3.67 r
-  ALU/sqrt/sqrt_dw/U89/Y (AND2X1)                        -0.01       3.67 r
-  ALU/sqrt/sqrt_dw/U90/Y (INVX1)                          0.03       3.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/B[0] (rooter_DW01_add_32)      0.00       3.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1/Y (AND2X1)                  0.04       3.74 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_1/YC (FAX1)                 0.08       3.82 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_2/YC (FAX1)                 0.08       3.90 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_3/YC (FAX1)                 0.08       3.99 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_4/YC (FAX1)                 0.08       4.07 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_5/YC (FAX1)                 0.08       4.15 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_6/YC (FAX1)                 0.08       4.23 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_7/YC (FAX1)                 0.08       4.31 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_8/YC (FAX1)                 0.08       4.39 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_9/YC (FAX1)                 0.08       4.47 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_10/YC (FAX1)                0.08       4.56 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_11/YC (FAX1)                0.08       4.64 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_12/YC (FAX1)                0.08       4.72 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_13/YC (FAX1)                0.08       4.80 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_14/YC (FAX1)                0.08       4.88 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_15/YC (FAX1)                0.08       4.96 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_16/YC (FAX1)                0.08       5.04 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_17/YC (FAX1)                0.08       5.13 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_18/YC (FAX1)                0.08       5.21 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_19/YC (FAX1)                0.08       5.29 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_20/YC (FAX1)                0.08       5.37 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_21/YC (FAX1)                0.08       5.45 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_22/YC (FAX1)                0.08       5.53 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_23/YC (FAX1)                0.08       5.61 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_24/YC (FAX1)                0.08       5.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_25/YC (FAX1)                0.08       5.78 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_26/YC (FAX1)                0.08       5.86 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_27/YC (FAX1)                0.08       5.94 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_28/YC (FAX1)                0.08       6.02 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_29/YC (FAX1)                0.08       6.10 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_30/YC (FAX1)                0.08       6.18 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U1_31/YC (FAX1)                0.07       6.26 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U10/Y (OAI21X1)                0.02       6.27 r
-  ALU/sqrt/sqrt_dw/U_ADD_0/U5/Y (INVX1)                   0.02       6.30 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U9/Y (AOI21X1)                 0.02       6.31 r
-  ALU/sqrt/sqrt_dw/U_ADD_0/U2/Y (BUFX2)                   0.04       6.35 r
-  ALU/sqrt/sqrt_dw/U_ADD_0/U3/Y (INVX1)                   0.02       6.37 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/U8/Y (OAI21X1)                 0.04       6.41 r
-  ALU/sqrt/sqrt_dw/U_ADD_0/U7/Y (OAI21X1)                 0.03       6.43 f
-  ALU/sqrt/sqrt_dw/U_ADD_0/CO (rooter_DW01_add_32)        0.00       6.43 f
-  ALU/sqrt/sqrt_dw/U276/Y (INVX1)                         0.52       6.96 r
-  ALU/sqrt/sqrt_dw/U882/Y (MUX2X1)                        0.12       7.08 r
-  ALU/sqrt/sqrt_dw/U337/Y (INVX1)                         0.07       7.15 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/A[2] (rooter_DW01_add_33)      0.00       7.15 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_2/YC (FAX1)                 0.09       7.24 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_3/YC (FAX1)                 0.08       7.32 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_4/YC (FAX1)                 0.08       7.40 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_5/YC (FAX1)                 0.08       7.48 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_6/YC (FAX1)                 0.08       7.56 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_7/YC (FAX1)                 0.08       7.64 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_8/YC (FAX1)                 0.08       7.73 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_9/YC (FAX1)                 0.08       7.81 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_10/YC (FAX1)                0.08       7.89 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_11/YC (FAX1)                0.08       7.97 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_12/YC (FAX1)                0.08       8.05 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_13/YC (FAX1)                0.08       8.13 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_14/YC (FAX1)                0.08       8.21 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_15/YC (FAX1)                0.08       8.30 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_16/YC (FAX1)                0.08       8.38 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_17/YC (FAX1)                0.08       8.46 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_18/YC (FAX1)                0.08       8.54 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_19/YC (FAX1)                0.08       8.62 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_20/YC (FAX1)                0.08       8.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_21/YC (FAX1)                0.08       8.79 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_22/YC (FAX1)                0.08       8.87 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_23/YC (FAX1)                0.08       8.95 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_24/YC (FAX1)                0.08       9.03 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_25/YC (FAX1)                0.08       9.11 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_26/YC (FAX1)                0.08       9.19 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_27/YC (FAX1)                0.08       9.27 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_28/YC (FAX1)                0.08       9.36 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_29/YC (FAX1)                0.08       9.44 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_30/YC (FAX1)                0.08       9.52 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1_31/YC (FAX1)                0.07       9.59 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U11/Y (OAI21X1)                0.02       9.61 r
-  ALU/sqrt/sqrt_dw/U_ADD_1/U5/Y (INVX1)                   0.02       9.63 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U10/Y (AOI21X1)                0.02       9.65 r
-  ALU/sqrt/sqrt_dw/U_ADD_1/U2/Y (BUFX2)                   0.04       9.68 r
-  ALU/sqrt/sqrt_dw/U_ADD_1/U1/Y (INVX1)                   0.02       9.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/U9/Y (OAI21X1)                 0.04       9.74 r
-  ALU/sqrt/sqrt_dw/U_ADD_1/U8/Y (OAI21X1)                 0.03       9.77 f
-  ALU/sqrt/sqrt_dw/U_ADD_1/CO (rooter_DW01_add_33)        0.00       9.77 f
-  ALU/sqrt/sqrt_dw/U274/Y (INVX1)                         0.49      10.26 r
-  ALU/sqrt/sqrt_dw/U892/Y (MUX2X1)                        0.12      10.38 r
-  ALU/sqrt/sqrt_dw/U352/Y (INVX1)                         0.06      10.44 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/A[2] (rooter_DW01_add_34)      0.00      10.44 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_2/YC (FAX1)                 0.09      10.53 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_3/YC (FAX1)                 0.08      10.61 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_4/YC (FAX1)                 0.08      10.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_5/YC (FAX1)                 0.08      10.78 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_6/YC (FAX1)                 0.08      10.86 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_7/YC (FAX1)                 0.08      10.94 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_8/YC (FAX1)                 0.08      11.02 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_9/YC (FAX1)                 0.08      11.10 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_10/YC (FAX1)                0.08      11.18 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_11/YC (FAX1)                0.08      11.27 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_12/YC (FAX1)                0.08      11.35 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_13/YC (FAX1)                0.08      11.43 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_14/YC (FAX1)                0.08      11.51 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_15/YC (FAX1)                0.08      11.59 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_16/YC (FAX1)                0.08      11.67 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_17/YC (FAX1)                0.08      11.75 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_18/YC (FAX1)                0.08      11.84 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_19/YC (FAX1)                0.08      11.92 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_20/YC (FAX1)                0.08      12.00 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_21/YC (FAX1)                0.08      12.08 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_22/YC (FAX1)                0.08      12.16 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_23/YC (FAX1)                0.08      12.24 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_24/YC (FAX1)                0.08      12.32 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_25/YC (FAX1)                0.08      12.41 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_26/YC (FAX1)                0.08      12.49 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_27/YC (FAX1)                0.08      12.57 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_28/YC (FAX1)                0.08      12.65 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_29/YC (FAX1)                0.08      12.73 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_30/YC (FAX1)                0.08      12.81 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1_31/YC (FAX1)                0.07      12.88 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U11/Y (OAI21X1)                0.02      12.90 r
-  ALU/sqrt/sqrt_dw/U_ADD_2/U5/Y (INVX1)                   0.02      12.93 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U10/Y (AOI21X1)                0.02      12.94 r
-  ALU/sqrt/sqrt_dw/U_ADD_2/U2/Y (BUFX2)                   0.04      12.98 r
-  ALU/sqrt/sqrt_dw/U_ADD_2/U1/Y (INVX1)                   0.02      13.00 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/U9/Y (OAI21X1)                 0.04      13.04 r
-  ALU/sqrt/sqrt_dw/U_ADD_2/U8/Y (OAI21X1)                 0.03      13.06 f
-  ALU/sqrt/sqrt_dw/U_ADD_2/CO (rooter_DW01_add_34)        0.00      13.06 f
-  ALU/sqrt/sqrt_dw/U275/Y (INVX1)                         0.46      13.52 r
-  ALU/sqrt/sqrt_dw/U900/Y (MUX2X1)                        0.11      13.63 r
-  ALU/sqrt/sqrt_dw/U350/Y (INVX1)                         0.06      13.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/A[2] (rooter_DW01_add_35)      0.00      13.70 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_2/YC (FAX1)                 0.09      13.79 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_3/YC (FAX1)                 0.08      13.87 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_4/YC (FAX1)                 0.08      13.95 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_5/YC (FAX1)                 0.08      14.03 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_6/YC (FAX1)                 0.08      14.11 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_7/YC (FAX1)                 0.08      14.19 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_8/YC (FAX1)                 0.08      14.28 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_9/YC (FAX1)                 0.08      14.36 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_10/YC (FAX1)                0.08      14.44 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_11/YC (FAX1)                0.08      14.52 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_12/YC (FAX1)                0.08      14.60 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_13/YC (FAX1)                0.08      14.68 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_14/YC (FAX1)                0.08      14.76 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_15/YC (FAX1)                0.08      14.85 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_16/YC (FAX1)                0.08      14.93 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_17/YC (FAX1)                0.08      15.01 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_18/YC (FAX1)                0.08      15.09 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_19/YC (FAX1)                0.08      15.17 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_20/YC (FAX1)                0.08      15.25 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_21/YC (FAX1)                0.08      15.33 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_22/YC (FAX1)                0.08      15.42 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_23/YC (FAX1)                0.08      15.50 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_24/YC (FAX1)                0.08      15.58 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_25/YC (FAX1)                0.08      15.66 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_26/YC (FAX1)                0.08      15.74 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_27/YC (FAX1)                0.08      15.82 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_28/YC (FAX1)                0.08      15.90 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_29/YC (FAX1)                0.08      15.99 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_30/YC (FAX1)                0.08      16.07 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1_31/YC (FAX1)                0.07      16.14 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U11/Y (OAI21X1)                0.02      16.16 r
-  ALU/sqrt/sqrt_dw/U_ADD_3/U4/Y (INVX1)                   0.02      16.18 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U10/Y (AOI21X1)                0.02      16.20 r
-  ALU/sqrt/sqrt_dw/U_ADD_3/U1/Y (BUFX2)                   0.04      16.23 r
-  ALU/sqrt/sqrt_dw/U_ADD_3/U2/Y (INVX1)                   0.02      16.25 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/U9/Y (OAI21X1)                 0.04      16.29 r
-  ALU/sqrt/sqrt_dw/U_ADD_3/U8/Y (OAI21X1)                 0.03      16.32 f
-  ALU/sqrt/sqrt_dw/U_ADD_3/CO (rooter_DW01_add_35)        0.00      16.32 f
-  ALU/sqrt/sqrt_dw/root[0] (rooter_DW_sqrt_seq_14)        0.00      16.32 f
-  ALU/sqrt/U134/Y (AOI22X1)                               0.05      16.37 r
-  ALU/sqrt/U38/Y (BUFX2)                                  0.04      16.40 r
-  ALU/sqrt/U4/Y (AND2X1)                                  0.04      16.44 r
-  ALU/sqrt/U62/Y (INVX1)                                  0.02      16.46 f
-  ALU/sqrt/root[0] (rooter)                               0.00      16.46 f
-  ALU/U1300/Y (AOI22X1)                                   0.03      16.50 r
-  ALU/U1620/Y (BUFX2)                                     0.04      16.54 r
-  ALU/U1299/Y (NAND3X1)                                   0.01      16.55 f
-  ALU/U795/Y (BUFX2)                                      0.03      16.59 f
-  ALU/alu_out[63] (alu_clk)                               0.00      16.59 f
-  U2141/Y (AND2X1)                                        0.03      16.62 f
-  U2142/Y (INVX1)                                         0.01      16.62 r
-  U1539/Y (NAND3X1)                                       0.01      16.63 f
-  U1985/Y (BUFX2)                                         0.03      16.67 f
-  U1933/Y (OR2X1)                                         0.05      16.72 f
-  U1934/Y (INVX1)                                         0.00      16.72 r
-  U1089/Y (NAND3X1)                                       0.02      16.73 f
-  U1940/Y (BUFX2)                                         0.03      16.77 f
-  U1083/Y (NOR3X1)                                        0.04      16.80 r
-  U992/Y (AOI22X1)                                        0.04      16.84 f
-  U3057/Y (BUFX2)                                         0.04      16.88 f
-  U991/Y (XNOR2X1)                                        0.05      16.93 r
-  U990/Y (NAND3X1)                                        0.02      16.95 f
-  U3056/Y (BUFX2)                                         0.04      16.99 f
-  U1641/Y (AND2X1)                                        0.22      17.21 f
-  U971/Y (AOI22X1)                                        0.09      17.30 r
-  U2995/Y (BUFX2)                                         0.04      17.34 r
-  U1634/Y (AND2X1)                                        0.03      17.37 r
-  U2992/Y (INVX1)                                         0.02      17.39 f
-  PC_reg[26]/D (DFFPOSX1)                                 0.00      17.39 f
-  data arrival time                                                 17.39
+  alu_op_reg[0]/CLK (DFFPOSX1)                            0.00 #     0.00 r
+  alu_op_reg[0]/Q (DFFPOSX1)                              0.17       0.17 r
+  ALU/opcode[0] (alu_clk)                                 0.00       0.17 r
+  ALU/U2773/Y (INVX1)                                     0.08       0.26 f
+  ALU/U1275/Y (NAND3X1)                                   0.04       0.30 r
+  ALU/U2774/Y (INVX1)                                     0.03       0.32 f
+  ALU/U1274/Y (NAND2X1)                                   0.03       0.35 r
+  ALU/U2771/Y (INVX1)                                     0.02       0.37 f
+  ALU/U2592/Y (INVX1)                                     0.76       1.13 r
+  ALU/U2502/Y (INVX1)                                     0.19       1.31 f
+  ALU/U2479/Y (INVX1)                                     0.45       1.76 r
+  ALU/U2475/Y (INVX1)                                     0.20       1.97 f
+  ALU/sqrt/in_v (rooter)                                  0.00       1.97 f
+  ALU/sqrt/U165/Y (INVX1)                                 0.07       2.04 r
+  ALU/sqrt/U164/Y (INVX1)                                 0.04       2.08 f
+  ALU/sqrt/sqrt_dw/start (rooter_DW_sqrt_seq_14)          0.00       2.08 f
+  ALU/sqrt/sqrt_dw/U271/Y (INVX1)                         0.59       2.66 r
+  ALU/sqrt/sqrt_dw/U96/Y (AND2X1)                        -0.01       2.66 r
+  ALU/sqrt/sqrt_dw/U97/Y (INVX1)                          0.03       2.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/B[0] (rooter_DW01_add_32)      0.00       2.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1/Y (AND2X1)                  0.04       2.73 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_1/YC (FAX1)                 0.08       2.81 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_2/YC (FAX1)                 0.08       2.89 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_3/YC (FAX1)                 0.08       2.98 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_4/YC (FAX1)                 0.08       3.06 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_5/YC (FAX1)                 0.08       3.14 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_6/YC (FAX1)                 0.08       3.22 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_7/YC (FAX1)                 0.08       3.30 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_8/YC (FAX1)                 0.08       3.38 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_9/YC (FAX1)                 0.08       3.47 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_10/YC (FAX1)                0.08       3.55 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_11/YC (FAX1)                0.08       3.63 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_12/YC (FAX1)                0.08       3.71 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_13/YC (FAX1)                0.08       3.79 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_14/YC (FAX1)                0.08       3.87 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_15/YC (FAX1)                0.08       3.95 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_16/YC (FAX1)                0.08       4.04 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_17/YC (FAX1)                0.08       4.12 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_18/YC (FAX1)                0.08       4.20 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_19/YC (FAX1)                0.08       4.28 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_20/YC (FAX1)                0.08       4.36 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_21/YC (FAX1)                0.08       4.44 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_22/YC (FAX1)                0.08       4.52 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_23/YC (FAX1)                0.08       4.61 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_24/YC (FAX1)                0.08       4.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_25/YC (FAX1)                0.08       4.77 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_26/YC (FAX1)                0.08       4.85 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_27/YC (FAX1)                0.08       4.93 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_28/YC (FAX1)                0.08       5.01 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_29/YC (FAX1)                0.08       5.09 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_30/YC (FAX1)                0.08       5.18 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U1_31/YC (FAX1)                0.07       5.25 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U10/Y (OAI21X1)                0.02       5.26 r
+  ALU/sqrt/sqrt_dw/U_ADD_0/U9/Y (INVX1)                   0.02       5.29 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U8/Y (AOI21X1)                 0.02       5.30 r
+  ALU/sqrt/sqrt_dw/U_ADD_0/U2/Y (BUFX2)                   0.04       5.34 r
+  ALU/sqrt/sqrt_dw/U_ADD_0/U6/Y (INVX1)                   0.02       5.36 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/U5/Y (OAI21X1)                 0.04       5.40 r
+  ALU/sqrt/sqrt_dw/U_ADD_0/U4/Y (OAI21X1)                 0.03       5.42 f
+  ALU/sqrt/sqrt_dw/U_ADD_0/CO (rooter_DW01_add_32)        0.00       5.42 f
+  ALU/sqrt/sqrt_dw/U280/Y (INVX1)                         0.52       5.95 r
+  ALU/sqrt/sqrt_dw/U877/Y (MUX2X1)                        0.12       6.07 r
+  ALU/sqrt/sqrt_dw/U876/Y (INVX1)                         0.07       6.14 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/A[2] (rooter_DW01_add_33)      0.00       6.14 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_2/YC (FAX1)                 0.09       6.23 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_3/YC (FAX1)                 0.08       6.31 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_4/YC (FAX1)                 0.08       6.39 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_5/YC (FAX1)                 0.08       6.47 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_6/YC (FAX1)                 0.08       6.55 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_7/YC (FAX1)                 0.08       6.64 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_8/YC (FAX1)                 0.08       6.72 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_9/YC (FAX1)                 0.08       6.80 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_10/YC (FAX1)                0.08       6.88 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_11/YC (FAX1)                0.08       6.96 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_12/YC (FAX1)                0.08       7.04 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_13/YC (FAX1)                0.08       7.12 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_14/YC (FAX1)                0.08       7.21 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_15/YC (FAX1)                0.08       7.29 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_16/YC (FAX1)                0.08       7.37 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_17/YC (FAX1)                0.08       7.45 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_18/YC (FAX1)                0.08       7.53 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_19/YC (FAX1)                0.08       7.61 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_20/YC (FAX1)                0.08       7.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_21/YC (FAX1)                0.08       7.78 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_22/YC (FAX1)                0.08       7.86 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_23/YC (FAX1)                0.08       7.94 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_24/YC (FAX1)                0.08       8.02 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_25/YC (FAX1)                0.08       8.10 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_26/YC (FAX1)                0.08       8.18 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_27/YC (FAX1)                0.08       8.27 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_28/YC (FAX1)                0.08       8.35 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_29/YC (FAX1)                0.08       8.43 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_30/YC (FAX1)                0.08       8.51 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1_31/YC (FAX1)                0.07       8.58 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U11/Y (OAI21X1)                0.02       8.60 r
+  ALU/sqrt/sqrt_dw/U_ADD_1/U10/Y (INVX1)                  0.02       8.62 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U9/Y (AOI21X1)                 0.02       8.64 r
+  ALU/sqrt/sqrt_dw/U_ADD_1/U2/Y (BUFX2)                   0.04       8.68 r
+  ALU/sqrt/sqrt_dw/U_ADD_1/U1/Y (INVX1)                   0.02       8.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/U7/Y (OAI21X1)                 0.04       8.73 r
+  ALU/sqrt/sqrt_dw/U_ADD_1/U6/Y (OAI21X1)                 0.03       8.76 f
+  ALU/sqrt/sqrt_dw/U_ADD_1/CO (rooter_DW01_add_33)        0.00       8.76 f
+  ALU/sqrt/sqrt_dw/U278/Y (INVX1)                         0.49       9.25 r
+  ALU/sqrt/sqrt_dw/U891/Y (MUX2X1)                        0.12       9.37 r
+  ALU/sqrt/sqrt_dw/U890/Y (INVX1)                         0.06       9.43 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/A[2] (rooter_DW01_add_34)      0.00       9.43 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_2/YC (FAX1)                 0.09       9.52 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_3/YC (FAX1)                 0.08       9.61 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_4/YC (FAX1)                 0.08       9.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_5/YC (FAX1)                 0.08       9.77 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_6/YC (FAX1)                 0.08       9.85 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_7/YC (FAX1)                 0.08       9.93 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_8/YC (FAX1)                 0.08      10.01 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_9/YC (FAX1)                 0.08      10.09 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_10/YC (FAX1)                0.08      10.18 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_11/YC (FAX1)                0.08      10.26 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_12/YC (FAX1)                0.08      10.34 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_13/YC (FAX1)                0.08      10.42 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_14/YC (FAX1)                0.08      10.50 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_15/YC (FAX1)                0.08      10.58 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_16/YC (FAX1)                0.08      10.66 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_17/YC (FAX1)                0.08      10.75 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_18/YC (FAX1)                0.08      10.83 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_19/YC (FAX1)                0.08      10.91 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_20/YC (FAX1)                0.08      10.99 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_21/YC (FAX1)                0.08      11.07 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_22/YC (FAX1)                0.08      11.15 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_23/YC (FAX1)                0.08      11.23 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_24/YC (FAX1)                0.08      11.32 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_25/YC (FAX1)                0.08      11.40 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_26/YC (FAX1)                0.08      11.48 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_27/YC (FAX1)                0.08      11.56 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_28/YC (FAX1)                0.08      11.64 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_29/YC (FAX1)                0.08      11.72 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_30/YC (FAX1)                0.08      11.80 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1_31/YC (FAX1)                0.07      11.88 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U11/Y (OAI21X1)                0.02      11.89 r
+  ALU/sqrt/sqrt_dw/U_ADD_2/U10/Y (INVX1)                  0.02      11.92 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U9/Y (AOI21X1)                 0.02      11.93 r
+  ALU/sqrt/sqrt_dw/U_ADD_2/U2/Y (BUFX2)                   0.04      11.97 r
+  ALU/sqrt/sqrt_dw/U_ADD_2/U1/Y (INVX1)                   0.02      11.99 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/U7/Y (OAI21X1)                 0.04      12.03 r
+  ALU/sqrt/sqrt_dw/U_ADD_2/U6/Y (OAI21X1)                 0.03      12.06 f
+  ALU/sqrt/sqrt_dw/U_ADD_2/CO (rooter_DW01_add_34)        0.00      12.06 f
+  ALU/sqrt/sqrt_dw/U279/Y (INVX1)                         0.46      12.51 r
+  ALU/sqrt/sqrt_dw/U901/Y (MUX2X1)                        0.11      12.63 r
+  ALU/sqrt/sqrt_dw/U900/Y (INVX1)                         0.06      12.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/A[2] (rooter_DW01_add_35)      0.00      12.69 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_2/YC (FAX1)                 0.09      12.78 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_3/YC (FAX1)                 0.08      12.86 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_4/YC (FAX1)                 0.08      12.94 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_5/YC (FAX1)                 0.08      13.02 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_6/YC (FAX1)                 0.08      13.10 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_7/YC (FAX1)                 0.08      13.19 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_8/YC (FAX1)                 0.08      13.27 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_9/YC (FAX1)                 0.08      13.35 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_10/YC (FAX1)                0.08      13.43 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_11/YC (FAX1)                0.08      13.51 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_12/YC (FAX1)                0.08      13.59 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_13/YC (FAX1)                0.08      13.67 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_14/YC (FAX1)                0.08      13.76 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_15/YC (FAX1)                0.08      13.84 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_16/YC (FAX1)                0.08      13.92 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_17/YC (FAX1)                0.08      14.00 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_18/YC (FAX1)                0.08      14.08 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_19/YC (FAX1)                0.08      14.16 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_20/YC (FAX1)                0.08      14.24 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_21/YC (FAX1)                0.08      14.33 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_22/YC (FAX1)                0.08      14.41 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_23/YC (FAX1)                0.08      14.49 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_24/YC (FAX1)                0.08      14.57 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_25/YC (FAX1)                0.08      14.65 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_26/YC (FAX1)                0.08      14.73 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_27/YC (FAX1)                0.08      14.81 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_28/YC (FAX1)                0.08      14.90 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_29/YC (FAX1)                0.08      14.98 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_30/YC (FAX1)                0.08      15.06 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1_31/YC (FAX1)                0.07      15.13 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U11/Y (OAI21X1)                0.02      15.15 r
+  ALU/sqrt/sqrt_dw/U_ADD_3/U10/Y (INVX1)                  0.02      15.17 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U9/Y (AOI21X1)                 0.02      15.19 r
+  ALU/sqrt/sqrt_dw/U_ADD_3/U1/Y (BUFX2)                   0.04      15.23 r
+  ALU/sqrt/sqrt_dw/U_ADD_3/U7/Y (INVX1)                   0.02      15.24 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/U6/Y (OAI21X1)                 0.04      15.28 r
+  ALU/sqrt/sqrt_dw/U_ADD_3/U5/Y (OAI21X1)                 0.03      15.31 f
+  ALU/sqrt/sqrt_dw/U_ADD_3/CO (rooter_DW01_add_35)        0.00      15.31 f
+  ALU/sqrt/sqrt_dw/root[0] (rooter_DW_sqrt_seq_14)        0.00      15.31 f
+  ALU/sqrt/U134/Y (AOI22X1)                               0.05      15.36 r
+  ALU/sqrt/U41/Y (BUFX2)                                  0.04      15.39 r
+  ALU/sqrt/U23/Y (AND2X1)                                 0.04      15.43 r
+  ALU/sqrt/U78/Y (INVX1)                                  0.02      15.46 f
+  ALU/sqrt/root[0] (rooter)                               0.00      15.46 f
+  ALU/U1310/Y (AOI22X1)                                   0.03      15.49 r
+  ALU/U1629/Y (BUFX2)                                     0.04      15.53 r
+  ALU/U1628/Y (INVX1)                                     0.02      15.55 f
+  ALU/U169/Y (OR2X1)                                      0.04      15.59 f
+  ALU/U168/Y (OR2X1)                                      0.05      15.64 f
+  ALU/alu_out[63] (alu_clk)                               0.00      15.64 f
+  U1068/Y (AOI22X1)                                       0.03      15.67 r
+  U1602/Y (BUFX2)                                         0.04      15.71 r
+  U1562/Y (AND2X1)                                        0.03      15.74 r
+  U2217/Y (INVX1)                                         0.03      15.77 f
+  U1488/Y (OR2X1)                                         0.04      15.81 f
+  U252/Y (NOR3X1)                                         0.03      15.84 r
+  U251/Y (NAND3X1)                                        0.02      15.86 f
+  U2149/Y (BUFX2)                                         0.03      15.89 f
+  U1503/Y (OR2X1)                                         0.04      15.93 f
+  U2154/Y (INVX1)                                         0.00      15.93 r
+  U195/Y (AOI21X1)                                        0.02      15.95 f
+  U2719/Y (BUFX2)                                         0.04      15.99 f
+  U194/Y (XNOR2X1)                                        0.05      16.04 r
+  U193/Y (NAND3X1)                                        0.02      16.06 f
+  U2718/Y (BUFX2)                                         0.04      16.10 f
+  U1598/Y (AND2X1)                                        0.22      16.31 f
+  U183/Y (AOI22X1)                                        0.11      16.42 r
+  U2442/Y (BUFX2)                                         0.04      16.45 r
+  U1587/Y (AND2X1)                                        0.03      16.48 r
+  U2439/Y (INVX1)                                         0.02      16.50 f
+  PC_reg[29]/D (DFFPOSX1)                                 0.00      16.50 f
+  data arrival time                                                 16.50
 
   clock clk (rise edge)                                  20.00      20.00
   clock network delay (ideal)                             0.00      20.00
-  PC_reg[26]/CLK (DFFPOSX1)                               0.00      20.00 r
+  PC_reg[29]/CLK (DFFPOSX1)                               0.00      20.00 r
   library setup time                                     -0.06      19.94
   data required time                                                19.94
   --------------------------------------------------------------------------
   data required time                                                19.94
-  data arrival time                                                -17.39
+  data arrival time                                                -16.50
   --------------------------------------------------------------------------
-  slack (MET)                                                        2.56
+  slack (MET)                                                        3.44
 
 
   Startpoint: inst_D_reg[2]
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: nicEn (output port)
+  Endpoint: d_in_nic[23]
+            (output port)
   Path Group: default
   Path Type: max
 
   Point                                    Incr       Path
   -----------------------------------------------------------
   inst_D_reg[2]/CLK (DFFPOSX1)             0.00 #     0.00 r
-  inst_D_reg[2]/Q (DFFPOSX1)               0.06       0.06 r
-  U3172/Y (INVX1)                          0.03       0.09 f
-  U3171/Y (AND2X1)                         0.05       0.14 f
-  U1146/Y (NAND3X1)                        0.03       0.17 r
-  U3170/Y (BUFX2)                          0.07       0.23 r
-  U3076/Y (INVX1)                          0.05       0.29 f
-  U3085/Y (AND2X1)                         0.05       0.33 f
-  U1137/Y (NAND3X1)                        0.03       0.36 r
-  U3012/Y (BUFX2)                          0.04       0.41 r
-  U3078/Y (INVX1)                          0.01       0.42 f
-  nicEn (out)                              0.00       0.42 f
-  data arrival time                                   0.42
+  inst_D_reg[2]/Q (DFFPOSX1)               0.07       0.07 r
+  U2948/Y (INVX1)                          0.02       0.09 f
+  U2835/Y (AND2X1)                         0.05       0.13 f
+  U1094/Y (NAND3X1)                        0.03       0.16 r
+  U2829/Y (BUFX2)                          0.08       0.24 r
+  U2735/Y (AND2X1)                         0.04       0.28 r
+  U2736/Y (INVX1)                          0.02       0.30 f
+  U5/Y (OAI21X1)                           0.03       0.33 r
+  rf/r0[3] (reg_file)                      0.00       0.33 r
+  rf/U9129/Y (INVX1)                       0.03       0.36 f
+  rf/U2136/Y (OR2X1)                       0.04       0.40 f
+  rf/U8959/Y (INVX1)                       0.41       0.81 r
+  rf/U10570/Y (OAI21X1)                    0.14       0.95 f
+  rf/U10571/Y (NOR3X1)                     0.07       1.02 r
+  rf/U10572/Y (AOI22X1)                    0.03       1.05 f
+  rf/U535/Y (BUFX2)                        0.04       1.08 f
+  rf/U138/Y (AND2X1)                       0.04       1.12 f
+  rf/U2130/Y (INVX1)                       0.01       1.14 r
+  rf/r0_D[40] (reg_file)                   0.00       1.14 r
+  d_in_nic[23] (out)                       0.00       1.14 r
+  data arrival time                                   1.14
 
   max_delay                                5.00       5.00
   output external delay                    0.00       5.00
   data required time                                  5.00
   -----------------------------------------------------------
   data required time                                  5.00
-  data arrival time                                  -0.42
+  data arrival time                                  -1.14
   -----------------------------------------------------------
-  slack (MET)                                         4.58
+  slack (MET)                                         3.86
 
 
 1

@@ -1,39 +1,32 @@
-Warning: Design 'cardinal_processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 check_design summary:
 Version:     K-2015.06-SP5-5
-Date:        Thu Apr 28 19:56:41 2022
+Date:        Thu Apr 28 20:36:58 2022
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
-Inputs/Outputs                                                    948
-    Multiply driven inputs (LINT-6)                                 2
-    Unconnected ports (LINT-28)                                    37
+Inputs/Outputs                                                    947
+    Unconnected ports (LINT-28)                                    38
     Feedthrough (LINT-29)                                         256
     Shorted outputs (LINT-31)                                     454
     Constant outputs (LINT-52)                                    199
 
-Cells                                                              55
+Cells                                                              35
     Cells do not drive (LINT-1)                                    16
     Connected to power or ground (LINT-32)                         14
     Nets connected to multiple pins on same cell (LINT-33)          1
-    Leaf pins connected to undriven nets (LINT-58)                 22
-    Cells have undriven hier pins (LINT-59)                         2
+    Leaf pins connected to undriven nets (LINT-58)                  4
 
-Nets                                                               48
-    Unloaded nets (LINT-2)                                         46
-    Undriven nets (LINT-3)                                          2
-
-Tristate                                                           97
-    A tristate bus has a non tri-state driver (LINT-34)            97
+Nets                                                               40
+    Unloaded nets (LINT-2)                                         40
 --------------------------------------------------------------------------------
 
-Warning: In design 'alu_clk', cell 'C2402' does not drive any nets. (LINT-1)
-Warning: In design 'alu_clk', cell 'C2403' does not drive any nets. (LINT-1)
-Warning: In design 'alu_clk', cell 'C2404' does not drive any nets. (LINT-1)
-Warning: In design 'alu_clk', cell 'C2405' does not drive any nets. (LINT-1)
+Warning: In design 'alu_clk', cell 'C2420' does not drive any nets. (LINT-1)
+Warning: In design 'alu_clk', cell 'C2421' does not drive any nets. (LINT-1)
+Warning: In design 'alu_clk', cell 'C2422' does not drive any nets. (LINT-1)
+Warning: In design 'alu_clk', cell 'C2423' does not drive any nets. (LINT-1)
 Warning: In design 'shifter', cell 'C414' does not drive any nets. (LINT-1)
 Warning: In design 'shifter', cell 'C416' does not drive any nets. (LINT-1)
 Warning: In design 'shifter', cell 'C421' does not drive any nets. (LINT-1)
@@ -46,12 +39,6 @@ Warning: In design 'shifter', cell 'C440' does not drive any nets. (LINT-1)
 Warning: In design 'shifter', cell 'C443' does not drive any nets. (LINT-1)
 Warning: In design 'shifter', cell 'C446' does not drive any nets. (LINT-1)
 Warning: In design 'shifter', cell 'C449' does not drive any nets. (LINT-1)
-Warning: In design 'cardinal_processor', net 'ALU/srt_op_delay[4]' driven by pin 'ALU/sqrt/op_delay[4]' has no loads. (LINT-2)
-Warning: In design 'cardinal_processor', net 'ALU/srt_op_delay[5]' driven by pin 'ALU/sqrt/op_delay[5]' has no loads. (LINT-2)
-Warning: In design 'cardinal_processor', net 'ALU/srt_op_delay[6]' driven by pin 'ALU/sqrt/op_delay[6]' has no loads. (LINT-2)
-Warning: In design 'cardinal_processor', net 'ALU/div_op_delay[6]' driven by pin 'ALU/div/op_delay[6]' has no loads. (LINT-2)
-Warning: In design 'cardinal_processor', net 'ALU/div_op_delay[4]' driven by pin 'ALU/div/op_delay[4]' has no loads. (LINT-2)
-Warning: In design 'cardinal_processor', net 'ALU/div_op_delay[5]' driven by pin 'ALU/div/op_delay[5]' has no loads. (LINT-2)
 Warning: In design 'cardinal_processor', net 'ALU/add/couts[6]' driven by pin 'ALU/add/genblk3[6].a_i/cout' has no loads. (LINT-2)
 Warning: In design 'cardinal_processor', net 'ALU/add/couts[2]' driven by pin 'ALU/add/genblk3[2].a_i/cout' has no loads. (LINT-2)
 Warning: In design 'cardinal_processor', net 'ALU/add/couts[0]' driven by pin 'ALU/add/genblk3[0].a_i/cout' has no loads. (LINT-2)
@@ -92,10 +79,7 @@ Warning: In design 'cardinal_processor', net 'ALU/sqrt/out_v_8[4]' driven by pin
 Warning: In design 'cardinal_processor', net 'ALU/sqrt/out_v_8[3]' driven by pin 'ALU/sqrt/genblk1[24].sqrt_b/complete' has no loads. (LINT-2)
 Warning: In design 'cardinal_processor', net 'ALU/sqrt/out_v_8[2]' driven by pin 'ALU/sqrt/genblk1[16].sqrt_b/complete' has no loads. (LINT-2)
 Warning: In design 'cardinal_processor', net 'ALU/sqrt/out_v_8[1]' driven by pin 'ALU/sqrt/genblk1[8].sqrt_b/complete' has no loads. (LINT-2)
-Warning: In design 'cardinal_processor', net 'ALU/la_lr[0]' has no drivers.  Logic 0 assumed. (LINT-3)
-Warning: In design 'cardinal_processor', net 'ALU/la_lr[1]' has no drivers.  Logic 0 assumed. (LINT-3)
-Warning: In design 'cardinal_processor', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'cardinal_processor', input port 'reset' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'hdu', port 'mul_ready' is not connected to any nets. (LINT-28)
 Warning: In design 'shifter', port 'op2[0]' is not connected to any nets. (LINT-28)
 Warning: In design 'shifter', port 'op2[1]' is not connected to any nets. (LINT-28)
 Warning: In design 'shifter', port 'op2[2]' is not connected to any nets. (LINT-28)
@@ -873,103 +857,6 @@ Warning: In design 'mac_units', a pin on submodule 'mb6' is connected to logic 1
    Pin 'mult_en' is connected to logic 1. 
 Warning: In design 'mac_units', the same net is connected to more than one pin on submodule 'mb0'. (LINT-33)
    Net '*Logic0*' is connected to pins 'cib', 'cia'', 'bi[7]', 'bi[6]', 'bi[5]', 'bi[4]', 'bi[3]', 'bi[2]', 'bi[1]', 'bi[0]'.
-Warning: In design 'cardinal_processor', three-state bus 'hdu_ins_v' has non three-state driver 'hdu_ins_v_reg/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rS_conflict' has non three-state driver 'ALU/C2057/Z'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rD_conflict' has non three-state driver 'ALU/C2046/Z'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'op_delay[0]' has non three-state driver 'ALU/C2018/Z_0'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'op_delay[1]' has non three-state driver 'ALU/C2018/Z_1'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'op_delay[2]' has non three-state driver 'ALU/C2018/Z_2'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'op_delay[3]' has non three-state driver 'ALU/C2018/Z_3'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'srt_ready' has non three-state driver 'ALU/sqrt/C113/Z'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'div_ready' has non three-state driver 'ALU/div/C247/Z'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'add_ready' has non three-state driver 'ALU/add/C280/Z'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'mul_ready' has non three-state driver 'ALU/mult/I_0/Z'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'alu_op[0]' has non three-state driver 'alu_op_reg[0]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'alu_op[1]' has non three-state driver 'alu_op_reg[1]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'alu_op[2]' has non three-state driver 'alu_op_reg[2]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'alu_op[3]' has non three-state driver 'alu_op_reg[3]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'alu_op[4]' has non three-state driver 'alu_op_reg[4]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'alu_op[5]' has non three-state driver 'alu_op_reg[5]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'we' has non three-state driver 'we_E_reg/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[63]' has non three-state driver 'C1710/Z_0'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[62]' has non three-state driver 'C1710/Z_1'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[61]' has non three-state driver 'C1710/Z_2'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[60]' has non three-state driver 'C1710/Z_3'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[59]' has non three-state driver 'C1710/Z_4'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[58]' has non three-state driver 'C1710/Z_5'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[57]' has non three-state driver 'C1710/Z_6'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[56]' has non three-state driver 'C1710/Z_7'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[55]' has non three-state driver 'C1710/Z_8'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[54]' has non three-state driver 'C1710/Z_9'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[53]' has non three-state driver 'C1710/Z_10'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[52]' has non three-state driver 'C1710/Z_11'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[51]' has non three-state driver 'C1710/Z_12'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[50]' has non three-state driver 'C1710/Z_13'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[49]' has non three-state driver 'C1710/Z_14'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[48]' has non three-state driver 'C1710/Z_15'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[47]' has non three-state driver 'C1710/Z_16'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[46]' has non three-state driver 'C1710/Z_17'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[45]' has non three-state driver 'C1710/Z_18'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[44]' has non three-state driver 'C1710/Z_19'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[43]' has non three-state driver 'C1710/Z_20'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[42]' has non three-state driver 'C1710/Z_21'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[41]' has non three-state driver 'C1710/Z_22'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[40]' has non three-state driver 'C1710/Z_23'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[39]' has non three-state driver 'C1710/Z_24'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[38]' has non three-state driver 'C1710/Z_25'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[37]' has non three-state driver 'C1710/Z_26'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[36]' has non three-state driver 'C1710/Z_27'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[35]' has non three-state driver 'C1710/Z_28'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[34]' has non three-state driver 'C1710/Z_29'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[33]' has non three-state driver 'C1710/Z_30'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[32]' has non three-state driver 'C1710/Z_31'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[31]' has non three-state driver 'C1710/Z_32'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[30]' has non three-state driver 'C1710/Z_33'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[29]' has non three-state driver 'C1710/Z_34'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[28]' has non three-state driver 'C1710/Z_35'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[27]' has non three-state driver 'C1710/Z_36'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[26]' has non three-state driver 'C1710/Z_37'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[25]' has non three-state driver 'C1710/Z_38'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[24]' has non three-state driver 'C1710/Z_39'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[23]' has non three-state driver 'C1710/Z_40'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[22]' has non three-state driver 'C1710/Z_41'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[21]' has non three-state driver 'C1710/Z_42'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[20]' has non three-state driver 'C1710/Z_43'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[19]' has non three-state driver 'C1710/Z_44'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[18]' has non three-state driver 'C1710/Z_45'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[17]' has non three-state driver 'C1710/Z_46'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[16]' has non three-state driver 'C1710/Z_47'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[15]' has non three-state driver 'C1710/Z_48'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[14]' has non three-state driver 'C1710/Z_49'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[13]' has non three-state driver 'C1710/Z_50'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[12]' has non three-state driver 'C1710/Z_51'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[11]' has non three-state driver 'C1710/Z_52'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[10]' has non three-state driver 'C1710/Z_53'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[9]' has non three-state driver 'C1710/Z_54'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[8]' has non three-state driver 'C1710/Z_55'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[7]' has non three-state driver 'C1710/Z_56'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[6]' has non three-state driver 'C1710/Z_57'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[5]' has non three-state driver 'C1710/Z_58'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[4]' has non three-state driver 'C1710/Z_59'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[3]' has non three-state driver 'C1710/Z_60'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[2]' has non three-state driver 'C1710/Z_61'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[1]' has non three-state driver 'C1710/Z_62'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'wd[0]' has non three-state driver 'C1710/Z_63'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rD_E[0]' has non three-state driver 'rD_E_reg[0]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rD_E[1]' has non three-state driver 'rD_E_reg[1]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rD_E[2]' has non three-state driver 'rD_E_reg[2]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rD_E[3]' has non three-state driver 'rD_E_reg[3]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'rD_E[4]' has non three-state driver 'rD_E_reg[4]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'r0[0]' has non three-state driver 'C1696/Z_0'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'r0[1]' has non three-state driver 'C1696/Z_1'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'r0[2]' has non three-state driver 'C1696/Z_2'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'r0[3]' has non three-state driver 'C1696/Z_3'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'r0[4]' has non three-state driver 'C1696/Z_4'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'mem_addr[4]' has non three-state driver 'inst_D_reg[20]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'mem_addr[3]' has non three-state driver 'inst_D_reg[19]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'mem_addr[2]' has non three-state driver 'inst_D_reg[18]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'mem_addr[1]' has non three-state driver 'inst_D_reg[17]/Q'. (LINT-34)
-Warning: In design 'cardinal_processor', three-state bus 'mem_addr[0]' has non three-state driver 'inst_D_reg[16]/Q'. (LINT-34)
 Warning: In design 'divider', output port 'op_delay[6]' is connected directly to 'logic 0'. (LINT-52)
 Warning: In design 'divider', output port 'op_delay[2]' is connected directly to 'logic 1'. (LINT-52)
 Warning: In design 'divider', output port 'op_delay[1]' is connected directly to 'logic 1'. (LINT-52)
@@ -1169,28 +1056,8 @@ Warning: In design 'mult_gen', output port 'br_3[3]' is connected directly to 'l
 Warning: In design 'mult_gen', output port 'br_3[2]' is connected directly to 'logic 0'. (LINT-52)
 Warning: In design 'mult_gen', output port 'br_3[1]' is connected directly to 'logic 0'. (LINT-52)
 Warning: In design 'mult_gen', output port 'br_3[0]' is connected directly to 'logic 0'. (LINT-52)
-Warning: In design 'alu_clk', input pin 'DATA1_63' of leaf cell 'C2026' is connected to undriven net 'srt_out[63]'.  (LINT-58)
-Warning: In design 'alu_clk', input pin 'DATA1_62' of leaf cell 'C2026' is connected to undriven net 'srt_out[62]'.  (LINT-58)
-Warning: In design 'alu_clk', input pin 'DATA1_61' of leaf cell 'C2026' is connected to undriven net 'srt_out[61]'.  (LINT-58)
-Warning: In design 'alu_clk', input pin 'DATA1_60' of leaf cell 'C2026' is connected to undriven net 'srt_out[60]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'B_0' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C412' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C412' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C414' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C419' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C419' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C421' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C426' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C426' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C428' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C433' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C433' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'B' of leaf cell 'C435' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'I_8' is connected to undriven net 'la_lr[0]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C439' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C442' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C445' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'shifter', input pin 'A' of leaf cell 'C448' is connected to undriven net 'la_lr[1]'.  (LINT-58)
-Warning: In design 'alu_clk', input pin 'la_lr[1]' of hierarchical cell 'shift' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
-Warning: In design 'alu_clk', input pin 'la_lr[0]' of hierarchical cell 'shift' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'alu_clk', input pin 'DATA1_63' of leaf cell 'C2044' is connected to undriven net 'srt_out[63]'.  (LINT-58)
+Warning: In design 'alu_clk', input pin 'DATA1_62' of leaf cell 'C2044' is connected to undriven net 'srt_out[62]'.  (LINT-58)
+Warning: In design 'alu_clk', input pin 'DATA1_61' of leaf cell 'C2044' is connected to undriven net 'srt_out[61]'.  (LINT-58)
+Warning: In design 'alu_clk', input pin 'DATA1_60' of leaf cell 'C2044' is connected to undriven net 'srt_out[60]'.  (LINT-58)
 1

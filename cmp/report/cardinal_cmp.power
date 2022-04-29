@@ -1,19 +1,20 @@
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
-Warning: Design has unannotated black box outputs. (PWR-428)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : cardinal_cmp
 Version: K-2015.06-SP5-5
-Date   : Thu Apr 28 20:01:28 2022
+Date   : Thu Apr 28 21:26:57 2022
 ****************************************
 
 
 Library(s) Used:
 
-    No libraries used.
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
 
 
 Operating Conditions: typical   Library: gscl45nm
@@ -29,24 +30,24 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   0.0000 mW        
-  Net Switching Power  =   0.0000 mW        
+  Cell Internal Power  =  15.6500 mW   (96%)
+  Net Switching Power  = 716.1393 uW    (4%)
                          ---------
-Total Dynamic Power    =   0.0000 mW        
+Total Dynamic Power    =  16.3662 mW  (100%)
 
-Cell Leakage Power     =   0.0000 nW
+Cell Leakage Power     =   2.8744 mW
 
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
 --------------------------------------------------------------------------------------------------
-io_pad             0.0000            0.0000            0.0000            0.0000  (     N/A)
-memory             0.0000            0.0000            0.0000            0.0000  (     N/A)
-black_box          0.0000            0.0000            0.0000            0.0000  (     N/A)
-clock_network      0.0000            0.0000            0.0000            0.0000  (     N/A)
-register           0.0000            0.0000            0.0000            0.0000  (     N/A)
-sequential         0.0000            0.0000            0.0000            0.0000  (     N/A)
-combinational      0.0000            0.0000            0.0000            0.0000  (     N/A)
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          15.0083        2.6096e-02        1.1660e+06           16.2004  (  84.21%)
+sequential     1.4478e-05            0.0000           98.0132        1.1249e-04  (   0.00%)
+combinational      0.6398            0.6899        1.7083e+06            3.0380  (  15.79%)
 --------------------------------------------------------------------------------------------------
-Total              0.0000 mW         0.0000 mW         0.0000 nW         0.0000 mW
+Total             15.6482 mW         0.7160 mW     2.8744e+06 nW        19.2386 mW
 1
