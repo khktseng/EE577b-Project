@@ -94,7 +94,7 @@ module cardinal_processor(
 	assign alu_opB = fwdB_E ? wb : opB_E;
 	assign we = we_E;
 
-	wire [3:0] op_delay;
+	wire [6:0] op_delay;
 	wire issue_ok;
 	wire rD_conflict, rS_conflict;
 

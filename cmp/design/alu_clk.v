@@ -28,7 +28,7 @@ module alu_clk(
 	input [4:0] rB_addr,
 	output reg [0:63] alu_out,
 	output out_v,
-	output reg [3:0] op_delay,
+	output reg [6:0] op_delay,
 	output mul_ready,
 	output add_ready,
 	output div_ready,
