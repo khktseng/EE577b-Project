@@ -1,4 +1,7 @@
 // Verilog for cardinal CMP
+`include "./design/cardinal_processor.v"
+`include "./design/cardinal_nic.v"
+`include "./design/cardinal_ring.v"
 
 module cardinal_cmp(
 	input clk, reset,

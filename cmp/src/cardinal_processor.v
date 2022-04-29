@@ -1,6 +1,8 @@
 // verilog for processor
 
 `define NOP 32'hF0000000
+`include "./design/alu_clk.v"
+`include "./design/hdu.v"
 
 module cardinal_processor(
 	input clk, reset,

@@ -1,7 +1,7 @@
-`define NUM_CYCLES_8 'd8
-`define NUM_CYCLES_16 'd16
-`define NUM_CYCLES_32 'd32
-`define NUM_CYCLES_64 'd64
+`define NUM_CYCLES_8 8
+`define NUM_CYCLES_16 16
+`define NUM_CYCLES_32 32
+`define NUM_CYCLES_64 64
 
 module divider(
 	input clk, reset,
@@ -96,25 +96,25 @@ module divider(
 				quotient = div_8;
 				remainder = rem_8;
 				out_v = out_v_8[0];
-				op_delay = `NUM_CYCLES_8 - 'd2;
+				op_delay = 'd`NUM_CYCLES_8 - 'd2;
 			end
 			2'b01: begin
 				quotient = div_16;
 				remainder = rem_16;
 				out_v = out_v_16[0];
-				op_delay = `NUM_CYCLES_16 - 'd2;
+				op_delay = 'd`NUM_CYCLES_16 - 'd2;
 			end
 			2'b10: begin
 				quotient = div_32;
 				remainder = rem_32;
 				out_v = out_v_32[0];
-				op_delay = `NUM_CYCLES_32 - 'd2;
+				op_delay = 'd`NUM_CYCLES_32 - 'd2;
 			end
 			2'b11: begin
 				quotient = div_64;
 				remainder = rem_64;
 				out_v = out_v_64;
-				op_delay = `NUM_CYCLES_64 - 'd2;
+				op_delay = 'd`NUM_CYCLES_64 - 'd2;
 			end
 		endcase
 	end

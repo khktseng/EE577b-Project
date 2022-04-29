@@ -43,7 +43,7 @@
 # top level module
 TOP = tb_cardinal_processor
 TOP_SYN = tb_multiplier_syn
-DESIGN_NAME = cardinal_processor
+DESIGN_NAME = cardinal_cmp
 
 # List of the design files
 DESIGN_FILES = ./design/*.v
