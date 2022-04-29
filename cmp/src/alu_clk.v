@@ -28,7 +28,7 @@ module alu_clk(
 	input [4:0] rB_addr,
 	output reg [0:63] alu_out,
 	output out_v,
-	output reg [3:0] op_delay,
+	output reg [6:0] op_delay,
 	output mul_ready,
 	output add_ready,
 	output div_ready,
@@ -114,6 +114,7 @@ module alu_clk(
 
 		square = 0;
 		is_mod = 0;
+		la_lr = 2'b00;
 
 		op_delay = 'b0;
 		mul_ww_delay = 'b0;
@@ -178,10 +179,12 @@ module alu_clk(
 				6'd10: begin
 					out_v_basic = 1'b1;
 					basic_out = shift_out;
+					la_lr = 2'b11;
 					end
 				6'd11: begin
 					out_v_basic = 1'b1;
 					basic_out = shift_out;
+					la_lr = 2'b10;
 					end
 				6'd12: begin
 					out_v_basic = 1'b1;
