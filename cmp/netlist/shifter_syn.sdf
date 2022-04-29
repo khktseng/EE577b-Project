@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "shifter")
-(DATE "Sun Apr 17 22:31:45 2022")
+(DATE "Thu Apr 28 01:50:53 2022")
 (VENDOR "gscl45nm")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "K-2015.06-SP5-5")

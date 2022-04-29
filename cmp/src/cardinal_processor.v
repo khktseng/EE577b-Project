@@ -28,7 +28,7 @@ module cardinal_processor(
 	wire [4:0] r0;
 	wire [0:63] r1_D, r0_D, br_D;
 	reg [0:63] wd;
-	reg [4:0] rD_E;
+	reg [4:0] rD_E, rA_E, rB_E;
 	wire is_imm_op;
 
 	wire is_nic_op;
@@ -51,6 +51,9 @@ module cardinal_processor(
 
 	wire [4:0] rD_out;
 
+	// alu execution units ready signals
+	wire mul_ready, add_ready, srt_ready, div_ready;
+
 	// Fetch
 	assign ins_addr = PC;
 
@@ -72,6 +75,9 @@ module cardinal_processor(
 	assign is_nic_op = im[15] && im[14];
 	assign addr_nic = im[1:0];
 	assign r0 = is_imm_op ? rD : rA;
+
+	// needs fixing 
+	// ops no longer single cycle
 	assign br_D = (rD_E == rD) ? wd : r0_D;
 
 	reg_file rf(clk, reset, r0, rB, rD_E, r0_D, r1_D, wd, we);
@@ -86,9 +92,10 @@ module cardinal_processor(
 	assign alu_opB = fwdB_E ? wb : opB_E;
 	assign we = we_E;
 
-	wire [2:0] op_delay;
+	wire [3:0] op_delay;
 	wire issue_ok;
-	wire rD_conflict;
+	wire rD_conflict, rS_conflict;
+
 	alu_clk ALU(
 		.clk	(clk),
 		.reset	(reset),
@@ -98,12 +105,17 @@ module cardinal_processor(
 		.opcode	(alu_op),
 		.ww	(ww_E),
 		.rD_addr(rD_E),
+		.rA_addr(rA_E),
+		.rB_addr(rB_E),
 		.alu_out(alu_out),
 		.out_v	(alu_out_v),
 		.mul_ready(mul_ready),
 		.add_ready(add_ready),
+		.div_ready(div_ready),
+		.srt_ready(srt_ready),
 		.op_delay(op_delay),
 		.rD_conflict(rD_conflict),
+		.rS_conflict(rS_conflict),
 		.rD_out(rD_out)
 		);
 
@@ -115,10 +127,13 @@ module cardinal_processor(
 		.op_delay(op_delay),
 		.mul_ready(mul_ready),
 		.add_ready(add_ready),
+		.div_ready(div_ready),
+		.srt_ready(srt_ready),
 		.ins_v	(hdu_ins_v),
 		.stall	(stall),
 		.issue_ok(issue_ok),
-		.rD_conflict(rD_conflict)
+		.rD_conflict(rD_conflict),
+		.rS_conflict(rS_conflict)
 		);
 
 	always @(*) begin
@@ -186,6 +201,8 @@ module cardinal_processor(
 			inst_D <= inst;
 
 		rD_E <= rD;
+		rA_E <= rA;
+		rB_E <= rB;
 		opA_E <= opA_D;
 		opB_E <= opB_D;
 		we_E <= we_D;
@@ -205,6 +222,8 @@ module cardinal_processor(
 		if (reset) begin
 			PC <= 'b0;
 			rD_E <= 'b0;
+			rA_E <= 'b0;
+			rB_E <= 'b0;
 			opA_E <= 'b0;
 			opB_E <= 'b0;
 			we_E <= 'b0;

@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Expert(TM) in wire load mode
 // Version   : K-2015.06-SP5-5
-// Date      : Sun Apr 17 22:28:43 2022
+// Date      : Thu Apr 28 01:38:08 2022
 /////////////////////////////////////////////////////////////
 
 
@@ -58,7 +58,7 @@ module adder_byte_7 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_7_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_7_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -131,7 +131,7 @@ module adder_byte_6 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_6_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_6_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -187,7 +187,7 @@ module adder_byte_5 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_5_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_5_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -264,7 +264,7 @@ module adder_byte_4 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_4_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_4_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -336,7 +336,7 @@ module adder_byte_3 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_3_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_3_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -412,7 +412,7 @@ module adder_byte_2 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_2_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_2_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -475,7 +475,7 @@ module adder_byte_1 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_1_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_1_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 
@@ -538,7 +538,7 @@ module adder_byte_0 ( b1, b2, cin, sum, cout );
   output cout;
 
 
-  adder_byte_0_DW01_add_0 add_1_root_add_57_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
+  adder_byte_0_DW01_add_0 add_1_root_add_10_2 ( .A({1'b0, b1}), .B({1'b0, b2}), 
         .CI(cin), .SUM({cout, sum}) );
 endmodule
 

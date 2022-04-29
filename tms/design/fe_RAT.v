@@ -1,4 +1,4 @@
-// Verilog for rat
+// Verilog for front end rat
 
 module fe_RAT(clk, reset, reg_num, phys_reg_num, in_be);
 	parameter PHYS_SIZE = 128;

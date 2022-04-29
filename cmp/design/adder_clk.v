@@ -1,3 +1,5 @@
+`include "./design/adder_byte.v"
+
 module adder_clk(
 	input clk, reset,
 	input [0:63] op1, in2,
@@ -17,17 +19,18 @@ module adder_clk(
 	*/
 
 	wire [0:63] op2;
-	reg [1:0] ps;
+	reg ps;
+	reg c3;
 
 	assign op2 = sub ? ~in2: in2;
-	assign out_v = (ww == 0 && in_v) || (ps == ww && ps != 0);
-	assign ready = (ps == 0) || out_v;
-
+	assign out_v = (ww == 0 && in_v) || ps;
+	assign ready = out_v;
 
 	wire [0:7] cins;
 	wire [0:7] couts;
 
 	assign cins[7] = sub;
+	assign cins[3] = ps ? c3 : sub;
 
 	generate
 		genvar b;
@@ -35,7 +38,6 @@ module adder_clk(
 			assign cins[b] = ps > 'b0 ? couts[b+1] : sub;
 		for (b = 1; b < 8; b = b + 4)
 			assign cins[b] = ps > 'b1 ? couts[b+1] : sub;
-		assign cins[3] = ww == 'b11 ? couts[4] : sub;
 	endgenerate
 
 	generate
@@ -52,8 +54,11 @@ module adder_clk(
 	endgenerate
 
 	always @(posedge clk) begin
-		if (in_v)
+		if (in_v) begin
 			ps <=  ps + 1;
+			c3 <= couts[4];
+		end
+
 		if (out_v)
 			ps <= 0;
 
@@ -62,16 +67,3 @@ module adder_clk(
 	end
 endmodule
 
-module adder_byte(
-	input [0:7] b1, b2,
-	input cin,
-	output [0:7] sum,
-	output cout
-	);
-
-	wire [8:0] s;
-	
-	assign s = b1 + b2 + cin;
-	assign cout = s[8];
-	assign sum = s[7:0];
-endmodule

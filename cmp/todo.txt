@@ -1,11 +1,15 @@
 TODO:
- - Verify shifter.v, rotator.v meet timing
  - Clock gate multiplier
  - Integrate divider into alu_clk
- - Integrate shifter into alu_clk
- - Integrate rotator into alu_clk
  - Create and integrate sequential DW square root
  - Determine optimal number of clocks for sequential DW elements
  - Clock/power gate unused single cycle alu operations (bitwise, shifter?, rotator?)
  - Critical path timing for each pipeline stage
- - Fix and verify WaW and Fwding hazards in pipeline
+ - verify WaW and WaR hazard handling
+ - fix branching
+
+DONE:
+ - Integrate rotator into alu_clk
+ - Integrate shifter into alu_clk
+ - Fix WaW and Fwding hazards in pipeline
+ - Verify shifter.v, rotator.v meet timing

@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : shifter
 Version: K-2015.06-SP5-5
-Date   : Sun Apr 17 22:31:44 2022
+Date   : Thu Apr 28 01:50:52 2022
 ****************************************
 
 Operating Conditions: typical   Library: gscl45nm

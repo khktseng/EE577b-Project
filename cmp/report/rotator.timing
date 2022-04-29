@@ -1,0 +1,45 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : rotator
+Version: K-2015.06-SP5-5
+Date   : Thu Apr 28 01:58:00 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: ww[0] (input port)
+  Endpoint: rotate_out[3]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ww[0] (in)                               0.00       0.00 r
+  U344/Y (AND2X1)                          0.36       0.36 r
+  U342/Y (INVX1)                           0.15       0.51 f
+  U328/Y (INVX1)                           0.15       0.66 r
+  U95/Y (AOI22X1)                          0.06       0.73 f
+  U231/Y (BUFX2)                           0.04       0.77 f
+  U94/Y (NAND2X1)                          0.01       0.77 r
+  rotate_out[3] (out)                      0.00       0.77 r
+  data arrival time                                   0.77
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -0.77
+  -----------------------------------------------------------
+  slack (MET)                                         4.23
+
+
+1

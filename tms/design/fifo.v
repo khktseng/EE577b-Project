@@ -4,6 +4,7 @@ module fifo(clk, reset, in, front, add, remove, full, empty);
 	parameter DATA_WIDTH = 64;
 	parameter FIFO_SIZE = 8;
 	parameter INIT = 0;
+	parameter NUM_UNUSED = 0;
 	localparam FIFO_IDX = $clog2(FIFO_SIZE);
 
 	input clk, reset;
@@ -29,7 +30,7 @@ module fifo(clk, reset, in, front, add, remove, full, empty);
 			if(bptr < FIFO_SIZE-1)
 				bptr <= bptr + 1;
 			else
-				bptr <= 0;
+				bptr <= NUM_UNUSED;
 		end
 
 		if(remove && !empty) begin
@@ -38,14 +39,14 @@ module fifo(clk, reset, in, front, add, remove, full, empty);
 			if (fptr < FIFO_SIZE-1)
 				fptr <= fptr + 1;
 			else
-				fptr <= 0;
+				fptr <= NUM_UNUSED;
 		end
 			
 		if (reset) begin
-			fptr <= 0;
-			bptr <= 0;
+			fptr <= NUM_UNUSED;
+			bptr <= NUM_UNUSED;
 			if(INIT) begin
-				for(i = 0; i < FIFO_SIZE; i = i + 1)
+				for(i = NUM_UNUSED; i < FIFO_SIZE; i = i + 1)
 					fifo_reg[i] = i;
 				empty <= 0;
 			end else

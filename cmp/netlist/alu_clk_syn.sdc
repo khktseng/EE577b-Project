@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Mon Apr 18 17:10:01 2022
+# Created by write_sdc on Thu Apr 28 19:30:13 2022
 
 ###################################################################
 set sdc_version 2.0
@@ -72,12 +72,16 @@ set_max_delay 5  -to [get_ports {alu_out[61]}]
 set_max_delay 5  -to [get_ports {alu_out[62]}]
 set_max_delay 5  -to [get_ports {alu_out[63]}]
 set_max_delay 5  -to [get_ports out_v]
+set_max_delay 5  -to [get_ports {op_delay[3]}]
 set_max_delay 5  -to [get_ports {op_delay[2]}]
 set_max_delay 5  -to [get_ports {op_delay[1]}]
 set_max_delay 5  -to [get_ports {op_delay[0]}]
 set_max_delay 5  -to [get_ports mul_ready]
 set_max_delay 5  -to [get_ports add_ready]
+set_max_delay 5  -to [get_ports div_ready]
+set_max_delay 5  -to [get_ports srt_ready]
 set_max_delay 5  -to [get_ports rD_conflict]
+set_max_delay 5  -to [get_ports rS_conflict]
 set_max_delay 5  -to [get_ports {rD_out[4]}]
 set_max_delay 5  -to [get_ports {rD_out[3]}]
 set_max_delay 5  -to [get_ports {rD_out[2]}]
@@ -124,4 +128,7 @@ set_max_delay 5  -from [list [get_ports clk] [get_ports reset] [get_ports in_v] 
 {opcode[4]}] [get_ports {opcode[3]}] [get_ports {opcode[2]}] [get_ports        \
 {opcode[1]}] [get_ports {opcode[0]}] [get_ports {ww[1]}] [get_ports {ww[0]}]   \
 [get_ports {rD_addr[4]}] [get_ports {rD_addr[3]}] [get_ports {rD_addr[2]}]     \
-[get_ports {rD_addr[1]}] [get_ports {rD_addr[0]}]]
+[get_ports {rD_addr[1]}] [get_ports {rD_addr[0]}] [get_ports {rA_addr[4]}]     \
+[get_ports {rA_addr[3]}] [get_ports {rA_addr[2]}] [get_ports {rA_addr[1]}]     \
+[get_ports {rA_addr[0]}] [get_ports {rB_addr[4]}] [get_ports {rB_addr[3]}]     \
+[get_ports {rB_addr[2]}] [get_ports {rB_addr[1]}] [get_ports {rB_addr[0]}]]

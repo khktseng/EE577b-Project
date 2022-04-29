@@ -1,0 +1,222 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : rooter
+Version: K-2015.06-SP5-5
+Date   : Thu Apr 28 19:48:21 2022
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: in_v (input port)
+  Endpoint: sqrt_dw/part_rem_reg_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  in_v (in)                                               0.00       0.00 f
+  sqrt_dw/start (rooter_DW_sqrt_seq_14)                   0.00       0.00 f
+  sqrt_dw/U485/Y (INVX1)                                  0.09       0.09 r
+  sqrt_dw/U410/Y (INVX1)                                  0.06       0.16 f
+  sqrt_dw/U368/Y (INVX1)                                  0.11       0.27 r
+  sqrt_dw/U475/Y (AND2X1)                                 0.05       0.32 r
+  sqrt_dw/U_ADD_0/A[4] (rooter_DW01_add_39)               0.00       0.32 r
+  sqrt_dw/U_ADD_0/U534/Y (OR2X1)                          0.06       0.39 r
+  sqrt_dw/U_ADD_0/U535/Y (INVX1)                          0.02       0.41 f
+  sqrt_dw/U_ADD_0/U402/Y (OR2X1)                          0.04       0.45 f
+  sqrt_dw/U_ADD_0/U606/Y (INVX1)                          0.01       0.46 r
+  sqrt_dw/U_ADD_0/U446/Y (AND2X1)                         0.04       0.51 r
+  sqrt_dw/U_ADD_0/U447/Y (INVX1)                          0.02       0.53 f
+  sqrt_dw/U_ADD_0/U316/Y (OAI21X1)                        0.05       0.58 r
+  sqrt_dw/U_ADD_0/U223/Y (AOI21X1)                        0.02       0.60 f
+  sqrt_dw/U_ADD_0/U573/Y (BUFX2)                          0.04       0.64 f
+  sqrt_dw/U_ADD_0/U16/Y (OAI21X1)                         0.04       0.67 r
+  sqrt_dw/U_ADD_0/U716/Y (INVX1)                          0.02       0.70 f
+  sqrt_dw/U_ADD_0/U730/Y (OAI21X1)                        0.32       1.02 r
+  sqrt_dw/U_ADD_0/CO (rooter_DW01_add_39)                 0.00       1.02 r
+  sqrt_dw/U300/Y (INVX1)                                  0.15       1.17 f
+  sqrt_dw/U284/Y (INVX1)                                  0.19       1.36 r
+  sqrt_dw/U597/Y (MUX2X1)                                 0.07       1.43 f
+  sqrt_dw/U381/Y (INVX1)                                  0.02       1.45 r
+  sqrt_dw/U_ADD_1/A[26] (rooter_DW01_add_38)              0.00       1.45 r
+  sqrt_dw/U_ADD_1/U630/Y (OR2X1)                          0.04       1.50 r
+  sqrt_dw/U_ADD_1/U629/Y (INVX1)                          0.03       1.52 f
+  sqrt_dw/U_ADD_1/U585/Y (OR2X1)                          0.06       1.58 f
+  sqrt_dw/U_ADD_1/U584/Y (INVX1)                          0.01       1.59 r
+  sqrt_dw/U_ADD_1/U380/Y (AND2X1)                         0.06       1.65 r
+  sqrt_dw/U_ADD_1/U659/Y (INVX1)                          0.04       1.69 f
+  sqrt_dw/U_ADD_1/U569/Y (OR2X1)                          0.04       1.73 f
+  sqrt_dw/U_ADD_1/U570/Y (INVX1)                          0.01       1.74 r
+  sqrt_dw/U_ADD_1/U431/Y (AND2X1)                         0.03       1.77 r
+  sqrt_dw/U_ADD_1/U432/Y (INVX1)                          0.02       1.79 f
+  sqrt_dw/U_ADD_1/U7/Y (OAI21X1)                          0.04       1.83 r
+  sqrt_dw/U_ADD_1/U678/Y (INVX1)                          0.02       1.85 f
+  sqrt_dw/U_ADD_1/U693/Y (OAI21X1)                        0.30       2.16 r
+  sqrt_dw/U_ADD_1/CO (rooter_DW01_add_38)                 0.00       2.16 r
+  sqrt_dw/U299/Y (INVX1)                                  0.14       2.30 f
+  sqrt_dw/U283/Y (INVX1)                                  0.20       2.50 r
+  sqrt_dw/U629/Y (MUX2X1)                                 0.07       2.57 f
+  sqrt_dw/U362/Y (INVX1)                                  0.02       2.59 r
+  sqrt_dw/U_ADD_2/A[26] (rooter_DW01_add_37)              0.00       2.59 r
+  sqrt_dw/U_ADD_2/U632/Y (OR2X1)                          0.04       2.63 r
+  sqrt_dw/U_ADD_2/U631/Y (INVX1)                          0.03       2.66 f
+  sqrt_dw/U_ADD_2/U585/Y (OR2X1)                          0.06       2.72 f
+  sqrt_dw/U_ADD_2/U584/Y (INVX1)                          0.01       2.73 r
+  sqrt_dw/U_ADD_2/U379/Y (AND2X1)                         0.06       2.79 r
+  sqrt_dw/U_ADD_2/U667/Y (INVX1)                          0.04       2.83 f
+  sqrt_dw/U_ADD_2/U569/Y (OR2X1)                          0.04       2.86 f
+  sqrt_dw/U_ADD_2/U570/Y (INVX1)                          0.01       2.87 r
+  sqrt_dw/U_ADD_2/U431/Y (AND2X1)                         0.03       2.90 r
+  sqrt_dw/U_ADD_2/U432/Y (INVX1)                          0.02       2.93 f
+  sqrt_dw/U_ADD_2/U7/Y (OAI21X1)                          0.04       2.97 r
+  sqrt_dw/U_ADD_2/U678/Y (INVX1)                          0.02       2.99 f
+  sqrt_dw/U_ADD_2/U693/Y (OAI21X1)                        0.10       3.09 r
+  sqrt_dw/U_ADD_2/CO (rooter_DW01_add_37)                 0.00       3.09 r
+  sqrt_dw/U297/Y (INVX1)                                  0.06       3.14 f
+  sqrt_dw/U298/Y (INVX1)                                  0.22       3.37 r
+  sqrt_dw/U661/Y (MUX2X1)                                 0.08       3.45 f
+  sqrt_dw/U333/Y (INVX1)                                  0.03       3.48 r
+  sqrt_dw/U_ADD_3/A[26] (rooter_DW01_add_36)              0.00       3.48 r
+  sqrt_dw/U_ADD_3/U609/Y (OR2X1)                          0.04       3.52 r
+  sqrt_dw/U_ADD_3/U610/Y (INVX1)                          0.03       3.55 f
+  sqrt_dw/U_ADD_3/U569/Y (OR2X1)                          0.06       3.61 f
+  sqrt_dw/U_ADD_3/U568/Y (INVX1)                          0.01       3.62 r
+  sqrt_dw/U_ADD_3/U378/Y (AND2X1)                         0.06       3.68 r
+  sqrt_dw/U_ADD_3/U643/Y (INVX1)                          0.04       3.72 f
+  sqrt_dw/U_ADD_3/U551/Y (OR2X1)                          0.04       3.75 f
+  sqrt_dw/U_ADD_3/U552/Y (INVX1)                          0.01       3.76 r
+  sqrt_dw/U_ADD_3/U426/Y (AND2X1)                         0.03       3.79 r
+  sqrt_dw/U_ADD_3/U427/Y (INVX1)                          0.02       3.82 f
+  sqrt_dw/U_ADD_3/U7/Y (OAI21X1)                          0.04       3.86 r
+  sqrt_dw/U_ADD_3/U679/Y (INVX1)                          0.02       3.88 f
+  sqrt_dw/U_ADD_3/U693/Y (OAI21X1)                        0.06       3.94 r
+  sqrt_dw/U_ADD_3/CO (rooter_DW01_add_36)                 0.00       3.94 r
+  sqrt_dw/U301/Y (INVX1)                                  0.03       3.97 f
+  sqrt_dw/U158/Y (AND2X1)                                 0.21       4.18 f
+  sqrt_dw/U700/Y (AOI22X1)                                0.11       4.29 r
+  sqrt_dw/U15/Y (BUFX2)                                   0.03       4.32 r
+  sqrt_dw/U701/Y (OAI21X1)                                0.01       4.34 f
+  sqrt_dw/part_rem_reg_reg[5]/D (DFFPOSX1)                0.00       4.34 f
+  data arrival time                                                  4.34
+
+  max_delay                                               5.00       5.00
+  library setup time                                     -0.06       4.94
+  data required time                                                 4.94
+  --------------------------------------------------------------------------
+  data required time                                                 4.94
+  data arrival time                                                 -4.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: in_v (input port)
+  Endpoint: root[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  in_v (in)                                               0.00       0.00 f
+  sqrt_dw/start (rooter_DW_sqrt_seq_14)                   0.00       0.00 f
+  sqrt_dw/U485/Y (INVX1)                                  0.09       0.09 r
+  sqrt_dw/U410/Y (INVX1)                                  0.06       0.16 f
+  sqrt_dw/U368/Y (INVX1)                                  0.11       0.27 r
+  sqrt_dw/U475/Y (AND2X1)                                 0.05       0.32 r
+  sqrt_dw/U_ADD_0/A[4] (rooter_DW01_add_39)               0.00       0.32 r
+  sqrt_dw/U_ADD_0/U534/Y (OR2X1)                          0.06       0.39 r
+  sqrt_dw/U_ADD_0/U535/Y (INVX1)                          0.02       0.41 f
+  sqrt_dw/U_ADD_0/U402/Y (OR2X1)                          0.04       0.45 f
+  sqrt_dw/U_ADD_0/U606/Y (INVX1)                          0.01       0.46 r
+  sqrt_dw/U_ADD_0/U446/Y (AND2X1)                         0.04       0.51 r
+  sqrt_dw/U_ADD_0/U447/Y (INVX1)                          0.02       0.53 f
+  sqrt_dw/U_ADD_0/U316/Y (OAI21X1)                        0.05       0.58 r
+  sqrt_dw/U_ADD_0/U223/Y (AOI21X1)                        0.02       0.60 f
+  sqrt_dw/U_ADD_0/U573/Y (BUFX2)                          0.04       0.64 f
+  sqrt_dw/U_ADD_0/U16/Y (OAI21X1)                         0.04       0.67 r
+  sqrt_dw/U_ADD_0/U716/Y (INVX1)                          0.02       0.70 f
+  sqrt_dw/U_ADD_0/U730/Y (OAI21X1)                        0.32       1.02 r
+  sqrt_dw/U_ADD_0/CO (rooter_DW01_add_39)                 0.00       1.02 r
+  sqrt_dw/U300/Y (INVX1)                                  0.15       1.17 f
+  sqrt_dw/U284/Y (INVX1)                                  0.19       1.36 r
+  sqrt_dw/U597/Y (MUX2X1)                                 0.07       1.43 f
+  sqrt_dw/U381/Y (INVX1)                                  0.02       1.45 r
+  sqrt_dw/U_ADD_1/A[26] (rooter_DW01_add_38)              0.00       1.45 r
+  sqrt_dw/U_ADD_1/U630/Y (OR2X1)                          0.04       1.50 r
+  sqrt_dw/U_ADD_1/U629/Y (INVX1)                          0.03       1.52 f
+  sqrt_dw/U_ADD_1/U585/Y (OR2X1)                          0.06       1.58 f
+  sqrt_dw/U_ADD_1/U584/Y (INVX1)                          0.01       1.59 r
+  sqrt_dw/U_ADD_1/U380/Y (AND2X1)                         0.06       1.65 r
+  sqrt_dw/U_ADD_1/U659/Y (INVX1)                          0.04       1.69 f
+  sqrt_dw/U_ADD_1/U569/Y (OR2X1)                          0.04       1.73 f
+  sqrt_dw/U_ADD_1/U570/Y (INVX1)                          0.01       1.74 r
+  sqrt_dw/U_ADD_1/U431/Y (AND2X1)                         0.03       1.77 r
+  sqrt_dw/U_ADD_1/U432/Y (INVX1)                          0.02       1.79 f
+  sqrt_dw/U_ADD_1/U7/Y (OAI21X1)                          0.04       1.83 r
+  sqrt_dw/U_ADD_1/U678/Y (INVX1)                          0.02       1.85 f
+  sqrt_dw/U_ADD_1/U693/Y (OAI21X1)                        0.30       2.16 r
+  sqrt_dw/U_ADD_1/CO (rooter_DW01_add_38)                 0.00       2.16 r
+  sqrt_dw/U299/Y (INVX1)                                  0.14       2.30 f
+  sqrt_dw/U283/Y (INVX1)                                  0.20       2.50 r
+  sqrt_dw/U629/Y (MUX2X1)                                 0.07       2.57 f
+  sqrt_dw/U362/Y (INVX1)                                  0.02       2.59 r
+  sqrt_dw/U_ADD_2/A[26] (rooter_DW01_add_37)              0.00       2.59 r
+  sqrt_dw/U_ADD_2/U632/Y (OR2X1)                          0.04       2.63 r
+  sqrt_dw/U_ADD_2/U631/Y (INVX1)                          0.03       2.66 f
+  sqrt_dw/U_ADD_2/U585/Y (OR2X1)                          0.06       2.72 f
+  sqrt_dw/U_ADD_2/U584/Y (INVX1)                          0.01       2.73 r
+  sqrt_dw/U_ADD_2/U379/Y (AND2X1)                         0.06       2.79 r
+  sqrt_dw/U_ADD_2/U667/Y (INVX1)                          0.04       2.83 f
+  sqrt_dw/U_ADD_2/U569/Y (OR2X1)                          0.04       2.86 f
+  sqrt_dw/U_ADD_2/U570/Y (INVX1)                          0.01       2.87 r
+  sqrt_dw/U_ADD_2/U431/Y (AND2X1)                         0.03       2.90 r
+  sqrt_dw/U_ADD_2/U432/Y (INVX1)                          0.02       2.93 f
+  sqrt_dw/U_ADD_2/U7/Y (OAI21X1)                          0.04       2.97 r
+  sqrt_dw/U_ADD_2/U678/Y (INVX1)                          0.02       2.99 f
+  sqrt_dw/U_ADD_2/U693/Y (OAI21X1)                        0.10       3.09 r
+  sqrt_dw/U_ADD_2/CO (rooter_DW01_add_37)                 0.00       3.09 r
+  sqrt_dw/U297/Y (INVX1)                                  0.06       3.14 f
+  sqrt_dw/U298/Y (INVX1)                                  0.22       3.37 r
+  sqrt_dw/U661/Y (MUX2X1)                                 0.08       3.45 f
+  sqrt_dw/U333/Y (INVX1)                                  0.03       3.48 r
+  sqrt_dw/U_ADD_3/A[26] (rooter_DW01_add_36)              0.00       3.48 r
+  sqrt_dw/U_ADD_3/U609/Y (OR2X1)                          0.04       3.52 r
+  sqrt_dw/U_ADD_3/U610/Y (INVX1)                          0.03       3.55 f
+  sqrt_dw/U_ADD_3/U569/Y (OR2X1)                          0.06       3.61 f
+  sqrt_dw/U_ADD_3/U568/Y (INVX1)                          0.01       3.62 r
+  sqrt_dw/U_ADD_3/U378/Y (AND2X1)                         0.06       3.68 r
+  sqrt_dw/U_ADD_3/U643/Y (INVX1)                          0.04       3.72 f
+  sqrt_dw/U_ADD_3/U551/Y (OR2X1)                          0.04       3.75 f
+  sqrt_dw/U_ADD_3/U552/Y (INVX1)                          0.01       3.76 r
+  sqrt_dw/U_ADD_3/U426/Y (AND2X1)                         0.03       3.79 r
+  sqrt_dw/U_ADD_3/U427/Y (INVX1)                          0.02       3.82 f
+  sqrt_dw/U_ADD_3/U7/Y (OAI21X1)                          0.04       3.86 r
+  sqrt_dw/U_ADD_3/U679/Y (INVX1)                          0.02       3.88 f
+  sqrt_dw/U_ADD_3/U693/Y (OAI21X1)                        0.06       3.94 r
+  sqrt_dw/U_ADD_3/CO (rooter_DW01_add_36)                 0.00       3.94 r
+  sqrt_dw/root[0] (rooter_DW_sqrt_seq_14)                 0.00       3.94 r
+  U255/Y (AOI22X1)                                        0.03       3.96 f
+  U145/Y (BUFX2)                                          0.06       4.02 f
+  U256/Y (NAND2X1)                                        0.01       4.03 r
+  root[0] (out)                                           0.00       4.03 r
+  data arrival time                                                  4.03
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -4.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.97
+
+
+1

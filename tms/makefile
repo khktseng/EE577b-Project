@@ -41,7 +41,7 @@
 
 
 # top level module
-TOP = tb_multiplier
+TOP = tb_prf
 TOP_SYN = tb_clock_syn
 DESIGN_NAME = multiplier
 

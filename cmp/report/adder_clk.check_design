@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Thu Apr 28 18:53:47 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Shorted outputs (LINT-31)                                       1
+
+Nets                                                                3
+    Unloaded nets (LINT-2)                                          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'adder_clk', net 'couts[6]' driven by pin 'genblk3[6].a_i/cout' has no loads. (LINT-2)
+Warning: In design 'adder_clk', net 'couts[2]' driven by pin 'genblk3[2].a_i/cout' has no loads. (LINT-2)
+Warning: In design 'adder_clk', net 'couts[0]' driven by pin 'genblk3[0].a_i/cout' has no loads. (LINT-2)
+Warning: In design 'adder_clk', output port 'out_v' is connected directly to output port 'ready'. (LINT-31)
+1
